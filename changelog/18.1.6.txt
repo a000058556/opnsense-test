@@ -1,0 +1,141 @@
+Howdy partners,
+
+With Meltdown and Spectre just behind us here comes another round of
+security advisories and assorted changes.
+
+Three mentionable changes are included: We are switching back to
+single-source automatic outbound NAT on the primary IP instead of
+using all additional VIPs on the interface as was the case with
+OPNsense 17.7 and earlier.  The hardware-assisted VLAN capability
+check was removed from the system enabling e.g. XEN users to create
+VLANs.  And the multi-WAN traffic shaping experience has been
+corrected for non-default interfaces within the scope of shared
+forwarding.
+
+Expected is an image release based on this version some time within
+the next week for completeness.
+
+Here are the full patch notes:
+
+o system: reverse reload order for gateway switching on OpenVPN
+o system: implement password policies for local accounts
+o system: separate web GUI and configd log files
+o system: add syslog and login service visibility
+o system: show root as disabled in user manager if disabled
+o interfaces: no longer restrict VLAN driver capability
+o firewall: switch back to the pre-18.1 auto-outbound NAT behaviour
+o firewall: reload schedules 1 minute later
+o firewall: filter descriptions option does no longer exist
+o firewall: updated anti-lockout link (contributed by Michael Muenz)
+o firewall: fix help text in shaper masks (contributed by Michael Muenz)
+o firewall: add delay option to pipe in shaper (contributed by Michael Muenz)
+o reporting: add insight aggregator to service list
+o dashboard: large CPU usage widget (contributed by Team Rebellion)
+o dhcp: fix display of DUID in IPv6 leases
+o firmware: let opnsense-patch apply chmod even in partially failed patches
+o firmware: let opnsense-code fetch all remotes as well as prune them
+o intrusion detection: provide custom.yaml for user edits
+o web proxy: fix pid file pointer for service status probe
+o ui: help data-for attribute (contributed by NOYB)
+o ui: reversed zebra redraw on static page mobile forms
+o ui: cleanup for unused classes in static pages
+o mvc: add constraint type for dependent fields
+o plugins: merge rc.plugins_configure code into pluginctl
+o plugins: os-c-icap 1.5_1 service controller fix (contributed by Fabian Franz)
+o plugins: os-frr 1.3 adds BGP for IPv6 (contributed by Michael Muenz)
+o plugins: os-lcdproc-sdeclcd 1.0 release adds LCD usage to Lanner/Watchguard Firebox
+o plugins: os-monit 1.7 fixes compatibility with UI rework
+o plugins: os-rspamd 1.2 allows to specify bad file extensions (contributed by Fabian Franz and Michael Muenz)
+o plugins: os-shadowsocks 1.0 release (contributed by Michael Muenz)
+o plugins: os-theme-rebellion 1.0 release (contributed by Team Rebellion)
+o plugins: os-web-proxy-sso 2.2 adds XMLRPC sync (contributed by Smart-Soft)
+o plugins: os-web-proxy-useracl 1.1 adds XMLRPC sync (contributed by Smart-Soft)
+o plugins: os-zabbix-agent 1.2_1 fixes service controls
+o src: fix mutli-wan traffic shaper on non-default gateway interfaces
+o src: ipsec crash or denial of service[1]
+o src: vt console memory disclosure[2]
+o src: multiple minor kernel memory disclosures[3]
+o src: timezone database information update[4]
+o ports: dnsmasq 2.79[5]
+o ports: openssl 1.0.2o[6]
+o ports: perl 5.26.1[7]
+o ports: php 7.1.16[8]
+o ports: squid 3.5.27 adds LDAP authentication
+
+We are also happy to announce the immediate availability of the renewed
+OPNsense 18.1 images based on version 18.1.6.  Apart from the numerous
+improvements since the initial release, the images contain three
+relevant fixes:
+
+o Fix Unbound DNS parameter underflow on systems with higher number of CPUs
+o Disable Health Reporting (RRD) by default on Nano images to reduce write cycles
+o Disable TRIM by default on Nano images to prevent corruptions of the file system
+
+The full list of changes of the OPNsense 18.1 series can be reviewed
+using their original announcements:
+
+o 18.1: https://forum.opnsense.org/index.php?topic=7044.0
+o 18.1.1: https://forum.opnsense.org/index.php?topic=7138.0
+o 18.1.2: https://forum.opnsense.org/index.php?topic=7219.0
+o 18.1.3: https://forum.opnsense.org/index.php?topic=7492.0
+o 18.1.4: https://forum.opnsense.org/index.php?topic=7543.0
+o 18.1.5: https://forum.opnsense.org/index.php?topic=7679.0
+o 18.1.6: this document
+
+Download links, an installation guide[9] and the checksums for the
+images can be found below as well.
+
+o Europe: https://opnsense.c0urier.net/releases/18.1/
+o US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/18.1/
+o US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/18.1/
+o South America: http://mirror.upb.edu.co/opnsense/releases/18.1/
+o South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/18.1/
+o Full mirror list: https://opnsense.org/download/
+
+All images are provided with SHA-256 signatures, which can be verified
+against the distributed public key:
+
+openssl base64 -d -in image.bz2.sig -out /tmp/image.sig
+openssl dgst -sha256 -verify rsa.pub -signature /tmp/image.sig image.bz2
+
+The public key for the 18.1 series is:
+
+-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5kMyxEWUoyY3y8JLlOnz
+j2dE1QPYmWspn5Diqf1T6uSh0/HA8TwnRvI4m82dC2kgnafVB85zIS+rXQLiyJZI
+JEqmBS5f54kVcyJPVORe7NepJq372amAMTcpPwH4b0SS9ZETebAOyuHjdG/lCjKD
+yt5W5ZvaMiDMWLVuw1ZlTIxLgkRuCHsk66E1bdoiIMdZPoyk2Q9WQd3PynLRBVHC
+iT32cJ/NlHiLEALp0wcNr+FllmFQXahQ5R1uBcsE/IXa7Tg0QXlW7s5+d6NTwQ/d
+7NVnfZzH8IiO0A/9O5jbBsD6HLmity5nMI+RBwFQ9OQoBNxl5aakkusizT6diMYb
+PG+zPZsWo/ADqsbg1U/MMLJXD8CDFjcerhIDrrWSIVlSmQKw97nMK/TdUsqnVl7N
+uDLl0RHe+N6ndmNGTQGg5HbrTmYKSEGBdS4xFtO60JCxubzfpvnkDnPCIJtxWukf
+TzhORJHj2vkGLDA5FocTSOY76lWUO4qJQBA2bB3GtGbCm/nM4TlHpL4Kbf10IUJk
+j1tRFi8gXNOhrdplFAR+lV/yy58/+ZOg61Yz7UvYG/A9rxGkyVmIjzB/4S6Wstye
+IA6vpfzHwHq82hMqafCSB2KJciuKVEgVO6DHLV03VLTPqkJVsCbWXHgNjK2fQCFX
+JeXNX68TcObIJzqbiegZYo8CAwEAAQ==
+-----END PUBLIC KEY-----
+
+
+Stay safe,
+Your OPNsense team
+
+--
+[1] https://security.freebsd.org/advisories/FreeBSD-SA-18:05.ipsec.asc
+[2] https://security.freebsd.org/advisories/FreeBSD-SA-18:04.vt.asc
+[3] https://security.freebsd.org/advisories/FreeBSD-EN-18:04.mem.asc
+[4] https://security.freebsd.org/advisories/FreeBSD-EN-18:03.tzdata.asc
+[5] https://www.thekelleys.org.uk/dnsmasq/CHANGELOG
+[6] https://www.openssl.org/news/secadv/20180327.txt
+[7] https://perldoc.perl.org/5.26.1/perldelta
+[8] https://php.net/ChangeLog-7.php#7.1.16
+[9] https://docs.opnsense.org/manual/install.html
+
+SHA256 (OPNsense-18.1.6-OpenSSL-dvd-amd64.iso.bz2) = ee296edf026abd23b01d04c2aee7b9a0578ad4b3aa039e50eb40f720f13eac58
+SHA256 (OPNsense-18.1.6-OpenSSL-nano-amd64.img.bz2) = 204e87a93b5bd0f7742e90bef8ae20bfd7c362a73ee29054a96356e9649572b3
+SHA256 (OPNsense-18.1.6-OpenSSL-serial-amd64.img.bz2) = 063dc97b4177a932ba0bb243bec54b6b568ed84e515445b3eae7ba54f087478f
+SHA256 (OPNsense-18.1.6-OpenSSL-vga-amd64.img.bz2) = 9be03dccce94705c35c476ea7ca0e2f42c70049ecc5c681a6dfe92b7f21d7c34
+
+SHA256 (OPNsense-18.1.6-OpenSSL-dvd-i386.iso.bz2) = 06883a48295529bb7fae9fff4a77bbb95df9fcb08554f4c73aa3e0b894a4158b
+SHA256 (OPNsense-18.1.6-OpenSSL-nano-i386.img.bz2) = ea87270fb5c83943c7cccae12ae9579f4f3a82489a901881cd4a786b7e09009d
+SHA256 (OPNsense-18.1.6-OpenSSL-serial-i386.img.bz2) = 3ccbdf4fd31913afc93b0b51b4784df01d22ec03156659efe78d36ab2dcf222f
+SHA256 (OPNsense-18.1.6-OpenSSL-vga-i386.img.bz2) = 252b16aae7592faf3d5912b5394124e494db7797ebeec7d6b7fae9a52ad28cd4

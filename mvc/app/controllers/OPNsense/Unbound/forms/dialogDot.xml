@@ -1,0 +1,38 @@
+<form>
+    <field>
+        <id>dot.enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help>Enable or disable this server.</help>
+    </field>
+    <field>
+        <id>dot.domain</id>
+        <label>Domain</label>
+        <type>text</type>
+        <help>
+            If a domain is entered here, queries for this specific domain will be forwarded to the specified server.
+            Leave blank to forward all queries to the specified server (default).
+        </help>
+    </field>
+    <field>
+        <id>dot.server</id>
+        <label>Server IP</label>
+        <type>text</type>
+        <help>IP address of DNS server to forward all requests.</help>
+    </field>
+    <field>
+        <id>dot.port</id>
+        <label>Server Port</label>
+        <type>text</type>
+        <help>Port of DNS server, for usual DNS use 53, if you use DoT set it to 853.</help>
+    </field>
+    <field>
+        <id>dot.verify</id>
+        <label>Verify CN</label>
+        <type>text</type>
+        <help>
+            Verify if CN in certificate matches this value. Please note that if this field is omitted,
+            Unbound will not perform any certificate verification. Therefore, man-in-the-middle attacks are still possible.
+        </help>
+    </field>
+</form>

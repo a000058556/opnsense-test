@@ -1,0 +1,16 @@
+{
+    "product_abi": "22.7",
+    "product_arch": "amd64",
+    "product_copyright_owner": "Deciso B.V.",
+    "product_copyright_url": "https://www.deciso.com/",
+    "product_copyright_years": "2014-2022",
+    "product_email": "project@opnsense.org",
+    "product_flavour": "OpenSSL",
+    "product_hash": "068ef7106",
+    "product_id": "opnsense",
+    "product_name": "OPNsense",
+    "product_nickname": "Powerful Panther",
+    "product_series": "22.7",
+    "product_version": "22.7",
+    "product_website": "https://opnsense.org/"
+}

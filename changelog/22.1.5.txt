@@ -1,0 +1,58 @@
+Hi there,
+
+Due to popular demand the user experience for the revamped VLAN handling
+was improved in several areas.  Also incuded are a larger Unbound MVC
+rework and DNS system route apply changes from one single spot.  Last but
+not least the zlib vulnerability was fixed in FreeBSD amongst others.
+
+Here are the full patch notes:
+
+o system: set up all DNS system routes from system_resolvconf_generate()
+o system: properly clear legacy files when clearing log files
+o reporting: add ACPI and ARM temperature support to health data
+o interfaces: do not assume exclusive use of router file in IPv6 PPPoE case
+o interfaces: for symmetry with PPPoE do not reload WAN when address disappears
+o interfaces: VLAN UX changes include better tag and parent visibility and handling
+o interfaces: improve VLAN parent selection for batch changes to allow for a single apply
+o interfaces: hint at missing apply when trying to add a new interface in assignment page
+o captive portal: prevent cleansing password field
+o dhcp: give a hint on why an interface was ignored in radvd
+o firmware: exclude revision matching from latest changelog version check
+o unbound: add custom forwarding and overrides MVC pages
+o ui: omit total entries display for log grids
+o plugins: os-acme-client 3.9[1]
+o plugins: os-chrony 1.5[2]
+o plugins: os-ddclient 1.5[3]
+o src: pf(4) tables may fail to load[4]
+o src: potential jail escape vulnerabilities in netmap[5]
+o src: bhyve e82545 device emulation out-of-bounds write[6]
+o src: mpr/mps/mpt driver ioctl heap out-of-bounds write[7]
+o src: 802.11 heap buffer overflow[8]
+o src: zlib compression out-of-bounds write[9]
+o ports: curl 7.82.0[10]
+o ports: expat 2.4.8[11]
+o ports: libxml 2.9.13[12]
+o ports: monit 5.32.0[13]
+o ports: nss 3.77[14]
+o ports: python 3.8.13[15]
+
+
+Stay safe,
+Your OPNsense team
+
+--
+[1] https://github.com/opnsense/plugins/blob/stable/22.1/security/acme-client/pkg-descr
+[2] https://github.com/opnsense/plugins/blob/stable/22.1/net/chrony/pkg-descr
+[3] https://github.com/opnsense/plugins/blob/stable/22.1/dns/ddclient/pkg-descr
+[4] https://www.freebsd.org/security/advisories/FreeBSD-EN-22:15.pf.asc
+[5] https://www.freebsd.org/security/advisories/FreeBSD-SA-22:04.netmap.asc
+[6] https://www.freebsd.org/security/advisories/FreeBSD-SA-22:05.bhyve.asc
+[7] https://www.freebsd.org/security/advisories/FreeBSD-SA-22:06.ioctl.asc
+[8] https://www.freebsd.org/security/advisories/FreeBSD-SA-22:07.wifi_meshid.asc
+[9] https://www.freebsd.org/security/advisories/FreeBSD-SA-22:08.zlib.asc
+[10] https://curl.se/changes.html#7_82_0
+[11] https://github.com/libexpat/libexpat/blob/R_2_4_8/expat/Changes
+[12] http://www.xmlsoft.org/news.html
+[13] https://mmonit.com/monit/changes/
+[14] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.77_release_notes
+[15] https://docs.python.org/release/3.8.13/whatsnew/changelog.html
