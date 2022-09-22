@@ -38,7 +38,7 @@
   background-color: #fff;
 }
 .bootstrap-dialog.type-default .bootstrap-dialog-title {
-  color: #333;
+  color: #fff;
 }
 .bootstrap-dialog.type-info .modal-header {
   background-color: #B0CDDB;
@@ -53,7 +53,7 @@
   background-color: #f0ad4e;
 }
 .bootstrap-dialog.type-danger .modal-header {
-  background-color: #d9534f;
+  background-color: #45D9FD;
 }
 .bootstrap-dialog.size-large .bootstrap-dialog-title {
   font-size: 24px;
