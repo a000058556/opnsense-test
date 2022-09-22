@@ -4705,8 +4705,10 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: #3C3C3B;
-  border-color: #2b2b2b;
+  /* background-color: #3C3C3B; */
+  /* border-color: #2b2b2b; */
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
+  border-radius: 1rem;
 }
 .navbar-default .navbar-brand {
   color: #F7F7F7;
