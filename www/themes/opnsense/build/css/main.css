@@ -7,8 +7,10 @@
   padding-right: 14px !important;
   padding-left: 16px !important;
   min-height: 25px !important;
-  border-top-left-radius: 1rem !important;
-  border-top-right-radius: 1rem !important;
+  /* border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important; */
+  border-radius: 1rem !important;
+
 }
 .widgetdiv .content-box-head .btn-group .btn {
   color: #3C3C3B !important;
