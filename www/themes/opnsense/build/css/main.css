@@ -4705,10 +4705,9 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  /* background-color: #3C3C3B; */
-  /* border-color: #2b2b2b; */
-  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
-  border-radius: 1rem;
+  background-color: #3C3C3B;
+  border-color: #2b2b2b;
+
 }
 .navbar-default .navbar-brand {
   color: #F7F7F7;
@@ -5436,7 +5435,7 @@ a.thumbnail.active {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 6px 8px;
+  padding: 12px 8px;
   margin-bottom: -1px;
   background-color: #fff;
 }
@@ -6943,7 +6942,7 @@ body {
 
 .page-side {
   background: #FFF;
-  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  /* border-right: 1px solid rgba(0, 0, 0, 0.15); */
   height: 100% !important;
   height: calc(100% - 52px) !important;
   left: 0;
@@ -6952,10 +6951,13 @@ body {
   position: fixed;
   top: 0;
   z-index: 3;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
+  border-radius: 1rem;
 }
 
 .page-side-nav--active {
-  background: #F7F7F7;
+  /* background: #F7F7F7; */
+  color: #2c7be5;
   border-left: 3px solid #45D9FD;
 }
 
