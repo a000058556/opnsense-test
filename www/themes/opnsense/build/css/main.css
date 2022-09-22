@@ -6953,6 +6953,7 @@ body {
   z-index: 3;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
   border-radius: 1rem;
+
 }
 
 .page-side-nav--active {
@@ -6975,10 +6976,14 @@ body {
 .content-box {
   background: #FFF;
   border: 1px solid #E5E5E5;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
 }
 .content-box-main {
   padding-bottom: 15px;
   padding-top: 15px;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
 }
 
 div.content-box.wizard div img {
