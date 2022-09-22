@@ -5478,7 +5478,8 @@ a.list-group-item:hover, a.list-group-item:focus {
   background-color: #f5f5f5;
 }
 a.list-group-item:hover:before, a.list-group-item:focus:before {
-  background: #45D9FD;
+  /* background: #45D9FD; */
+  color: #1056b2;
   content: "";
   height: 42px;
   left: 0;
