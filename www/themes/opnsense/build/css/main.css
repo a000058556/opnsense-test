@@ -4711,8 +4711,11 @@ tbody.collapse.in {
 }
 
 .navbar-default {
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
+  border-radius: 1rem;
   background-color: #2562d2;
-  border-color: #ffffff;
+  /* border-color: #ffffff; */
+
 
 }
 .navbar-default .navbar-brand {
