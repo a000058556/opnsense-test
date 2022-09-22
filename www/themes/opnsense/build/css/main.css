@@ -6976,14 +6976,11 @@ body {
 .content-box {
   background: #FFF;
   border: 1px solid #E5E5E5;
-  border: 0 solid rgba(0, 0, 0, 0.125);
-  border-radius: 1rem;
+  
 }
 .content-box-main {
   padding-bottom: 15px;
   padding-top: 15px;
-  border: 0 solid rgba(0, 0, 0, 0.125);
-  border-radius: 1rem;
 }
 
 div.content-box.wizard div img {
@@ -7498,6 +7495,8 @@ table {
 .widgetdiv {
   padding-top: 0px !important;
   padding-bottom: 20px;
+  box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+  border-radius: 1rem;
 }
 
 select {
