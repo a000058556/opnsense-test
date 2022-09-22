@@ -1,12 +1,14 @@
 @charset "UTF-8";
 .widgetdiv .content-box-head {
   background: #E8E8E8 !important;
-  color: #3C3C3B !important;
-  padding-bottom: 1px !important;
-  padding-top: 1px !important;
-  padding-right: 1px !important;
+  color: #189ef7 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  padding-right: 5px !important;
   padding-left: 5px !important;
   min-height: 25px !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
 }
 .widgetdiv .content-box-head .btn-group .btn {
   color: #3C3C3B !important;
