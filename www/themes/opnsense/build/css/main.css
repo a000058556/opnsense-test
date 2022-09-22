@@ -2633,8 +2633,8 @@ th {
   padding: 10px 0px 10px 20px;
   line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #eee;
-  border-radius: 1rem;
+  /* border-top: 1px solid #eee; */
+
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -7507,8 +7507,8 @@ table {
 .widgetdiv {
   padding-top: 0px !important;
   padding-bottom: 20px;
-  box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
-  border-radius: 1rem;
+  /* box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%); */
+  /* border-radius: 1rem; */
 }
 
 select {
