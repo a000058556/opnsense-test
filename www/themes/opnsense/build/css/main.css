@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .widgetdiv .content-box-head {
-  background: #48b4fd !important;
-  color: #3C3C3B !important;
+  background: #fff !important;
+  color: #48b4fd !important;
   padding-bottom: 10px !important;
   padding-top: 10px !important;
   padding-right: 5px !important;
@@ -6977,14 +6977,15 @@ body {
 
 .content-box {
   background: #FFF;
-  border: 1px solid #E5E5E5;
+  /* border: 1px solid #E5E5E5; */
   box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
-  
+  border-radius: 1rem;
 }
 .content-box-main {
   padding-bottom: 15px;
   padding-top: 15px;
   box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+  border-radius: 1rem;
 }
 
 div.content-box.wizard div img {
