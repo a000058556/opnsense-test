@@ -332,7 +332,7 @@ h3 {
   }
 
   .label {
-    border: 1px solid #000;
+    border: 1px solid rgb(220, 29, 93);
   }
 
   .table {
@@ -2612,6 +2612,7 @@ pre code {
 table {
   background-color: transparent;
   color: #444;
+  border-radius: 1rem;
 }
 
 th {
@@ -2633,6 +2634,7 @@ th {
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #eee;
+  border-radius: 1rem;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
