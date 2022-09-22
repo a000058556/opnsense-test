@@ -5474,12 +5474,12 @@ a.list-group-item .list-group-item-heading {
 }
 a.list-group-item:hover, a.list-group-item:focus {
   text-decoration: none;
-  color: #45D9FD;
+  color: #1056b2;
   background-color: #f5f5f5;
 }
 a.list-group-item:hover:before, a.list-group-item:focus:before {
-  /* background: #45D9FD; */
-  color: #1056b2;
+  background: #ab222b;
+  
   content: "";
   height: 42px;
   left: 0;
