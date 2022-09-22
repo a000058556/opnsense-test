@@ -4719,8 +4719,8 @@ tbody {
 
 .navbar-default {
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
-  border-radius: 1rem;
-  background-color: #2562d2;
+  /* border-radius: 1rem; */
+  background-color: #0b48b9;
   /* border-color: #ffffff; */
 
 
