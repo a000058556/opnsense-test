@@ -1,9 +1,9 @@
 <?php
 namespace OPNsense\HelloWorld\Api;
-use \OPNsense\Core\Backend;
+use \OPNsense\Core\Backend; // 使用後端通信
 
 use \OPNsense\Base\ApiControllerBase;
-class ServiceController extends ApiControllerBase
+class ServiceController extends ApiControllerBase 
 {
     public function reloadAction()
     {
