@@ -1,5 +1,9 @@
-………
-<items>
+<model>
+    <mount>//OPNsense/helloworld</mount>
+    <description>
+        the OPNsense "Hello World" application
+    </description>
+    <items>
     <!-- container -->
     <general>
         <!-- fields -->
@@ -22,4 +26,5 @@
         </Description>
     </general>
 </items>
-………
+</model>
+
