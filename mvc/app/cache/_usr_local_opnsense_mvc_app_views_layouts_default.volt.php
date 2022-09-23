@@ -11,7 +11,7 @@
     <meta name="copyright" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-    <title><?= (empty($headTitle) ? ('OPNsense') : ($headTitle)) ?> | <?= $system_hostname ?>.<?= $system_domain ?></title>
+    <title><?= (empty($headTitle) ? ('測試網站') : ($headTitle)) ?> | <?= $system_hostname ?>.<?= $system_domain ?></title>
     <?php $theme_name = (empty($ui_theme) ? ('opnsense') : ($ui_theme)); ?>
 
     <!-- include (theme) style -->
