@@ -17,6 +17,7 @@
             <FromEmail type="EmailField">
                 <default>sample@example.com</default>
                 <Required>Y</Required>
+                <ValidationMessage>please specify a valid email address</ValidationMessage>
             </FromEmail>
             <ToEmail type="EmailField">
                 <Required>Y</Required>
