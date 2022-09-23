@@ -1,0 +1,8 @@
+<model>
+    <mount>//OPNsense/helloworld</mount>
+    <description>
+        the OPNsense "Hello World" application
+    </description>
+    <items>
+    </items>
+</model>
