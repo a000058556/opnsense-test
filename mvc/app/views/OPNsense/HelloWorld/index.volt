@@ -1,1 +1,1 @@
-<h1>Hello World!</h1>
+{{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
