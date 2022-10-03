@@ -18,6 +18,14 @@
             });
         });
 
+        $("#testAct").click(function(){
+            $("#responseMsg").removeClass("hidden");
+            ajaxCall(url="/api/helloworld/service/test", sendData={},callback=function(data,status) {
+                // action to run after reload
+                $("#responseMsg").html(data['message']);
+            });
+        });
+
     });
 </script>
 <div class="alert alert-info hidden" role="alert" id="responseMsg"></div>
