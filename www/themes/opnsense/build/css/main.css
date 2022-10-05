@@ -7492,7 +7492,7 @@ table {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-button {
@@ -7519,6 +7519,12 @@ table {
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  width: 8px;
+  background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb:focus {
+  width: 8px;
   background: #e5e5e5;
 }
 
