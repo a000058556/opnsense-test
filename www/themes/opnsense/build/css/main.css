@@ -45,7 +45,6 @@ html {
 
 body {
   margin: 0;
-  overflow-y:hidden;
 }
 
 article,
@@ -7494,6 +7493,7 @@ table {
 
 ::-webkit-scrollbar {
   width: 8px;
+  overflow-y:hidden;
 }
 
 ::-webkit-scrollbar-button {
