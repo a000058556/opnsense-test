@@ -7506,6 +7506,12 @@ table {
   border-radius: 0;
 }
 
+::-webkit-scrollbar-track-piece {
+  background: none;
+  box-shadow: 0px 0px 0px;
+  border-radius: 0;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #e5e5e5;
   border: thin solid #e5e5e5;
