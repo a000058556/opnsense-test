@@ -7264,6 +7264,7 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 .nav-tabs > li {
   border-radius: 0px;
   border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   margin-right: 2px;
 }
 
@@ -7271,6 +7272,7 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   background: #FBFBFB;
   border-radius: 0px;
   border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   margin-right: 0px;
 }
 
