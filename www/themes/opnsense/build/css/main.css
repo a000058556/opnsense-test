@@ -7260,14 +7260,14 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   margin-right: 1px;
   border-bottom: 1px solid #999999;
 }
-
+/* 表格選項樣式 */
 .nav-tabs > li {
   border-radius: 0px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   margin-right: 2px;
 }
-
+/* 表格選項樣式 */
 .nav-tabs > li > a {
   background: #FBFBFB;
   border-radius: 0px;
