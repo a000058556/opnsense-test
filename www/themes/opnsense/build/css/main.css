@@ -7492,16 +7492,13 @@ table {
 }
 
 ::-webkit-scrollbar {
-  overflow: hidden !important;
-  overflow-anchor: none;
-  -ms-overflow-style: none;
-  touch-action: auto;
-  -ms-touch-action: auto;
+  width: 8px;
+  display: active;
 }
 
 ::-webkit-scrollbar-button {
-  /* width: 8px;
-  height: 5px; */
+  width: 8px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -7523,11 +7520,13 @@ table {
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  display: none;
   width: 8px;
   background: #e5e5e5;
 }
 
 ::-webkit-scrollbar-thumb:focus {
+  display: none;
   width: 8px;
   background: #e5e5e5;
 }
