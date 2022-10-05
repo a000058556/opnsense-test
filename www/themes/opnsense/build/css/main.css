@@ -7531,6 +7531,14 @@ table {
   background: #e5e5e5;
 }
 
+#navigation:hover>::-webkit-scrollbar-thumb:hover{
+  opacity: 0.6;
+}
+
+#navigation:focus>::-webkit-scrollbar-thumb:focus{
+  opacity: 0.6;
+}
+
 .widgetdiv {
   padding-top: 0px !important;
   padding-bottom: 20px;
