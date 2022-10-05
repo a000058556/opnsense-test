@@ -7493,7 +7493,7 @@ table {
 
 ::-webkit-scrollbar {
   width: 8px;
-  display: none;
+  /* display: none; */
 }
 
 ::-webkit-scrollbar-button {
@@ -7520,23 +7520,23 @@ table {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  display: active;
+  /* display: active; */
   width: 8px;
   background: #e5e5e5;
 }
 
 ::-webkit-scrollbar-thumb:focus {
-  display: active;
+  /* display: active; */
   width: 8px;
   background: #e5e5e5;
 }
 
-#navigation:hover>::-webkit-scrollbar-thumb:hover{
-  opacity: 0.6;
+#navigation {
+  overflow-y:hidden;
 }
 
-#navigation:focus>::-webkit-scrollbar-thumb:focus{
-  opacity: 0.6;
+#navigation:hover {
+  overflow-y:scroll;
 }
 
 .widgetdiv {
