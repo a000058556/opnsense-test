@@ -7493,7 +7493,8 @@ table {
 
 ::-webkit-scrollbar {
   width: 8px;
-  display: none;
+  overflow-y:hidden;
+  /* display: none; */
 }
 
 ::-webkit-scrollbar-button {
