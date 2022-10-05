@@ -7531,6 +7531,7 @@ table {
   background: #e5e5e5;
 }
 
+/* 滑過顯示滑輪 */
 #navigation {
   overflow-y:hidden;
 }
@@ -7538,6 +7539,11 @@ table {
 #navigation:hover {
   overflow-y:scroll;
 }
+
+#navigation>#navigation:hover{
+  opacity: 0.6;
+}
+
 
 .widgetdiv {
   padding-top: 0px !important;
