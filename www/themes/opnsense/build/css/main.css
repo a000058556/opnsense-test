@@ -7492,7 +7492,11 @@ table {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
 }
 
 ::-webkit-scrollbar-button {
