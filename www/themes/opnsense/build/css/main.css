@@ -4326,8 +4326,8 @@ tbody {
 }
 /* 下拉選單的選取時文字顏色 */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  color: #555555;
-  background-color: #fff;
+  color: #fff;
+  background-color: #006dd9 !important;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -7284,7 +7284,8 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 }
 
 .nav-tabs > li.active > a {
-  background: #FFF !important;
+  background: #FFF ;
+  /* background: #FFF !important; */
 }
 
 .nav-tabs > li.active > a,
