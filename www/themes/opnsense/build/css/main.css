@@ -4324,9 +4324,10 @@ tbody {
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #E5E5E5;
 }
+/* 下拉選單的選取時文字顏色 */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  color: #555555;
-  background-color: #fff;
+  color: #fff;
+  background-color: #006dd9;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
