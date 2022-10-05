@@ -34,3 +34,13 @@
     <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b></button>
     <button class="btn btn-primary"  id="testAct" type="button"><b>{{ lang._('Test') }}</b></button>
 </div>
+
+{% macro odd_numbers(a, b) %}
+    {% for number in a..b %}
+        {% if number is odd %}
+            <p>{{ number }}</p>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{{ odd_numbers(5, 10) }}
