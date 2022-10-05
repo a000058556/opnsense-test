@@ -7492,7 +7492,7 @@ table {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 8px;
   display: none;
 }
 
