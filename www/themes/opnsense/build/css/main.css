@@ -7493,7 +7493,7 @@ table {
 
 ::-webkit-scrollbar {
   width: 8px;
-  /* display: none; */
+  display: none;
 }
 
 ::-webkit-scrollbar-button {
