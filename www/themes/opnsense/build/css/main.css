@@ -7284,7 +7284,8 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 }
 
 .nav-tabs > li.active > a {
-  background: #FFF !important;
+  background: #FFF ;
+  /* background: #FFF !important; */
 }
 
 .nav-tabs > li.active > a,
