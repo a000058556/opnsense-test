@@ -7492,11 +7492,7 @@ table {
 }
 
 ::-webkit-scrollbar {
-  overflow: hidden !important;
-  overflow-anchor: none;
-  -ms-overflow-style: none;
-  touch-action: auto;
-  -ms-touch-action: auto;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-button {
@@ -7505,7 +7501,7 @@ table {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f7f7f7;
+  background: none;
   box-shadow: 0px 0px 0px;
   border-radius: 0;
 }
@@ -7513,7 +7509,7 @@ table {
 ::-webkit-scrollbar-thumb {
   background: #e5e5e5;
   border: thin solid #e5e5e5;
-  border-radius: 0px;
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
