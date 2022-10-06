@@ -4312,7 +4312,8 @@ tbody {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #006dd9;
+  padding: 10px 0px;
 }
 .nav-tabs > li {
   float: left;
