@@ -161,11 +161,11 @@
                     rrd_name = subitem + '-' + category;
 
                     // create dropdown menu
-                    tabs+='<a data-toggle="dropdown" href="#" class="dropdown-toggle pull-right visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" role="button">';
+                    // side_a 圓角設定用class
+                    tabs+='<a data-toggle="dropdown" href="#" class="side_a dropdown-toggle pull-right visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" role="button">';
                     tabs+='<b><span class="caret"></span></b>';
                     tabs+='</a>';
-                    // side_a 圓角設定用class
-                    tabs+='<a data-toggle="tab" onclick="$(\'#'+rrd_name+'\').click();" class="side_a visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" style="border-right:0px;"><b>'+category[0].toUpperCase() + category.slice(1)+'</b></a>';
+                    tabs+='<a data-toggle="tab" onclick="$(\'#'+rrd_name+'\').click();" class="visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" style="border-right:0px;"><b>'+category[0].toUpperCase() + category.slice(1)+'</b></a>';
                     tabs+='<ul class="dropdown-menu" role="menu">';
                     rrd_name="";
 
