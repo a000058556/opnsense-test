@@ -7263,26 +7263,26 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 /* 表格選項樣式 */
 .nav-tabs > li {
   border-radius: 0px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   margin-right: 2px;
 }
 /* 表格選項樣式 */
 .nav-tabs > li > a {
   background: #FBFBFB;
   border-radius: 0px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   margin-right: 0px;
 }
 
 .nav-tabs > li > a,
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-  border-right: 1px solid #fff;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-right: 0px solid #fff;
+  border-top: 0px solid #fff;
+  border-left: 0px solid #fff;
+  border-bottom: 0px solid #fff;
 }
 
 .nav-tabs > li.active > a {
@@ -7293,9 +7293,9 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  border-right: 1px solid #fff;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
+  border-right: 1px solid #FBFBFB;
+  border-top: 1px solid #FBFBFB;
+  border-left: 1px solid #FBFBFB;
 }
 
 .nav-tabs > li > a.visible-lg-inline-block:not(.pull-right) {
