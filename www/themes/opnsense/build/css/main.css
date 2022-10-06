@@ -7265,7 +7265,7 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 
 .nav-tabs {
   margin-right: 1px;
-  border-bottom: 1px solid #999999;
+  /* border-bottom: 1px solid #999999; */
 }
 /* 表格選項樣式 */
 .nav-tabs > li {
