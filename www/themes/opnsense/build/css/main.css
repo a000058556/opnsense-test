@@ -5485,8 +5485,9 @@ a.list-group-item:hover, a.list-group-item:focus {
   color: #1056b2;
   background-color: #f5f5f5;
 }
+/* 菜單選單滑過效果 */
 a.list-group-item:hover:before, a.list-group-item:focus:before {
-  background: #22ab30;
+  background: #45D9FD;
   
   content: "";
   height: 42px;
