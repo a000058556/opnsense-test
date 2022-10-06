@@ -5713,6 +5713,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table,
 .panel > .panel-collapse > .table {
   margin-bottom: 0;
+  overflow-x: auto;
+
 }
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
