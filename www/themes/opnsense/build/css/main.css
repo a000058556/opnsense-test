@@ -297,7 +297,7 @@ blockquote {
   tr,
 img {
     page-break-inside: avoid;
-    border-top: 1px solid #eee !important;
+    border-top: 1px solid #eee;
   }
 
   img {
@@ -2679,7 +2679,8 @@ th {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
+  border-top: 1px solid #eee;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2690,6 +2691,7 @@ th {
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
   /* background-color: #FBFBFB; */
+  /* border-top: 1px solid #eee; */
 }
 
 .table-hover > tbody > tr:hover > td,
