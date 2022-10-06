@@ -7282,8 +7282,8 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   margin-right: 0px;
 }
 
-/* side_a 圓角設定用class */
-.side_a {
+/* side-r-lf-0 圓角設定用class */
+.side-r-lf-0 {
   border-top-left-radius: 0px !important;
 }
 

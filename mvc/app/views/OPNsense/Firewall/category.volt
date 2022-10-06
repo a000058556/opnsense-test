@@ -90,7 +90,7 @@
     <li class="active"><a data-toggle="tab" href="#grid-categories">{{ lang._('Categories') }}</a></li>
 </ul>
 <!-- 主要表格 -->
-<div class="side-a tab-content content-box">
+<div class="side-r-lf-0 tab-content content-box">
     <div id="categories" class="tab-pane fade in active">
         <table id="grid-categories" class="table table-condensed table-hover table-striped table-responsive" data-editDialog="DialogEdit">
             <thead>
