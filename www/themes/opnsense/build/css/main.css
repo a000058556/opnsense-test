@@ -7278,7 +7278,7 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 
 /* side_a 圓角設定用class */
 .side_a {
-  border-top-left-radius: 0px;
+  border-top-left-radius: 0px !important;
 }
 
 .nav-tabs > li > a,
