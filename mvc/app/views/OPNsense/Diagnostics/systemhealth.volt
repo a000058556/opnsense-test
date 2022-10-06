@@ -316,9 +316,9 @@
                             detail_text = Math.floor(recordedtime / 60).toString() + " {{ lang._('Minutes') }}";
                         }
                         if (setcount == 0) {
-                            zoom_buttons += '<label class="custom-btn btn-2 active"> <input type="radio" id="d' + setcount.toString() + '" name="detail" checked="checked" value="' + setcount.toString() + '" /> ' + detail_text + ' </label>';
+                            zoom_buttons += '<label class="btn custom-btn btn-2 active"> <input type="radio" id="d' + setcount.toString() + '" name="detail" checked="checked" value="' + setcount.toString() + '" /> ' + detail_text + ' </label>';
                         } else {
-                            zoom_buttons += '<label class="custom-btn btn-2"> <input type="radio" id="d' + setcount.toString() + '" name="detail" value="' + setcount.toString() + '" /> ' + detail_text + ' </label>';
+                            zoom_buttons += '<label class="btn custom-btn btn-2"> <input type="radio" id="d' + setcount.toString() + '" name="detail" value="' + setcount.toString() + '" /> ' + detail_text + ' </label>';
                         }
 
                     }
