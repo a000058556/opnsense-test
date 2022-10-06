@@ -4313,7 +4313,8 @@ tbody {
 
 .nav-tabs {
   border-bottom: 1px solid #006dd9;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
+  margin-bottom: 10px;
 }
 .nav-tabs > li {
   float: left;
