@@ -2690,7 +2690,7 @@ th {
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
   /* background-color: #FBFBFB; */
-  border-top: 1px solid rgb(132, 132, 132);
+  /* border-top: 1px solid rgb(132, 132, 132); */
 }
 
 .table-hover > tbody > tr:hover > td,
