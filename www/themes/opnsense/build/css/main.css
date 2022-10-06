@@ -3559,10 +3559,29 @@ select[multiple].input-lg,
   box-shadow: none;
 }
 
+/* 2 */
+.btn-2 {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+  
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
 .btn-default {
   color: #444;
   background-color: #FFFFFF;
   border-color: #e5e5e5;
+  
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   color: #444;
