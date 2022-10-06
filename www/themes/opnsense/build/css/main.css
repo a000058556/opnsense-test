@@ -297,7 +297,7 @@ blockquote {
   tr,
 img {
     page-break-inside: avoid;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eee !important;
   }
 
   img {
