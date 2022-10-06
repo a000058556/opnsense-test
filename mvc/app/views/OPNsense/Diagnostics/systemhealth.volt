@@ -654,7 +654,7 @@
         </div>
 
         <!-- place holder for the general table with min/max/averages, is hidden by default -->
-        <div id="chart_general_table" class="col-md-12 pdg-0" style="display: none;">
+        <div id="chart_general_table" class="col-md-12 pdg-rf-0" style="display: none;">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title"> {{ lang._('Current View - Overview') }}</h3>
@@ -677,7 +677,7 @@
         </div>
     </div>
 
-    <div id="chart_details_table" class="col-md-12 pdg-0" style="display: none;">
+    <div id="chart_details_table" class="col-md-12 pdg-rf-0" style="display: none;">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">

@@ -7647,6 +7647,7 @@ div[data-for*=help_for] {
 
 /* 自用微調用 */
 
-.pdg-0 {
-  padding: 0px;
+.pdg-rf-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
