@@ -7643,3 +7643,10 @@ div[data-for*=help_for] {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+
+/* 自用微調用 */
+
+.pdg-0 {
+  padding: 0px;
+}
