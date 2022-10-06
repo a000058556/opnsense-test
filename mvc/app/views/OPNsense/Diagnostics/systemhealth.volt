@@ -569,7 +569,7 @@
                 {# Tab Content #}
                 </ul>
                     <div class="row">
-                        <div class="col-md-12"></div>
+                        <div class="col-md-12" style="border: 0px;"></div>
                         <div class="col-md-4">
                             <b>{{ lang._('Zoom level') }}:</b>
                             <form onChange="UpdateOptions()">
