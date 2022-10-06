@@ -3560,6 +3560,7 @@ select[multiple].input-lg,
 }
 
 .custom-btn {
+  display:none;
   height: 40px;
   color: #fff;
   border-radius: 5px;
