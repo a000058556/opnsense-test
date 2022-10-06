@@ -704,7 +704,7 @@
                     </div>
                 </div>
 
-                <div class="table-responsive">
+                <div class="table-responsive over-f-x-at">
                     <table class="table table-condensed table-hover table-striped">
                         <thead>
                         <tr id="table_view_heading" class="active">
