@@ -209,7 +209,7 @@
             </section>
             <section class="col-xs-12">
                 <div class="content-box">
-                    <div class="table-responsive">
+                    <div class="table-responsive over-f-x-at">
                         <table class="table table-striped" id="alias_content" data-store-selection="true">
                             <thead>
                                 <tr>
