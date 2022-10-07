@@ -2622,7 +2622,7 @@ table {
 th {
   text-align: left;
 }
-
+/* 基本表格樣式 */
 .table {
   width: 100%;
   max-width: 100%;
@@ -7007,7 +7007,8 @@ body {
 
 /* 頁面背景樣式 */
 .page-content-main {
-  background: #F7F7F7;
+  background: #fff;
+  /* #F7F7F7 */
   min-height: calc(100% - 64px);
   padding: 15px 0 73px;
 }
