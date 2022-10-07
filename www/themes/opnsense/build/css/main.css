@@ -3869,6 +3869,8 @@ tbody {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+  border-radius: 15px !important;
+  border: 2px solid #006dd9 !important;
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -7334,7 +7336,6 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   border: 2px solid #006dd9 !important;
   min-width: 90px;
   text-align: center;
-  
 }
 
 /* side-r-lf-0 圓角設定用class */
