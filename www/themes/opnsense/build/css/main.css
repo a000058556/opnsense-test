@@ -20,7 +20,7 @@
 .widgetdiv .content-box-head .btn-group .btn:hover {
   color: #fff !important;
   background: #48b4fd !important;
-  border-radius: 100%;
+  border-radius: 100% !important;
 }
 .widgetdiv .content-box-head .btn-group .btn .glyphicon {
   color: #006dd9 !important;
