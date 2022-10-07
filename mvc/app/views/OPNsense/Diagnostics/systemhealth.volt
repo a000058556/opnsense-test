@@ -165,7 +165,7 @@
                     tabs+='<a data-toggle="dropdown" href="#" class="dropdown-bt-right dropdown-toggle pull-right visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" role="button">';
                     tabs+='<b><span class="caret"></span></b>';
                     tabs+='</a>';
-                    tabs+='<a data-toggle="tab" onclick="$(\'#'+rrd_name+'\').click();" class="visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" style="border-radius: 15px 0px 0px 15px; margin-right: 0px;"><b>'+category[0].toUpperCase() + category.slice(1)+'</b></a>';
+                    tabs+='<a data-toggle="tab" onclick="$(\'#'+rrd_name+'\').click();" class="dropdown-bt-left visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" ><b>'+category[0].toUpperCase() + category.slice(1)+'</b></a>';
                     tabs+='<ul class="dropdown-menu" role="menu">';
                     rrd_name="";
 

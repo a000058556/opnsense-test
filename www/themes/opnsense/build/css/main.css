@@ -7713,4 +7713,12 @@ div[data-for*=help_for] {
 .dropdown-bt-right {
   border-radius: 0px 15px 15px 0px !important;
   min-width: 70px !important;
+  margin-bottom: 0px !important;
+}
+
+/* 下拉選單左 */
+.dropdown-bt-left {
+  border-radius: 15px 0px 0px 15px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
 }
