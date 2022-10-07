@@ -4355,7 +4355,7 @@ tbody {
 
 /* 選單下底線 */
 .nav-tabs {
-  /* border-bottom: 1px solid #006dd9; */
+  border-bottom: 1px solid #006dd9;
   border-width: 80%;
   /* padding: 10px 0px; */
   margin-bottom: 10px;

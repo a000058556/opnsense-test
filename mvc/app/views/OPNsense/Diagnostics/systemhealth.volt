@@ -565,7 +565,7 @@
             </div>
             <div class="panel-body collapse" id="options">
                 <div class="container-fluid">
-                <ul class="nav nav-tabs" role="tablist" id="maintabs">
+                <ul class="nav nav-tabs" role="tablist" id="maintabs" style="border-bottom: 0px">
                 {# Tab Content #}
                 </ul>
                     <div class="row">
