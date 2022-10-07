@@ -13,12 +13,12 @@
 
 }
 .widgetdiv .content-box-head .btn-group .btn {
-  color: #3C3C3B !important;
-  background: #E8E8E8 !important;
+  color: #48b4fd !important;
+  background: none !important;
   border: 0px;
 }
 .widgetdiv .content-box-head .btn-group .btn .glyphicon {
-  color: #3C3C3B !important;
+  color: #006dd9 !important;
 }
 .widgetdiv .content-box-head .list-inline li > h3 {
   padding-top: 4px;
@@ -4373,11 +4373,11 @@ tbody {
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #E5E5E5;
 }
-/* 下拉選單的選取時文字顏色 */
+/* 下拉選單的選取時顏色 */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #fff;
   background-color: #006dd9 !important;
-  border: 1px solid #006dd9;
+  border: 2px solid #006dd9;
   border-bottom-color: transparent;
   cursor: default;
 }

@@ -161,7 +161,7 @@
                     rrd_name = subitem + '-' + category;
 
                     // create dropdown menu
-                    // side-r-lf-0 圓角設定用class
+                    // dropdown-bt-right/dropdown-bt-left 自定用class
                     tabs+='<a data-toggle="dropdown" href="#" class="dropdown-bt-right dropdown-toggle pull-right visible-lg-inline-block visible-md-inline-block visible-xs-inline-block visible-sm-inline-block" role="button">';
                     tabs+='<b><span class="caret"></span></b>';
                     tabs+='</a>';
