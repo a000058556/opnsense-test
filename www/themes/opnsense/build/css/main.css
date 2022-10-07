@@ -7329,8 +7329,8 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   margin-right: 0px;
-  -webkit-box-shadow: inset 0 1px 6px 0 rgba(32, 33, 36, .28);
-  box-shadow: inset 0 1px 6px 0 rgba(32, 33, 36, .28);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   
 }
 
