@@ -7712,5 +7712,5 @@ div[data-for*=help_for] {
 /* 下拉選單右 */
 .dropdown-bt-right {
   border-radius: 0px 15px 15px 0px !important;
-  min-width: 70px;
+  min-width: 70px !important;
 }
