@@ -4353,6 +4353,7 @@ tbody {
 
 .nav-tabs {
   border-bottom: 1px solid #006dd9;
+  border-width: 80%;
   /* padding: 10px 0px; */
   margin-bottom: 10px;
 }
@@ -7328,7 +7329,7 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   border-radius: 15px;
   /* border-top-right-radius: 15px;
   border-top-left-radius: 15px; */
-  margin: 10px 20px 10px 0px;
+  margin: 10px 10px 10px 0px;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
   
 }
