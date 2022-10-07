@@ -7708,3 +7708,9 @@ div[data-for*=help_for] {
 .over-f-x-at {
   overflow-x: auto;
 }
+
+/* 下拉選單右 */
+.dropdown-bt-right {
+  border-radius: 0px 15px 15px 0px;
+  min-width: 70px;
+}
