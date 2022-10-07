@@ -7323,7 +7323,7 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   border-top-left-radius: 15px;
   margin-right: 2px;
 }
-/* 表格選項樣式(選取前) */
+/* 表格選項樣式(基本樣式) */
 .nav-tabs > li > a {
   background: #fff;
   border-radius: 15px;
@@ -7331,6 +7331,9 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
   border-top-left-radius: 15px; */
   margin: 10px 10px 10px 0px;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  border: 2px solid #006dd9 !important;
+  min-width: 90px;
+  text-align: center;
   
 }
 
