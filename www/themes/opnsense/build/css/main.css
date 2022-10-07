@@ -7730,9 +7730,9 @@ div[data-for*=help_for] {
 }
 
 .search-input-right {
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 15px 15px 0px !important;
 }
 
 .search-input-left {
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0px 0px 15px !important;
 }
