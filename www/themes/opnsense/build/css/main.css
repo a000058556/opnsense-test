@@ -17,6 +17,11 @@
   background: none !important;
   border: 0px;
 }
+.widgetdiv .content-box-head .btn-group .btn:hover {
+  color: #fff !important;
+  background: #48b4fd !important;
+  border-radius: 100%;
+}
 .widgetdiv .content-box-head .btn-group .btn .glyphicon {
   color: #006dd9 !important;
 }
