@@ -7728,3 +7728,11 @@ div[data-for*=help_for] {
   margin-right: 0px !important;
   margin-bottom: 0px !important;
 }
+
+.search-input-right {
+  border-radius: 0px 15px 15px 0px;
+}
+
+.search-input-left {
+  border-radius: 15px 0px 0px 15px;
+}
