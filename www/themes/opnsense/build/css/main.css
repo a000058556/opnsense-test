@@ -7324,11 +7324,11 @@ ul.nav > li.dropdown > ul.dropdown-menu > li > a {
 }
 /* 表格選項樣式(選取前) */
 .nav-tabs > li > a {
-  background: #FBFBFB;
-  border-radius: 0px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  margin-right: 0px;
+  background: #fff;
+  border-radius: 15px;
+  /* border-top-right-radius: 15px;
+  border-top-left-radius: 15px; */
+  margin: 10px 20px 10px 0px;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
   
 }
