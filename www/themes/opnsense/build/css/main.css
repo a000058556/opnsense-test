@@ -10,8 +10,9 @@
   /* border-top-left-radius: 1rem !important;
   border-top-right-radius: 1rem !important; */
   border-radius: 1rem !important;
-
 }
+
+/* 右上按鈕樣式 */
 .widgetdiv .content-box-head .btn-group .btn {
   color: #48b4fd !important;
   background: none !important;
