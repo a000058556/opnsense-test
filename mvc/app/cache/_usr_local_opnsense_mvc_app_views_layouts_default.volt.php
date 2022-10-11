@@ -220,8 +220,8 @@
             <li>
               <form class="navbar-form" role="search">
                 <div class="input-group">
-                  <div class="search-input-left input-group-addon"><i class="fa fa-search"></i></div>
-                  <input type="text" style="width: 250px;" class="search-input-right form-control" tabindex="1" data-provide="typeahead" id="menu_search_box" autocomplete="off">
+                  <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                  <input type="text" style="width: 250px;" class="form-control" tabindex="1" data-provide="typeahead" id="menu_search_box" autocomplete="off">
                 </div>
               </form>
             </li>
