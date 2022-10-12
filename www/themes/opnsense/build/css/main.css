@@ -3863,7 +3863,7 @@ tbody {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 15px 0;
+  padding: 15px 0 !important;
   margin: 2px 0 0;
   list-style: none;
   font-size: 14px;
