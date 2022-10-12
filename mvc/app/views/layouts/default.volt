@@ -101,7 +101,7 @@
                 initFormAdvancedUI();
                 addMultiSelectClearUI();
 
-                // hook in live menu search
+                // hook in live menu search 菜單調用
                 $.ajax("/api/core/menu/search/", {
                     type: 'get',
                     cache: false,
