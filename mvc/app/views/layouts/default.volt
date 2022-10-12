@@ -112,6 +112,7 @@
                     },
                     success: function (data) {
                         var menusearch_items = [];
+                        console.log(data);
                         $.each(data,function(idx, menu_item){
                             if (menu_item.Url != "") {
                                 menusearch_items.push({id:$('<div />').html(menu_item.Url).text(), name:menu_item.breadcrumb});
