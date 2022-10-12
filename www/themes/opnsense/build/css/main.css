@@ -7268,7 +7268,7 @@ main.page-content.col-lg-12 {
 }
 /* 縮小時選單間距 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item {
-  padding: 3px 8px !important;
+  padding: 8px 8px !important;
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in {
   width: 168px;
