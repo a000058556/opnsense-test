@@ -212,7 +212,7 @@ select.selectpicker {
   outline: none !important;
 }
 .bootstrap-select .dropdown-menu.inner {
-  border: 2px solid #006dd9 !important;
+  border: 0px !important;
   position: static;
   float: none;
   border: 0;

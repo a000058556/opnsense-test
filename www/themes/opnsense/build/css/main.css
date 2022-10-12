@@ -3876,7 +3876,7 @@ tbody {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
   border-radius: 15px !important;
-
+  border: 2px solid #006dd9 !important;
 }
 .dropdown-menu.pull-right {
   right: 0;
