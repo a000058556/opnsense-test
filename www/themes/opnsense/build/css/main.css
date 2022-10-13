@@ -7737,3 +7737,61 @@ div[data-for*=help_for] {
 .search-input-left {
   border-radius: 15px 0px 0px 15px !important;
 }
+
+/* 登入頁面 */
+.oblique {
+  transform: skewX(-10deg);
+  overflow: hidden;
+  width: 60%;
+  right: -10rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.oblique .oblique-image {
+  transform: skewX(10deg);
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.d-md-block {
+  display: block !important;
+}
+
+.me-n8 {
+  margin-right: -8rem !important;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.ms-n6 {
+  margin-left: -4rem !important;
+}
+
+.z-index-0 {
+  z-index: 0 !important;
+}
+
