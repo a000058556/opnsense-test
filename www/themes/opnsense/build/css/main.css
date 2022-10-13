@@ -7795,3 +7795,6 @@ div[data-for*=help_for] {
   z-index: 0 !important;
 }
 
+.bg-01-img {
+  background-image:url('../images/bg-01.jpg')
+}
