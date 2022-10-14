@@ -7142,9 +7142,9 @@ div.content-box.wizard div img {
 
 .login-modal-container {
   background: #FFF;
-  border: 1px solid #E5E5E5;
+  /* border: 1px solid #E5E5E5; */
   max-width: 400px;
-  margin: 100px auto 15px auto;
+  margin: 50% auto 20% auto;
 }
 .login-modal-head {
   background: #3C3C3B;
@@ -7863,6 +7863,9 @@ div[data-for*=help_for] {
 }
 .mt-8 {
   margin-top: 8rem !important;
+}
+.mt-12 {
+  margin-top: 12rem !important;
 }
 .card {
   position: relative;
