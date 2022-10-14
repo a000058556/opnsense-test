@@ -7931,3 +7931,26 @@ div[data-for*=help_for] {
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
+
+/* login button */
+
+.btn.bg-gradient-info {
+  color: #fff;
+}
+.btn:not([class*="btn-outline-"]) {
+  border: 0;
+}
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+.bg-gradient-info {
+  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
