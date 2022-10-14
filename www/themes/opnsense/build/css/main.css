@@ -7750,9 +7750,9 @@ div[data-for*=help_for] {
 .oblique {
   transform: skewX(-10deg);
   overflow: hidden;
-  width: 60%;
+  width: 85%;
   right: -10rem;
-  border-bottom-left-radius: 0.75rem;
+  border-bottom-left-radius: 2.75rem;
 }
 
 .oblique .oblique-image {
