@@ -7812,3 +7812,20 @@ div[data-for*=help_for] {
 *::after {
   box-sizing: border-box;
 }
+
+
+.main-content {
+  transition: all 0.2s ease-in-out;
+}
+
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
