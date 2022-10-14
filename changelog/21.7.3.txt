@@ -64,7 +64,7 @@ Your OPNsense team
 [5] https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-descr
 [6] https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr
 [7] https://www.thekelleys.org.uk/dnsmasq/CHANGELOG
-[8] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.70_release_notes
+[8] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_70.html
 [9] https://www.pcre.org/original/changelog.txt
 [10] https://docs.python.org/release/3.8.12/whatsnew/changelog.html
 [11] https://www.sudo.ws/stable.html#1.9.8p1

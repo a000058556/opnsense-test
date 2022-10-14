@@ -59,7 +59,7 @@ Your OPNsense team
 [2] https://github.com/opnsense/plugins/blob/stable/22.1/mail/postfix/pkg-descr
 [3] https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/telegraf/pkg-descr
 [4] https://curl.se/changes.html#7_84_0
-[5] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.80_release_notes
+[5] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_80.html
 [6] https://www.openssl.org/news/openssl-1.1.1-notes.html
 [7] https://github.com/phalcon/cphalcon/releases/tag/v5.0.0RC2
 [8] https://docs.python.org/release/3.9.13/whatsnew/changelog.html

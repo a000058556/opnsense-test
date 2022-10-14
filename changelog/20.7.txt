@@ -66,7 +66,7 @@ Your OPNsense team
 [3] https://github.com/opnsense/plugins/blob/stable/20.7/net-mgmt/zabbix5-proxy/pkg-descr
 [4] https://www.thekelleys.org.uk/dnsmasq/CHANGELOG
 [5] https://mmonit.com/monit/changes/
-[6] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.55_release_notes
+[6] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_55.html
 [7] https://www.sudo.ws/stable.html#1.9.2
 
 SHA256 (OPNsense-20.7-OpenSSL-dvd-amd64.iso.bz2) = 580070a3a0533418d58eaeb78122f804f2df7081c929288e1dccee34c4bf763a

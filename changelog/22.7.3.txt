@@ -71,5 +71,5 @@ Your OPNsense team
 [6] https://www.freebsd.org/security/advisories/FreeBSD-EN-22:20.tzdata.asc
 [7] https://raw.githubusercontent.com/NLnetLabs/ldns/1.8.3/Changelog
 [8] http://www.xmlsoft.org/news.html
-[9] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.82_release_notes
+[9] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_82.html
 [10] https://github.com/phpseclib/phpseclib/releases/tag/3.0.14

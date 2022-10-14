@@ -46,6 +46,6 @@ Your OPNsense team
 [1] https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr
 [2] https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr
 [3] https://curl.se/changes.html#7_80_0
-[4] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.73_release_notes
+[4] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_73.html
 [5] https://www.php.net/ChangeLog-7.php#7.4.26
 [6] https://github.com/phpseclib/phpseclib/releases/tag/2.0.35

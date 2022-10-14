@@ -64,7 +64,7 @@ Your OPNsense team
 [4] https://github.com/opnsense/plugins/blob/stable/22.1/net/wireguard/pkg-descr
 [5] https://web.mit.edu/kerberos/krb5-1.20/
 [6] https://www.lighttpd.net/2022/6/7/1.4.65/
-[7] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.79_release_notes
+[7] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_79.html
 [8] https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.7
 [9] https://www.php.net/ChangeLog-7.php#7.4.30
 [10] https://sqlite.org/releaselog/3_38_5.html

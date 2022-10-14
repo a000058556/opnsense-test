@@ -64,7 +64,7 @@ Your OPNsense team
 [1] https://github.com/opnsense/plugins/blob/stable/22.1/net/freeradius/pkg-descr
 [2] https://github.com/opnsense/plugins/blob/stable/22.1/www/nginx/pkg-descr
 [3] https://w1.fi/cgit/hostap/plain/hostapd/ChangeLog
-[4] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.74_release_notes
+[4] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html
 [5] https://pecl.php.net/package-changelog.php?package=psr&release=1.2.0
 [6] https://cgit.freebsd.org/ports/commit/?id=08342c9812d
 [7] https://sqlite.org/releaselog/3_37_2.html

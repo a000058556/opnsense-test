@@ -91,7 +91,7 @@ Your OPNsense team
 [6] https://www.freebsd.org/security/advisories/FreeBSD-SA-21:16.openssl.asc
 [7] https://www.freebsd.org/security/advisories/FreeBSD-SA-21:17.openssl.asc
 [8] https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.3.4-relnotes.txt
-[9] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.69_release_notes
+[9] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_69.html
 [10] https://mmonit.com/monit/changes/
 [11] https://www.openssl.org/news/openssl-1.1.1-notes.html
 [12] https://www.php.net/ChangeLog-7.php#7.4.23

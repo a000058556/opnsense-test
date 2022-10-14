@@ -81,6 +81,6 @@ Your OPNsense team
 [7] https://www.freebsd.org/security/advisories/FreeBSD-SA-21:06.xen.asc
 [8] https://github.com/DragonFlyBSD/cpdup/releases/tag/v1.22
 [9] https://web.mit.edu/kerberos/krb5-1.19/
-[10] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.62_release_notes
+[10] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_62.html
 [11] https://docs.python.org/release/3.7.10/whatsnew/changelog.html
 [12] https://github.com/syslog-ng/syslog-ng/releases/tag/syslog-ng-3.31.1

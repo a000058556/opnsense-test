@@ -72,7 +72,7 @@ Your OPNsense team
 [6] https://www.freebsd.org/security/advisories/FreeBSD-EN-21:14.pms.asc
 [7] https://curl.se/changes.html#7_77_0
 [8] https://downloads.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1-RELNOTES
-[9] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.66_release_notes
+[9] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_66.html
 [10] https://www.openldap.org/software/release/changes.html
 [11] https://www.pcre.org/changelog.txt
 [12] https://github.com/phalcon/cphalcon/releases/tag/v4.1.2

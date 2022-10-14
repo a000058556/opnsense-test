@@ -130,7 +130,7 @@ Your OPNsense team
 [4] https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-descr
 [5] https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr
 [6] http://www.xmlsoft.org/news.html
-[7] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.67_release_notes
+[7] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_67.html
 [8] https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.3
 [9] https://www.php.net/ChangeLog-7.php#7.4.20
 [10] https://github.com/phpseclib/phpseclib/releases/tag/2.0.32

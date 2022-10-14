@@ -66,7 +66,7 @@ Your OPNsense team
 [1] https://github.com/opnsense/plugins/blob/stable/20.7/net/freeradius/pkg-descr
 [2] https://github.com/opnsense/plugins/issues/2049
 [3] https://curl.se/changes.html#7_73_0
-[4] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.58_release_notes
+[4] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_58.html
 [5] https://www.openssl.org/news/openssl-1.1.1-notes.html
 [6] https://www.php.net/ChangeLog-7.php#7.3.23
 [7] https://www.sudo.ws/stable.html#1.9.3p1

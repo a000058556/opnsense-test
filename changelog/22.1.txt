@@ -233,7 +233,7 @@ Your OPNsense team
 [14] https://github.com/opnsense/ports/commit/2e27655d84
 [15] https://w1.fi/cgit/hostap/plain/hostapd/ChangeLog
 [16] https://www.lighttpd.net/2021/12/4/1.4.63/
-[17] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.74_release_notes
+[17] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html
 [18] https://www.openssl.org/news/openssl-1.1.1-notes.html
 [19] https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.5
 [20] https://pecl.php.net/package-changelog.php?package=psr&release=1.2.0

@@ -192,7 +192,7 @@ Your OPNsense team
 [13] https://www.freebsd.org/security/advisories/EN-21:22.linux_futex.asc
 [14] https://curl.se/changes.html#7_78_0
 [15] http://www.xmlsoft.org/news.html
-[16] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.68_release_notes
+[16] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_68.html
 [17] https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.3
 [18] https://www.php.net/ChangeLog-7.php#7.4.21
 [19] https://github.com/phpseclib/phpseclib/releases/tag/2.0.32

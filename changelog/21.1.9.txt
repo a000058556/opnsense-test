@@ -47,7 +47,7 @@ Your OPNsense team
 [3] https://github.com/opnsense/plugins/blob/stable/21.1/net/haproxy/pkg-descr
 [4] https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/zabbix-agent/pkg-descr
 [5] https://curl.se/changes.html#7_78_0
-[6] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.68_release_notes
+[6] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_68.html
 [7] https://www.php.net/ChangeLog-7.php#7.4.21
 [8] https://docs.python.org/release/3.7.11/whatsnew/changelog.html
 [9] https://github.com/syslog-ng/syslog-ng/releases/tag/syslog-ng-3.33.2

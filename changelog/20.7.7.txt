@@ -42,7 +42,7 @@ Your OPNsense team
 [5] https://curl.se/changes.html#7_74_0
 [6] https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.1.5-relnotes.txt
 [7] https://www.lighttpd.net/2020/11/29/1.4.56/
-[8] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.60_release_notes
+[8] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_60.html
 [9] https://www.openssl.org/news/secadv/20201208.txt
 [10] https://www.pcre.org/changelog.txt
 [11] https://www.sudo.ws/stable.html#1.9.4

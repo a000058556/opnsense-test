@@ -88,7 +88,7 @@ Your OPNsense team
 [9] https://github.com/libexpat/libexpat/blob/R_2_4_4/expat/Changes
 [10] https://www.lighttpd.net/2022/1/19/1.4.64/
 [11] https://mmonit.com/monit/changes/
-[12] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.75_release_notes
+[12] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_75.html
 [13] https://github.com/phpseclib/phpseclib/releases/tag/2.0.36
 [14] https://github.com/strongswan/strongswan/releases/tag/5.9.5
 [15] https://www.sudo.ws/stable.html#1.9.9

@@ -54,5 +54,5 @@ Your OPNsense team
 [11] https://github.com/libexpat/libexpat/blob/R_2_4_8/expat/Changes
 [12] http://www.xmlsoft.org/news.html
 [13] https://mmonit.com/monit/changes/
-[14] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.77_release_notes
+[14] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_77.html
 [15] https://docs.python.org/release/3.8.13/whatsnew/changelog.html

@@ -58,7 +58,7 @@ Your OPNsense team
 [5] https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/zabbix-agent/pkg-descr
 [6] https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/zabbix-proxy/pkg-descr
 [7] https://curl.se/changes.html#7_83_0
-[8] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.78_release_notes
+[8] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_78.html
 [9] https://www.openssl.org/news/openssl-1.1.1-notes.html
 [10] https://www.pcre.org/changelog.txt
 [11] https://www.php.net/ChangeLog-7.php#7.4.29

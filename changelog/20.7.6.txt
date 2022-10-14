@@ -60,7 +60,7 @@ Your OPNsense team
 [7] https://www.freebsd.org/security/advisories/FreeBSD-SA-20:32.rtsold.asc
 [8] https://www.freebsd.org/security/advisories/FreeBSD-EN-20:20.tzdata.asc
 [9] https://web.mit.edu/kerberos/krb5-1.18/
-[10] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.59_release_notes
+[10] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_59.html
 [11] https://www.openldap.org/software/release/changes.html
 [12] https://www.openssh.com/txt/release-8.4
 [13] https://www.php.net/ChangeLog-7.php#7.3.25

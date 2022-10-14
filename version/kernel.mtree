@@ -1,7 +1,7 @@
 #	   user: root
 #	machine: sensey
 #	   tree: /usr/obj/usr/tools/config/22.7/OpenSSL:amd64/work
-#	   date: Thu Jul 21 10:22:06 2022
+#	   date: Tue Oct  4 10:05:24 2022
 
 # .
 /set type=file uid=0 gid=0 mode=0755
@@ -260,7 +260,7 @@ kernel          type=dir mode=0755
     bytgpio.ko  size=17584 \
                 sha256digest=7d2f30d71a62b749e915c405a9ab78bd9232ccbe3b5837e8adfbcd99954d78a2
     cam.ko      size=1014088 \
-                sha256digest=15ad7933889cb7ba15ffdbb4e3316571d7d2c09adcb1f2e207782c9d2b76671d
+                sha256digest=55aa4f3f62c001e512e7b30c583d79b443951672abc6ad68acdb8a252adfa747
     cardbus.ko  size=31968 \
                 sha256digest=ac08f175fd6db81128b8637d6c80904618fbdc8f879b5b801dac570e06f20278
     carp.ko     size=64368 \
@@ -673,8 +673,8 @@ kernel          type=dir mode=0755
     if_ice.ko   size=564128 \
                 sha256digest=efa65618c01679953710eeff5849f1c2ba6c814b09cfa02f3a2339cdaa41862f
     if_igb.ko   type=link mode=0755
-    if_igc.ko   size=107848 \
-                sha256digest=d416bc264ace39d809aabba2621f78a3de185484fcb6acca7f789ac2f6483740
+    if_igc.ko   size=107872 \
+                sha256digest=50cfc67518a729034660e5a6a0f5d43df7255e40ed6b9340cf080fbaea2734aa
     if_infiniband.ko \
                 size=15008 \
                 sha256digest=0313b5606a263c3eebbc73d6b92df7dc3b6f4d4f872cbe4305fdbd3dd69fe972
@@ -1068,7 +1068,7 @@ kernel          type=dir mode=0755
     kbdmux.ko   size=42232 \
                 sha256digest=ac2fc5195e0401f5535af01dd60964f065edf2f301c525b117d03cbfe68c6d2d
     kernel      size=30592216 \
-                sha256digest=e23a3535df7be069cf6c30d3b852975fc1561b257fe42e2c4a28c75667ae471b
+                sha256digest=50e09720aba7fd951077d8ab3662a1f97b9220cc807689ba92c36b8b615b7fa4
     kgssapi.ko  size=93104 \
                 sha256digest=6b45f494b6142d0c6a8c8679454d8f101190f7aa546f3f2d3a27dbd2bb8f2c69
     kgssapi_krb5.ko \
@@ -1969,8 +1969,8 @@ kernel          type=dir mode=0755
                 sha256digest=3c7db90f1dd1980b275854d5f3fe31eca5108c070e3cdccfb73d087e13aefbc7
     zfs.ko      size=5251120 \
                 sha256digest=927207c4051b0ede7e840521a35833aa40d964127d0d1c9bceb1cf2d49009e75
-    zlib.ko     size=84680 \
-                sha256digest=baccf63433efa7b3d8e6679b9d15915543391fd9f0450ef225debe0ae76c6a61
+    zlib.ko     size=84656 \
+                sha256digest=08c56fff6ebad65da79629b47a7bc94e8462030b6d928b5f4e144cc2b70e9674
 # ./boot/kernel
 ..
 
@@ -1991,8 +1991,8 @@ opnsense        type=dir
 # ./usr/local/opnsense/version
 /set type=file uid=0 gid=0 mode=0644
 version         type=dir mode=0755
-    kernel      size=5 \
-                sha256digest=92c2fc79720802abbe8e8a090501e5e0a2c9697297f7966de4f93ee962b6104e
+    kernel      size=7 \
+                sha256digest=cdf1c587366228397b2a2bdb6934c66af73e7110fd2c6c139604d4311df97535
     kernel.arch size=6 \
                 sha256digest=d54d20eadbec9c9cc5ac6e0e371abc96d64a0d724d1cf45297fab6098026a69d
     kernel.size size=10 \

@@ -63,7 +63,7 @@ Your OPNsense team
 [5] https://www.freebsd.org/security/advisories/EN-21:19.libcasper.asc
 [6] https://www.freebsd.org/security/advisories/EN-21:22.linux_futex.asc
 [7] http://www.xmlsoft.org/news.html
-[8] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.67_release_notes
+[8] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_67.html
 [9] https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.3
 [10] https://www.php.net/ChangeLog-7.php#7.4.20
 [11] https://github.com/phpseclib/phpseclib/releases/tag/2.0.32

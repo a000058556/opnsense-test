@@ -35,6 +35,6 @@ Your OPNsense team
 --
 [1] https://fourdots.com/
 [2] http://ftp.isc.org/isc/bind9/9.10.4-P3/RELEASE-NOTES-bind-9.10.4-P3.html
-[3] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.27.1_release_notes
+[3] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_27_1.html
 [4] https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.3.8-relnotes.txt
 [5] https://nlnetlabs.nl/projects/unbound/download/#unbound-1-5-10

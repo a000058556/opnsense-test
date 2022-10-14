@@ -172,7 +172,7 @@ Your OPNsense team
 [11] https://github.com/libexpat/libexpat/blob/R_2_4_2/expat/Changes
 [12] https://github.com/opnsense/ports/commit/2e27655d84
 [13] https://www.lighttpd.net/2021/12/4/1.4.63/
-[14] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.73.1_release_notes
+[14] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_73_1.html
 [15] https://www.openssl.org/news/openssl-1.1.1-notes.html
 [16] https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn25#Changesin2.5.5
 [17] https://github.com/phalcon/cphalcon/releases/tag/v4.1.3

@@ -77,7 +77,7 @@ Your OPNsense team
 [4] https://github.com/opnsense/plugins/blob/stable/21.1/net-mgmt/telegraf/pkg-descr
 [5] https://github.com/opnsense/plugins/blob/stable/21.1/net/wireguard/pkg-descr
 [6] https://www.freebsd.org/security/advisories/FreeBSD-SA-21:07.openssl.asc
-[7] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.63_release_notes
+[7] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_63.html
 [8] https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.2.5-relnotes.txt
 [9] https://www.openldap.org/software/release/changes.html
 [10] https://ftp.openbsd.org/pub/OpenBSD/patches/6.8/common/015_sshagent.patch.sig

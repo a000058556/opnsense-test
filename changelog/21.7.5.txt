@@ -103,7 +103,7 @@ Your OPNsense team
 [13] https://www.freebsd.org/security/advisories/FreeBSD-EN-21:28.vmci.asc
 [14] https://www.freebsd.org/security/advisories/FreeBSD-EN-21:29.tzdata.asc
 [15] https://www.lighttpd.net/2021/10/28/1.4.61/
-[16] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.72_release_notes
+[16] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_72.html
 [17] https://www.openssh.com/txt/release-8.8
 [18] https://www.pcre.org/changelog.txt
 [19] https://www.php.net/ChangeLog-7.php#7.4.25

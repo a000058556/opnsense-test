@@ -47,6 +47,6 @@ Your OPNsense team
 [5] https://github.com/opnsense/plugins/blob/stable/22.7/net-mgmt/netdata/pkg-descr
 [6] https://github.com/opnsense/plugins/blob/stable/22.7/www/nginx/pkg-descr
 [7] http://www.xmlsoft.org/news.html
-[8] https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.81_release_notes
+[8] https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_81.html
 [9] https://github.com/oetiker/rrdtool-1.x/blob/master/CHANGES
 [10] https://nlnetlabs.nl/projects/unbound/download/#unbound-1-6-2
