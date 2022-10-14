@@ -1,0 +1,11 @@
+*.DS_Store
+*.codekit
+*.mo
+*.pyc
+*.sass-cache
+*.volt.php
+/changelog
+/version/*
+!/version/core.in
+.idea/
+/www/.htrouter.php
