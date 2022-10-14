@@ -7915,3 +7915,7 @@ div[data-for*=help_for] {
 .text-info {
   color: #17c1e8 !important;
 }
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
