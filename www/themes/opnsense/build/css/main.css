@@ -7896,3 +7896,22 @@ div[data-for*=help_for] {
   background-color: #fff;
   border-bottom: 0 solid rgba(0, 0, 0, 0.125);
 }
+
+/* login text */
+
+.text-gradient.text-info {
+  background-image: linear-gradient(310deg, #2152FF, #21D4FD);
+}
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.font-weight-bolder {
+  font-weight: 700 !important;
+}
+.text-info {
+  color: #17c1e8 !important;
+}
