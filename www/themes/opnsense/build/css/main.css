@@ -7920,6 +7920,12 @@ div[data-for*=help_for] {
   margin-bottom: 0 !important;
 }
 
+/* login-h3 */
+.login-h3{
+  font-size: 3rem;
+  line-height: 1.375;
+}
+
 /* login card-body */
 
 .card .card-body {
