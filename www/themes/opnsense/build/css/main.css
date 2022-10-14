@@ -7852,6 +7852,7 @@ div[data-for*=help_for] {
   display: flex !important;
 }
 
+/* login card */
 
 .card.card-plain {
   background-color: transparent;
@@ -7873,4 +7874,25 @@ div[data-for*=help_for] {
   background-clip: border-box;
   border: 0 solid rgba(0, 0, 0, 0.125);
   border-radius: 1rem;
+}
+
+/* login card-header */
+
+.card .card-header {
+  padding: 1.5rem;
+}
+.card-header:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 0 solid rgba(0, 0, 0, 0.125);
 }
