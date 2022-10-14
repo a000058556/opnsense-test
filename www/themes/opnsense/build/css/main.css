@@ -7739,6 +7739,12 @@ div[data-for*=help_for] {
 }
 
 /* 登入頁面 */
+.row>* {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
 
 
 .oblique {
@@ -7846,11 +7852,3 @@ div[data-for*=help_for] {
   display: flex !important;
 }
 
-.row>* {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-  margin-top: var(--bs-gutter-y);
-}
