@@ -7779,6 +7779,10 @@ div[data-for*=help_for] {
   margin-right: -8rem !important;
 }
 
+.me-4 {
+  margin-right: 4rem !important;
+}
+
 .bg-cover {
   background-size: cover;
 }
