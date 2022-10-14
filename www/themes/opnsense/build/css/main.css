@@ -7739,6 +7739,8 @@ div[data-for*=help_for] {
 }
 
 /* 登入頁面 */
+
+
 .oblique {
   transform: skewX(-10deg);
   overflow: hidden;
@@ -7828,4 +7830,27 @@ div[data-for*=help_for] {
 
 .mt-0 {
   margin-top: 0 !important;
+}
+
+/* login from */
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
 }
