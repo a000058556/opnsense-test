@@ -7805,3 +7805,10 @@ div[data-for*=help_for] {
   overflow: hidden !important;
   background-position: 50% center !important;
 }
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
