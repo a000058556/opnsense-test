@@ -7968,7 +7968,11 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   background-color: #17c1e8;
   border-color: #17c1e8;
   transform: scale(1.05);
-  transition:all 0.5s ease-out;;
+  transition:all 0.5s ease-out;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -webkit-transition: scale(1.05);
+  -moz-transition: scale(1.05);
 
 }
 
