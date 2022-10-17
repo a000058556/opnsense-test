@@ -7967,7 +7967,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .btn.bg-gradient-info:hover {
   background-color: #17c1e8;
   border-color: #17c1e8;
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition:all 0.5s ease;
 }
 
