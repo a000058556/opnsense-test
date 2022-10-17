@@ -7951,7 +7951,8 @@ div[data-for*=help_for] {
   color: #fff;
   box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
   font-weight: 700;
-  padding: 0.80rem 1.5rem
+  padding: 0.80rem 1.5rem;
+  border-radius: 0.7rem;
 }
 .btn:not([class*="btn-outline-"]) {
   border: 0;
