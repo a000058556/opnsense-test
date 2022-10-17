@@ -7986,3 +7986,16 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .w-100 {
   width: 100% !important;
 }
+
+
+/* Particles.js effect */
+
+.background-effect {
+  position: absolute;
+  height: 90vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: auto;
+}
