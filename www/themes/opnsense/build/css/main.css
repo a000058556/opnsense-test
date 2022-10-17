@@ -7746,7 +7746,7 @@ div[data-for*=help_for] {
   margin-top: var(--bs-gutter-y);
 }
 
-.padding-calc-right-left {
+.padding-calc-right-left>* {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
 }
