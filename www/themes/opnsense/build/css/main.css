@@ -7949,6 +7949,9 @@ div[data-for*=help_for] {
 
 .btn.bg-gradient-info {
   color: #fff;
+  box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
+  font-weight: 700;
+  padding: 0.80rem 1.5rem
 }
 .btn:not([class*="btn-outline-"]) {
   border: 0;
@@ -7958,6 +7961,11 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 .bg-gradient-info {
   background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+}
+
+.btn.bg-gradient-info:hover {
+  background-color: #17c1e8;
+  border-color: #17c1e8;
 }
 
 .mt-4 {
