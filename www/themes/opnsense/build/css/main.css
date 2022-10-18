@@ -7604,13 +7604,13 @@ table {
 ::-webkit-scrollbar-thumb:hover {
   /* display: active; */
   width: 8px;
-  background: rgb(229 229 229 / 50%);
+  background: rgb(229 229 229 / 70%);
 }
 
 ::-webkit-scrollbar-thumb:focus {
   /* display: active; */
   width: 8px;
-  background: rgb(229 229 229 / 50%);
+  background: rgb(229 229 229 / 70%);
 }
 
 /* 滑過顯示滑輪 */
