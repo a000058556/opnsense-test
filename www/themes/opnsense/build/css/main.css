@@ -8081,5 +8081,5 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 .menu-a-radius{
-  border-radius: 12px;
+  border-radius: 12px !important;
 }

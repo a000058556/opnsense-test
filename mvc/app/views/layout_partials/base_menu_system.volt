@@ -12,7 +12,7 @@
                                 {% for subMenuItem in topMenuItem.Children %}
                                     {% if subMenuItem.Url == '' %}
                                     {# next level items, submenu is a container #}
-                                        <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" class="list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %}"
+                                        <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %}"
                                             data-toggle="collapse" data-parent="#{{ topMenuItem.Id }}">
                                             <div style="display: table;width: 100%;">
                                                 <div style="display: table-row">
