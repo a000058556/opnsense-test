@@ -5525,7 +5525,7 @@ a.thumbnail.active {
 a.list-group-item {
   color: #FFF;
   border-radius: 0;
-  margin: 1.2em 0em;
+  margin: 1.2em 0.7em;
 }
 a.list-group-item .list-group-item-heading {
   color: #333;
@@ -7221,7 +7221,7 @@ main.page-content.col-lg-12 {
   height: 100% !important;
   border-right: 1px solid #D9D9D9;
 }
-#navigation.col-sidebar-left > div > nav > #mainmenu > div > a.list-group-item {
+#navigation.col-sidebar-left > div > nav menu-a-radius > #mainmenu > div > a.list-group-item {
   font-size: 14px;
   text-align: center;
   width: 70px;
