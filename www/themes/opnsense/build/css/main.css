@@ -7522,6 +7522,7 @@ table {
 }
 
 .active-menu-title, .active-menu a {
+  font-weight: bold;
   text-decoration: none;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
