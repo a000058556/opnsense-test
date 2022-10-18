@@ -31,7 +31,7 @@
                                             {% endif %} {% endfor %}
                                         </div>
                                     {% elseif subMenuItem.IsExternal == "Y" %}
-                                        <a href="{{ subMenuItem.Url }}" target="_blank" rel="noopener noreferrer" class="list-group-item {% if subMenuItem.Selected %} active {% endif  %}"
+                                        <a href="{{ subMenuItem.Url }}" target="_blank" rel="noopener noreferrer" class="menu-a-radius list-group-item {% if subMenuItem.Selected %} active {% endif  %}"
                                             aria-expanded="{% if subMenuItem.Selected %}true{%else%}false{% endif  %}">
                                             <div style="display: table;width: 100%;">
                                                 <div style="display: table-row">
@@ -43,7 +43,7 @@
                                             </div>
                                         </a>
                                     {% elseif acl.isPageAccessible(session.get('Username'),subMenuItem.Url) %}
-                                        <a href="{{ subMenuItem.Url }}" class="list-group-item {% if subMenuItem.Selected %} active {% endif  %}">
+                                        <a href="{{ subMenuItem.Url }}" class="menu-a-radius list-group-item {% if subMenuItem.Selected %} active {% endif  %}">
                                             <div style="display: table;width: 100%;">
                                                 <div style="display: table-row">
                                                     <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
@@ -59,11 +59,11 @@
                         {% else %}
                             {# parent level link menu items that pivot #}
                             {% if topMenuItem.IsExternal == "Y" %}
-                                <a href="{{ topMenuItem.Url }}" target="_blank" rel="noopener noreferrer" class="list-group-item {% if topMenuItem.Selected %}  active-menu-title {% endif  %}" data-parent="#mainmenu">
+                                <a href="{{ topMenuItem.Url }}" target="_blank" rel="noopener noreferrer" class="menu-a-radius list-group-item {% if topMenuItem.Selected %}  active-menu-title {% endif  %}" data-parent="#mainmenu">
                                     <span class="{{ topMenuItem.CssClass }} __iconspacer"></span>{{ lang._(topMenuItem.VisibleName) }}
                                 </a>
                             {% elseif acl.isPageAccessible(session.get('Username'),topMenuItem.Url) %}
-                                <a href="{{ topMenuItem.Url }}" class="list-group-item {% if topMenuItem.Selected %}  active-menu-title {% endif  %}" data-parent="#mainmenu">
+                                <a href="{{ topMenuItem.Url }}" class="menu-a-radius list-group-item {% if topMenuItem.Selected %}  active-menu-title {% endif  %}" data-parent="#mainmenu">
                                     <span class="{{ topMenuItem.CssClass }} __iconspacer"></span>{{ lang._(topMenuItem.VisibleName) }}
                                 </a>
                             {% endif %}
