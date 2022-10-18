@@ -5525,6 +5525,7 @@ a.thumbnail.active {
 a.list-group-item {
   color: #FFF;
   border-radius: 0;
+  margin: 1.2em 0em;
 }
 a.list-group-item .list-group-item-heading {
   color: #333;
