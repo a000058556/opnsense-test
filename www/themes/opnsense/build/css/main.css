@@ -7521,7 +7521,7 @@ table {
 .active-menu-title, .active-menu a {
   text-decoration: none;
   position: relative;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
 }
 .active-menu-title:before, .active-menu a:before {
   width: 3px;
