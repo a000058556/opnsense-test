@@ -5510,7 +5510,7 @@ a.thumbnail.active {
   display: block;
   padding: 12px 8px;
   margin-bottom: -1px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .list-group-item:last-child {
   margin-bottom: 0;
@@ -5523,8 +5523,9 @@ a.thumbnail.active {
 }
 
 a.list-group-item {
-  color: #3C3C3B;
+  color: #FFF;
   border-radius: 0;
+  margin: 1.2em 0.7em;
 }
 a.list-group-item .list-group-item-heading {
   color: #333;
@@ -5532,7 +5533,9 @@ a.list-group-item .list-group-item-heading {
 a.list-group-item:hover, a.list-group-item:focus {
   text-decoration: none;
   color: #1056b2;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
 }
 /* 菜單選單滑過效果 */
 a.list-group-item:hover:before, a.list-group-item:focus:before {
@@ -5686,7 +5689,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid transparent;
   border-radius: 3px;
   /* -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); */
@@ -7024,7 +7027,7 @@ body {
 }
 
 .page-side {
-  background: #FFF;
+  /* background: #FFF; */
   /* border-right: 1px solid rgba(0, 0, 0, 0.15); */
   height: 100% !important;
   height: calc(100% - 52px) !important;
@@ -7035,7 +7038,8 @@ body {
   top: 0;
   z-index: 3;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  background: linear-gradient(to bottom right, #00BCD4 0%, #2196F3 100%);
 
 }
 
@@ -7215,9 +7219,9 @@ main.page-content.col-lg-12 {
 #navigation.col-sidebar-left > div.row > nav.page-side-nav {
   width: 70px;
   height: 100% !important;
-  border-right: 1px solid #D9D9D9;
+  /* border-right: 1px solid #D9D9D9; */
 }
-#navigation.col-sidebar-left > div > nav > #mainmenu > div > a.list-group-item {
+#navigation.col-sidebar-left > div > nav menu-a-radius > #mainmenu > div > a.list-group-item {
   font-size: 14px;
   text-align: center;
   width: 70px;
@@ -7496,6 +7500,7 @@ table {
 }
 .list-group-item + div > a {
   padding-left: 44px;
+  margin: 0.2em 2em;
 }
 .list-group-item:before {
   background: #45D9FD;
@@ -7517,9 +7522,11 @@ table {
 }
 
 .active-menu-title, .active-menu a {
+  font-weight: bold;
   text-decoration: none;
   position: relative;
-  background-color: #F5F5F5;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
 }
 .active-menu-title:before, .active-menu a:before {
   width: 3px;
@@ -7589,21 +7596,21 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
-  border: thin solid #e5e5e5;
+  background: rgb(229 229 229 / 50%);
+  /* border: thin solid #e5e5e5; */
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   /* display: active; */
   width: 8px;
-  background: #e5e5e5;
+  background: rgb(229 229 229 / 70%);
 }
 
 ::-webkit-scrollbar-thumb:focus {
   /* display: active; */
   width: 8px;
-  background: #e5e5e5;
+  background: rgb(229 229 229 / 70%);
 }
 
 /* 滑過顯示滑輪 */
@@ -8072,4 +8079,13 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   background: rgba(255,255,255,0.2);
   font-size:1.2em;
   line-height:1.5em;
+}
+
+.menu-a-radius{
+  border-radius: 12px !important;
+}
+
+.menu-a-a{
+  margin:0.2em 7em 0.2em 2.2em !important;
+  border-radius: 12px !important;
 }
