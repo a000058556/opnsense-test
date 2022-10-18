@@ -5510,7 +5510,7 @@ a.thumbnail.active {
   display: block;
   padding: 12px 8px;
   margin-bottom: -1px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .list-group-item:last-child {
   margin-bottom: 0;
@@ -5523,7 +5523,7 @@ a.thumbnail.active {
 }
 
 a.list-group-item {
-  color: #3C3C3B;
+  color: #FFF;
   border-radius: 0;
 }
 a.list-group-item .list-group-item-heading {
