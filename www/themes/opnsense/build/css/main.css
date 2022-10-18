@@ -7219,7 +7219,7 @@ main.page-content.col-lg-12 {
 #navigation.col-sidebar-left > div.row > nav.page-side-nav {
   width: 70px;
   height: 100% !important;
-  border-right: 1px solid #D9D9D9;
+  /* border-right: 1px solid #D9D9D9; */
 }
 #navigation.col-sidebar-left > div > nav menu-a-radius > #mainmenu > div > a.list-group-item {
   font-size: 14px;
