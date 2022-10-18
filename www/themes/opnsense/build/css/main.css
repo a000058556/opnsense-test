@@ -7499,6 +7499,7 @@ table {
 }
 .list-group-item + div > a {
   padding-left: 44px;
+  margin: 0.2em 1em;
 }
 .list-group-item:before {
   background: #45D9FD;
