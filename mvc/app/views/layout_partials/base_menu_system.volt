@@ -33,7 +33,7 @@
                                     {% elseif subMenuItem.IsExternal == "Y" %}
                                         <a href="{{ subMenuItem.Url }}" target="_blank" rel="noopener noreferrer" class="menu-a-radius list-group-item {% if subMenuItem.Selected %} active {% endif  %}"
                                             aria-expanded="{% if subMenuItem.Selected %}true{%else%}false{% endif  %}">
-                                            <div style="display: table;width: 100%;">
+                                            <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
                                                     <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
                                                     <div style="display: table-cell; text-align:right; vertical-align:middle;">
@@ -44,7 +44,7 @@
                                         </a>
                                     {% elseif acl.isPageAccessible(session.get('Username'),subMenuItem.Url) %}
                                         <a href="{{ subMenuItem.Url }}" class="menu-a-radius list-group-item {% if subMenuItem.Selected %} active {% endif  %}">
-                                            <div style="display: table;width: 100%;">
+                                            <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
                                                     <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
                                                     <div style="display: table-cell; text-align:right; vertical-align:middle;">
