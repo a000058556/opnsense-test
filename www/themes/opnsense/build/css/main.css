@@ -8105,3 +8105,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   margin:0.2em 7em 0.2em 2.2em !important;
   border-radius: 12px !important;
 }
+
+.font-8px {
+  font-size: 8px !important;
+}
