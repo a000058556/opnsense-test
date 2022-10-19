@@ -7263,8 +7263,10 @@ main.page-content.col-lg-12 {
   position: absolute !important;
   left: 166px !important;
 }
+/* 選單縮小後彈出選項 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
-  background-color: #fff !important;
+  background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%) !important;
+  /* background-color: #fff !important; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
   padding-left: 10px !important;
