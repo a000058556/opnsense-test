@@ -7263,7 +7263,8 @@ main.page-content.col-lg-12 {
 /* 選單縮小後彈出選項 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
   background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%) !important;
-  backdrop-filter: saturate(200%) blur(30px);
+  /* backdrop-filter: saturate(200%) blur(30px); */
+  filter: blur(30px);
   /* background-color: #fff ; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
