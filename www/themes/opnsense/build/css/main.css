@@ -7265,6 +7265,8 @@ main.page-content.col-lg-12 {
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
   background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%) !important;
   backdrop-filter: saturate(200%) blur(30px);
+  margin: 1px 0px !important;
+
   /* filter: blur(30px); */
   /* background-color: #fff ; */
 }
@@ -7607,21 +7609,21 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
-  border: thin solid #e5e5e5;
+  /* background: #e5e5e5; */
+  background: rgb(229 229 229 / 50%);
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   /* display: active; */
   width: 8px;
-  background: #e5e5e5;
+  background: rgb(229 229 229 / 70%);
 }
 
 ::-webkit-scrollbar-thumb:focus {
   /* display: active; */
   width: 8px;
-  background: #e5e5e5;
+  background: rgb(229 229 229 / 70%);
 }
 
 /* 滑過顯示滑輪 */
@@ -8090,4 +8092,14 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   background: rgba(255,255,255,0.2);
   font-size:1.2em;
   line-height:1.5em;
+}
+
+.menu-a-radius{
+  border-radius: 12px !important;
+  margin: 0.7em !important;
+}
+
+.menu-a-a{
+  margin:0.2em 7em 0.2em 2.2em !important;
+  border-radius: 12px !important;
 }
