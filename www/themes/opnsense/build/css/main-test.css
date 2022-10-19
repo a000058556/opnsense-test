@@ -5743,6 +5743,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .list-group .list-group-item {
   border-width: 1px 0;
   border-radius: 0;
+  margin: 0;
 }
 .panel > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
