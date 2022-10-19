@@ -7607,21 +7607,21 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
-  border: thin solid #e5e5e5;
+  /* background: #e5e5e5; */
+  background: rgb(229 229 229 / 50%);
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   /* display: active; */
   width: 8px;
-  background: #e5e5e5;
+  background: rgb(229 229 229 / 70%);
 }
 
 ::-webkit-scrollbar-thumb:focus {
   /* display: active; */
   width: 8px;
-  background: #e5e5e5;
+  background: rgb(229 229 229 / 70%);
 }
 
 /* 滑過顯示滑輪 */
