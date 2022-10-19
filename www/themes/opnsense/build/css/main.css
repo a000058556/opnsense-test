@@ -7272,15 +7272,15 @@ main.page-content.col-lg-12 {
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 4px !important;
+  font-size: 0.1em !important;
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 4px !important;
+  font-size: 0.1em !important;
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapsed > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 4px !important;
+  font-size: 0.1em !important;
 }
 /* 縮小時選單間距 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item {
@@ -7290,7 +7290,7 @@ main.page-content.col-lg-12 {
 /* 縮小時選單第二層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in {
   width: 168px;
-  font-size: 4px;
+  font-size: 0.1em;
   z-index: 10;
   position: absolute;
   left: 70px;
@@ -7304,7 +7304,7 @@ main.page-content.col-lg-12 {
 /* 縮小時選單第三層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in {
   width: 168px;
-  font-size: 14px;
+  font-size: 0.1em;
   z-index: 10;
   position: absolute;
   left: 168px;
