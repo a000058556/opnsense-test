@@ -8096,6 +8096,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 .menu-a-radius{
   border-radius: 12px !important;
+  margin: 0.7em !important;
 }
 
 .menu-a-a{
