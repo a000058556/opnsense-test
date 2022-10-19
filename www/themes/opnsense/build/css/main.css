@@ -7024,7 +7024,7 @@ body {
 }
 
 .page-side {
-  background: #FFF;
+  /* background: #FFF; */
   /* border-right: 1px solid rgba(0, 0, 0, 0.15); */
   height: 100% !important;
   height: calc(100% - 52px) !important;
@@ -7035,7 +7035,8 @@ body {
   top: 0;
   z-index: 3;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  background: linear-gradient(to bottom right, #00BCD4 0%, #2196F3 100%);
 
 }
 
@@ -7204,6 +7205,8 @@ main.page-content.col-lg-12 {
 }
 
 #navigation.col-sidebar-left {
+  box-shadow: none;
+  background: #FFF ;
   width: 70px;
   overflow: hidden;
   background-color: transparent !important;
