@@ -7208,6 +7208,7 @@ main.page-content.col-lg-12 {
 }
 /* 縮小後菜單/最外層 */
 #navigation.col-sidebar-left {
+  color: #006dd9;
   box-shadow: none;
   background: #FFF;
   width: 70px;
