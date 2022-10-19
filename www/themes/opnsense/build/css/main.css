@@ -7292,9 +7292,10 @@ main.page-content.col-lg-12 {
   padding: 8px 8px !important;
   margin: 0;
 }
+/* 縮小時選單第二層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in {
   width: 168px;
-  font-size: 14px;
+  font-size: 4px;
   z-index: 10;
   position: absolute;
   left: 70px;
@@ -7304,14 +7305,15 @@ main.page-content.col-lg-12 {
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
 }
+/* 縮小時選單第三層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in {
   width: 168px;
-  font-size: 14px;
+  font-size: 4px;
   z-index: 10;
   position: absolute;
-  left: 166px;
-  margin-top: -26px;
-  border: 1px solid #eaeaea;
+  left: 169px;
+  margin-top: -36px;
+  /* border: 1px solid #eaeaea; */
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
