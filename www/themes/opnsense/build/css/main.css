@@ -7272,15 +7272,15 @@ main.page-content.col-lg-12 {
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 14px !important;
+  /* font-size: 14px !important; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 14px !important;
+  /* font-size: 14px !important; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapsed > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 14px !important;
+  /* font-size: 14px !important; */
 }
 /* 縮小時選單間距 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item {
