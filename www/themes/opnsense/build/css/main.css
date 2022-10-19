@@ -8097,3 +8097,13 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   font-size:1.2em;
   line-height:1.5em;
 }
+
+.menu-a-a{
+  margin:0.2em 7em 0.2em 2.2em !important;
+  border-radius: 12px !important;
+}
+
+.menu-a-radius{
+  border-radius: 12px !important;
+  margin: 0.7em !important;
+}
