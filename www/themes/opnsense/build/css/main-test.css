@@ -7527,6 +7527,7 @@ table {
   padding-left: 56px;
 }
 
+/* 選單選取時樣式 */
 .active-menu-title, .active-menu a {
   font-weight: bold;
   text-decoration: none;

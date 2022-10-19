@@ -7522,10 +7522,13 @@ table {
   padding-left: 56px;
 }
 
+/* 選單選取時樣式 */
 .active-menu-title, .active-menu a {
   text-decoration: none;
   position: relative;
-  background-color: #F5F5F5;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  transition: all 0.3s;
 }
 .active-menu-title:before, .active-menu a:before {
   width: 3px;
