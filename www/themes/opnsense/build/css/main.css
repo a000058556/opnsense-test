@@ -7229,6 +7229,7 @@ main.page-content.col-lg-12 {
   /* border-right: 1px solid #D9D9D9; */
   background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%);
 }
+/* 縮小後選單按鈕 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > a.list-group-item {
   font-size: 1px;
   text-align: center;
