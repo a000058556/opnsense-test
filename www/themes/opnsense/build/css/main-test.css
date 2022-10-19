@@ -7221,10 +7221,12 @@ main.page-content.col-lg-12 {
 #navigation.col-sidebar-left > div.row {
   height: 100% !important;
 }
+/* 選單縮小後樣式 */
 #navigation.col-sidebar-left > div.row > nav.page-side-nav {
   width: 70px;
   height: 100% !important;
   /* border-right: 1px solid #D9D9D9; */
+  background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%);
 }
 #navigation.col-sidebar-left > div > nav menu-a-radius > #mainmenu > div > a.list-group-item {
   font-size: 14px;
