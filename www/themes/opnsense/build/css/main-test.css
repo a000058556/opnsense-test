@@ -7293,7 +7293,7 @@ main.page-content.col-lg-12 {
   position: absolute;
   left: 70px;
   margin-top: -70px;
-  border: 1px solid #eaeaea;
+  /* border: 1px solid #eaeaea; */
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
