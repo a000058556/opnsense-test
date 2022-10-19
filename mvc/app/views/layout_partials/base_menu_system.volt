@@ -14,7 +14,7 @@
                                     {# next level items, submenu is a container #}
                                         <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %}"
                                             data-toggle="collapse" data-parent="#{{ topMenuItem.Id }}">
-                                            <div style="display: table;width: 100%;">
+                                            <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
                                                     <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
                                                     <div style="display: table-cell; text-align:right; vertical-align:middle;">
