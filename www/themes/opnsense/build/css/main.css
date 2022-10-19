@@ -7299,7 +7299,7 @@ main.page-content.col-lg-12 {
   z-index: 10;
   position: absolute;
   left: 70px;
-  margin-top: -75px;
+  margin-top: -75px !important;
   /* border: 1px solid #eaeaea; */
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
@@ -7313,7 +7313,7 @@ main.page-content.col-lg-12 {
   z-index: 10;
   position: absolute;
   left: 168px;
-  margin-top: -33px;
+  margin-top: -33px !important;
   border-left: 1px solid #eaeaea;
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
