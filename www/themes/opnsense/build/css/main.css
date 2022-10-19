@@ -7207,7 +7207,7 @@ div.content-box.wizard div img {
 main.page-content.col-lg-12 {
   padding-left: 90px;
 }
-
+/* 選單縮小後樣式 */
 #navigation.col-sidebar-left {
   box-shadow: none;
   background: #FFF ;
@@ -7215,6 +7215,7 @@ main.page-content.col-lg-12 {
   overflow: hidden;
   background-color: transparent !important;
   border: none !important;
+  overflow-y: hidden !important;
 }
 #navigation.col-sidebar-left > div.row {
   height: 100% !important;
