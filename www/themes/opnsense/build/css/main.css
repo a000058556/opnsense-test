@@ -7267,7 +7267,7 @@ main.page-content.col-lg-12 {
 }
 /* 選單縮小後彈出選項 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
-  background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%) !important;
+  /* background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%) !important; */
   backdrop-filter: saturate(200%) blur(30px);
   margin: 0px !important;
   border-radius: 0 !important;
@@ -7304,6 +7304,7 @@ main.page-content.col-lg-12 {
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
+  background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%)
 }
 /* 縮小時選單第三層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in {
@@ -7317,6 +7318,7 @@ main.page-content.col-lg-12 {
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
+  background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%)
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapsing, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapsing {
   display: none;
