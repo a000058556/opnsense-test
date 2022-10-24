@@ -26,50 +26,54 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-            <section class="content-box " style="display:block;">
-                <table class="table table-striped opnsense_standard_table_form">
-                    <tbody>
-                        <tr>
-                            <div style="display: table-cell">
-                                <div class="power-text">Reboot</div>
-                            </div>
-                            <div class="power-icon">
-                                <span class="fa fa-repeat fa-fw"></span>
-                            </div>
-                        </tr>
-                        <tr>
-                            <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
-                        </tr>
-                        <tr>
-                            <button id="do-reboot" class="btn btn-primary">{{ lang._('reboot') }}</button>
-                            <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <div class="content-box" >
+                <section style="display:block;">
+                    <table class="table table-striped opnsense_standard_table_form">
+                        <tbody>
+                            <tr>
+                                <div style="display: table-cell">
+                                    <div class="power-text">Reboot</div>
+                                </div>
+                                <div class="power-icon">
+                                    <span class="fa fa-repeat fa-fw"></span>
+                                </div>
+                            </tr>
+                            <tr>
+                                <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
+                            </tr>
+                            <tr>
+                                <button id="do-reboot" class="btn btn-primary">{{ lang._('reboot') }}</button>
+                                <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
         </div>
         <div class="col-md-6">
-            <section class="content-box " style="display:block;">
-                <table class="table table-striped opnsense_standard_table_form">
-                    <tbody>
-                        <tr>
-                            <div style="display: table-cell">
-                                <div class="power-text">Power Off</div>
-                            </div>
-                            <div class="power-icon">
-                                <span class="fa fa-power-off fa-fw"></span>
-                            </div>
-                        </tr>
-                        <tr>
-                            <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
-                        </tr>
-                        <tr>
-                            <button id="do-halt" class="btn btn-primary">{{ lang._('power off') }}</button>
-                            <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <div class="content-box" >
+                <section style="display:block;">
+                    <table class="table table-striped opnsense_standard_table_form">
+                        <tbody>
+                            <tr>
+                                <div style="display: table-cell">
+                                    <div class="power-text">Power Off</div>
+                                </div>
+                                <div class="power-icon">
+                                    <span class="fa fa-power-off fa-fw"></span>
+                                </div>
+                            </tr>
+                            <tr>
+                                <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
+                            </tr>
+                            <tr>
+                                <button id="do-halt" class="btn btn-primary">{{ lang._('power off') }}</button>
+                                <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
         </div>
     </div>
 </div>
