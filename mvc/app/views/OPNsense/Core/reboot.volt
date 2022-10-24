@@ -26,8 +26,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-            <div class="content-box" >
-                <section class="widgetdiv" style="display:block;">
+            <div class="content-box widgetdiv" >
+                <section class="" style="display:block;">
                     <table class="table table-striped opnsense_standard_table_form">
                         <tbody>
                             <tr>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="content-box" >
+            <div class="content-box widgetdiv" >
                 <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped opnsense_standard_table_form">
                         <tbody>
