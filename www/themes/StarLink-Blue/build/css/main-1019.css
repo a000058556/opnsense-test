@@ -4774,7 +4774,6 @@ tbody {
   }
 }
 
-/* 上方收尋欄預設樣式 */
 .navbar-default {
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
   /* border-radius: 1rem; */
@@ -4808,15 +4807,12 @@ tbody {
   color: #ccc;
   background-color: transparent;
 }
-/* 手機板菜單按鈕default/外框效果 */
 .navbar-default .navbar-toggle {
   border-color: #FFF;
 }
-/* 手機板菜單按鈕default/滑過效果 */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #555;
 }
-/* 手機板菜單按鈕default/icon效果 */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
 }
@@ -5538,7 +5534,9 @@ a.list-group-item .list-group-item-heading {
 a.list-group-item:hover, a.list-group-item:focus {
   text-decoration: none;
   color: #1056b2;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
 }
 /* 菜單選單滑過效果 */
 a.list-group-item:hover:before, a.list-group-item:focus:before {
@@ -7272,21 +7270,22 @@ main.page-content.col-lg-12 {
   /* background: linear-gradient(to bottom, #00BCD4 0%, #2196F3 100%) !important; */
   backdrop-filter: saturate(200%) blur(30px);
   margin: 0px !important;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
+
   /* filter: blur(30px); */
   /* background-color: #fff ; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 0.1em !important;
+  /* font-size: 14px !important; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 0.1em !important;
+  /* font-size: 14px !important; */
 }
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapsed > a.list-group-item {
   padding-left: 10px !important;
-  font-size: 0.1em !important;
+  /* font-size: 14px !important; */
 }
 /* 縮小時選單間距 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > a.list-group-item, #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse > div.collapse > a.list-group-item {
@@ -7296,11 +7295,11 @@ main.page-content.col-lg-12 {
 /* 縮小時選單第二層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in {
   width: 168px;
-  font-size: 0.1em;
+  font-size: 4px;
   z-index: 10;
   position: absolute;
   left: 70px;
-  margin-top: -75px;
+  margin-top: -75px !important;
   /* border: 1px solid #eaeaea; */
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
@@ -7310,11 +7309,11 @@ main.page-content.col-lg-12 {
 /* 縮小時選單第三層 */
 #navigation.col-sidebar-left > div > nav > #mainmenu > div > div.collapse.in > div.collapse.in {
   width: 168px;
-  font-size: 0.1em;
+  font-size: 4px;
   z-index: 10;
   position: absolute;
   left: 168px;
-  margin-top: -33px;
+  margin-top: -33px !important;
   border-left: 1px solid #eaeaea;
   -webkit-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
   -moz-box-shadow: 2px 2px 1px 0px rgba(234, 234, 234, 0.5);
@@ -8104,12 +8103,16 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   line-height:1.5em;
 }
 
-/* .menu-a-a{
+.menu-a-radius{
+  border-radius: 12px !important;
+  margin: 0.7em !important;
+}
+
+.menu-a-a{
   margin:0.2em 7em 0.2em 2.2em !important;
   border-radius: 12px !important;
 }
 
-.menu-a-radius{
-  border-radius: 12px !important;
-  margin: 0.7em !important;
-} */
+.font-8px {
+  font-size: 8px !important;
+}
