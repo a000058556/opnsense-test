@@ -42,7 +42,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
+                                    <p style="margin: 15px auto;"><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
                                 </td>
                             </tr>
                             <tr>
@@ -73,7 +73,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
+                                    <p style="margin: 15px auto;"><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
                                 </td>
                             </tr>
                             <tr>
