@@ -25,13 +25,15 @@
  #}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
+        <div class="content-box col-md-6">
             <section style="display:block;">
                 <table class="table table-striped opnsense_standard_table_form">
                     <tbody>
                         <tr>
-                            <div style="display: table-cell"><h3 style="margin: 0;">Reboot</h3></div>
-                            <div style="display: table-cell; text-align:right; vertical-align:middle;">
+                            <div style="display: table-cell">
+                                <div class="power-text">Reboot</div>
+                            </div>
+                            <div class="power-icon">
                                 <span class="fa fa-repeat fa-fw"></span>
                             </div>
                         </tr>
@@ -46,12 +48,17 @@
                 </table>
             </section>
         </div>
-        <div class="col-md-6">
+        <div class="content-box col-md-6">
             <section style="display:block;">
                 <table class="table table-striped opnsense_standard_table_form">
                     <tbody>
                         <tr>
-                            <h3>Power Off</h3>
+                            <div style="display: table-cell">
+                                <div class="power-text">Power Off</div>
+                            </div>
+                            <div class="power-icon">
+                                <span class="fa fa-power-off fa-fw"></span>
+                            </div>
                         </tr>
                         <tr>
                             <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
