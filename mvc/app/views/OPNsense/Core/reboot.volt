@@ -28,22 +28,28 @@
         <div class="col-md-6 widgetdiv">
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
-                    <table class="table table-striped opnsense_standard_table_form">
+                    <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <div style="display: table-cell">
-                                    <div class="power-text">Reboot</div>
-                                </div>
-                                <div class="power-icon">
-                                    <span class="fa fa-repeat fa-fw"></span>
-                                </div>
+                                <td>
+                                    <div style="display: table-cell">
+                                        <div class="power-text">Reboot</div>
+                                    </div>
+                                    <div class="power-icon">
+                                        <span class="fa fa-repeat fa-fw"></span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
+                                <td>
+                                    <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
+                                </td>
                             </tr>
                             <tr>
-                                <button id="do-reboot" class="btn btn-primary">{{ lang._('reboot') }}</button>
-                                <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
+                                <td>
+                                    <button id="do-reboot" class="btn btn-primary">{{ lang._('reboot') }}</button>
+                                    <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -53,7 +59,7 @@
         <div class="col-md-6 widgetdiv">
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
-                    <table class="table table-striped opnsense_standard_table_form">
+                    <table class="table table-striped">
                         <tbody>
                             <tr>
                                 <div style="display: table-cell">
