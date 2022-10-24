@@ -32,8 +32,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div class="power-text" style="display: table-cell; text-align: center;">
-                                        <div style="text-align: center;">
+                                    <div class="power-text" style="text-align: center;">
+                                        <div style="display: revert;">
                                             Reboot
                                             <span class="fa fa-repeat fa-fw power-icon"></span>
                                         </div>
@@ -63,11 +63,11 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div style="display: table-cell">
-                                        <div class="power-text">Power Off</div>
-                                    </div>
-                                    <div class="power-icon">
-                                        <span class="fa fa-power-off fa-fw"></span>
+                                    <div class="power-text" style="text-align: center;">
+                                        <div style="display: revert;">
+                                            Power Off
+                                            <span class="fa fa-power-off fa-fw power-icon"></span>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
