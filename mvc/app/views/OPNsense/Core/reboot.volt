@@ -29,19 +29,17 @@
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped" style="text-align:center;">
-                        <thead>
+                        <tbody>
                             <tr>
-                                <th>
+                                <td>
                                     <div style="display: table-cell">
                                         <div class="power-text">Reboot</div>
                                     </div>
                                     <div class="power-icon">
                                         <span class="fa fa-repeat fa-fw"></span>
                                     </div>
-                                </th>
+                                </td>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <td>
                                     <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
@@ -62,19 +60,17 @@
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped" style="text-align:center;">
-                        <thead>
+                        <tbody>
                             <tr>
-                                <th>
+                                <td>
                                     <div style="display: table-cell">
                                         <div class="power-text">Power Off</div>
                                     </div>
                                     <div class="power-icon">
                                         <span class="fa fa-power-off fa-fw"></span>
                                     </div>
-                                </th>
+                                </td>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <td>
                                     <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
