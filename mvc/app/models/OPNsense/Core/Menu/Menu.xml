@@ -100,6 +100,11 @@
                 <All url="/status_services.php?*" visibility="hidden"/>
             </Services>
         </Diagnostics>
+        <!-- 將Power移至System中 -->
+        <Power order="170" cssClass="fa fa-plug">
+            <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
+            <PowerOff VisibleName="Power Off" order="20" url="/ui/core/halt" cssClass="fa fa-power-off fa-fw"/>
+        </Power>
     </System>
     <Interfaces order="30" cssClass="fa fa-sitemap">
         <Assignments order="900" url="/interfaces_assign.php" cssClass="fa fa-pencil fa-fw"/>
@@ -229,10 +234,10 @@
             <LogFile order="70" VisibleName="Log File" url="/ui/diagnostics/log/core/openvpn"/>
         </OpenVPN>
     </VPN>
-    <Power order="70" cssClass="fa fa-plug">
+    <!-- <Power order="70" cssClass="fa fa-plug">
         <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
         <PowerOff VisibleName="Power Off" order="20" url="/ui/core/halt" cssClass="fa fa-power-off fa-fw"/>
-    </Power>
+    </Power> -->
     <Help order="80" cssClass="fa fa-support">
         <Documentation order="10" url="https://docs.opnsense.org/" cssClass="fa fa-book" IsExternal="Y"/>
         <Forum VisibleName="User Forum" order="20" url="https://forum.opnsense.org/" cssClass="fa fa-ticket" IsExternal="Y"/>
