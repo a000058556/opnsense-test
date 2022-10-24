@@ -30,7 +30,7 @@
                 <table class="table table-striped opnsense_standard_table_form">
                     <tbody>
                         <tr>
-                            <div style="display: table-cell"><h3>Reboot</h3></div>
+                            <div style="display: table-cell"><h3 style="margin: 0;">Reboot</h3></div>
                             <div style="display: table-cell; text-align:right; vertical-align:middle;">
                                 <span class="fa fa-repeat fa-fw"></span>
                             </div>
