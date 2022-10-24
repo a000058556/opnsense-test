@@ -32,13 +32,9 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div style="margin:auto;">
-                                        <div style="display: table-cell">
-                                            <div class="power-text">Reboot</div>
-                                        </div>
-                                        <div class="power-icon">
-                                            <span class="fa fa-repeat fa-fw"></span>
-                                        </div>
+                                    <div style="display: table-cell" style="text-align: center;">
+                                        <div class="power-text">Reboot</div>
+                                        <span class="fa fa-repeat fa-fw power-icon"></span>
                                     </div>
                                 </td>
                             </tr>
