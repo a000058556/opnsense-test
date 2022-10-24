@@ -32,8 +32,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div style="display: table-cell" style="text-align: center;">
-                                        <div class="power-text">Reboot</div>
+                                    <div class="power-text" style="display: table-cell; text-align: center;">
+                                        Reboot
                                         <span class="fa fa-repeat fa-fw power-icon"></span>
                                     </div>
                                 </td>
