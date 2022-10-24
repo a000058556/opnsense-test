@@ -29,17 +29,19 @@
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped">
-                        <tbody>
+                        <thead>
                             <tr>
-                                <td>
+                                <th>
                                     <div style="display: table-cell">
                                         <div class="power-text">Reboot</div>
                                     </div>
                                     <div class="power-icon">
                                         <span class="fa fa-repeat fa-fw"></span>
                                     </div>
-                                </td>
+                                </th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td>
                                     <p><strong>{{ lang._('Are you sure you want to reboot the system?') }}</strong></p>
@@ -60,21 +62,29 @@
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div style="display: table-cell">
+                                        <div class="power-text">Power Off</div>
+                                    </div>
+                                    <div class="power-icon">
+                                        <span class="fa fa-power-off fa-fw"></span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr>
-                                <div style="display: table-cell">
-                                    <div class="power-text">Power Off</div>
-                                </div>
-                                <div class="power-icon">
-                                    <span class="fa fa-power-off fa-fw"></span>
-                                </div>
+                                <td>
+                                    <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
+                                </td>
                             </tr>
                             <tr>
-                                <p><strong>{{ lang._('Are you sure you want to power off the system?') }}</strong></p>
-                            </tr>
-                            <tr>
-                                <button id="do-halt" class="btn btn-primary">{{ lang._('power off') }}</button>
-                                <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
+                                <td>
+                                    <button id="do-halt" class="btn btn-primary">{{ lang._('power off') }}</button>
+                                    <!-- <a href="/" class="btn btn-default">{{ lang._('No') }}</a> -->
+                                </td>
                             </tr>
                         </tbody>
                     </table>
