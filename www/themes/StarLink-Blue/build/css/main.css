@@ -8118,12 +8118,12 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 /* power 頁面 */
 
 .power-text {
-  font-size: 6rem !important;
+  font-size: 5rem !important;
   margin: 10px 10px 10px 0;
 }
 
 .power-icon {
-  font-size: 6rem !important;
+  font-size: 5rem !important;
   display: table-cell; 
   text-align: right; 
   vertical-align: middle;
