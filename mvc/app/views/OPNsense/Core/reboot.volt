@@ -28,7 +28,7 @@
         <div class="col-md-6 widgetdiv">
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
-                    <table class="table table-striped">
+                    <table class="table table-striped" style="text-align:center;">
                         <thead>
                             <tr>
                                 <th>
@@ -61,7 +61,7 @@
         <div class="col-md-6 widgetdiv">
             <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
-                    <table class="table table-striped">
+                    <table class="table table-striped" style="text-align:center;">
                         <thead>
                             <tr>
                                 <th>
