@@ -23,11 +23,11 @@
  # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  # POSSIBILITY OF SUCH DAMAGE.
  #}
-<div class="container-fluid">
+<div class="">
     <div class="row">
-        <div class="col-md-6">
-            <div class="content-box widgetdiv" >
-                <section class="" style="display:block;">
+        <div class="col-md-6 widgetdiv">
+            <div class="content-box" >
+                <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped opnsense_standard_table_form">
                         <tbody>
                             <tr>
@@ -50,8 +50,8 @@
                 </section>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="content-box widgetdiv" >
+        <div class="col-md-6 widgetdiv">
+            <div class="content-box" >
                 <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped opnsense_standard_table_form">
                         <tbody>
