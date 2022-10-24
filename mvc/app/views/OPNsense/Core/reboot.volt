@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="content-box" >
-                <section style="display:block;">
+                <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped opnsense_standard_table_form">
                         <tbody>
                             <tr>
@@ -52,7 +52,7 @@
         </div>
         <div class="col-md-6">
             <div class="content-box" >
-                <section style="display:block;">
+                <section class="widgetdiv" style="display:block;">
                     <table class="table table-striped opnsense_standard_table_form">
                         <tbody>
                             <tr>
