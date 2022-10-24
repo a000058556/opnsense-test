@@ -101,9 +101,9 @@
             </Services>
         </Diagnostics>
         <!-- 將Power移至System中 -->
-        <Power order="170" cssClass="fa fa-plug">
-            <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
-            <PowerOff VisibleName="Power Off" order="20" url="/ui/core/halt" cssClass="fa fa-power-off fa-fw"/>
+        <Power order="170" cssClass="fa fa-plug" url="/ui/core/reboot" VisibleName="Power Off" >
+            <!-- <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
+            <PowerOff VisibleName="Power Off" order="20" url="/ui/core/halt" cssClass="fa fa-power-off fa-fw"/> -->
         </Power>
     </System>
     <Interfaces order="30" cssClass="fa fa-sitemap">
