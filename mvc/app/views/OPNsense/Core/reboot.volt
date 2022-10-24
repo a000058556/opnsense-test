@@ -25,8 +25,8 @@
  #}
 <div class="container-fluid">
     <div class="row">
-        <div class="content-box col-md-6">
-            <section style="display:block;">
+        <div class="col-md-6">
+            <section class="content-box " style="display:block;">
                 <table class="table table-striped opnsense_standard_table_form">
                     <tbody>
                         <tr>
@@ -48,8 +48,8 @@
                 </table>
             </section>
         </div>
-        <div class="content-box col-md-6">
-            <section style="display:block;">
+        <div class="col-md-6">
+            <section class="content-box " style="display:block;">
                 <table class="table table-striped opnsense_standard_table_form">
                     <tbody>
                         <tr>
