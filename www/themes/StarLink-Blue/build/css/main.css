@@ -4776,11 +4776,12 @@ tbody {
 
 /* 上方收尋欄預設樣式 */
 .navbar-default {
-  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
+  background: linear-gradient(45deg, rgba(#707CFF,1) 0%, rgba(#FA81E8,1) 100%);
+	box-shadow: 0 5px 20px rgba(#707CFF,.3);
+  /* box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%); */
   /* border-radius: 1rem; */
-  background-color: #0b48b9;
+  /* background-color: #0b48b9; */
   /* border-color: #ffffff; */
-
 
 }
 .navbar-default .navbar-brand {
@@ -8132,3 +8133,4 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   text-align: right; 
   vertical-align: middle;
 }
+
