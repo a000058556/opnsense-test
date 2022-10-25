@@ -4561,14 +4561,14 @@ tbody {
   margin-right: -20px;
   margin-left: -20px;
 }
-/* 縮小後logo 間距 */
+
 @media (min-width: 768px) {
   .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
     margin-right: 0;
-    margin-left: -10px;
+    margin-left: 0;
   }
 }
 
