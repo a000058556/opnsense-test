@@ -3911,6 +3911,10 @@ tbody {
   background-color: #45D9FD;
 }
 
+.dropdown-menu > .active > a {
+  color: #45D9FD !important;
+}
+
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #777777;
 }
