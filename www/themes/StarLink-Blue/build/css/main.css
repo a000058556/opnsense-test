@@ -7997,9 +7997,9 @@ div[data-for*=help_for] {
   padding: 0.80rem 1.5rem;
   border-radius: 0.7rem;
 }
-.btn:not([class*="btn-outline-"]) {
+/* .btn:not([class*="btn-outline-"]) {
   border: 0;
-}
+} */
 button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
   cursor: pointer;
 }
