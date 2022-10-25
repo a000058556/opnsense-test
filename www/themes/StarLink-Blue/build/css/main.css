@@ -4778,6 +4778,7 @@ tbody {
 .navbar-default {
   background-image: linear-gradient(349deg, #00BCD4 0%, #330867 50%, #16032e 90%);
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 16%);
+  border: none !important;
   /* border-radius: 1rem; */
   /* background-color: #0b48b9; */
   /* border-color: #ffffff; */
@@ -7038,7 +7039,7 @@ body {
   height: calc(100% - 52px) !important;
   left: 0;
   overflow: auto;
-  margin-top: 52px;
+  margin-top: 50px;
   position: fixed;
   top: 0;
   z-index: 3;
