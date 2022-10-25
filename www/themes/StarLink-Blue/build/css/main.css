@@ -3629,7 +3629,8 @@ select[multiple].input-lg,
 .btn-primary {
   color: #fff;
   background-color: #45D9FD;
-  border-color: #006dd9;
+  border: none;
+  /* border-color: #006dd9; */
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -7996,6 +7997,7 @@ div[data-for*=help_for] {
   font-weight: 700;
   padding: 0.80rem 1.5rem;
   border-radius: 0.7rem;
+  border: none;
 }
 /* .btn:not([class*="btn-outline-"]) {
   border: 0;
