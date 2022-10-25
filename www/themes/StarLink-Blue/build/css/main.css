@@ -7007,8 +7007,8 @@ body {
 }
 
 .page-content {
-  height: calc(100% - 52px);
-  padding-top: 52px;
+  height: calc(100% - 50px);
+  padding-top: 50px;
   position: relative;
   z-index: 1;
 }
