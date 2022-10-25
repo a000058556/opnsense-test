@@ -7042,7 +7042,7 @@ body {
   /* background: #FFF; */
   /* border-right: 1px solid rgba(0, 0, 0, 0.15); */
   height: 100% !important;
-  height: calc(100% - 52px) !important;
+  height: calc(100% - 50px) !important;
   left: 0;
   overflow: auto;
   margin-top: 50px;
