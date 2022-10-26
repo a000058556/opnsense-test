@@ -8153,7 +8153,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   width:40px;
   height:40px;
   margin: 0 auto;
-  margin-top: 1%;
+  margin-top: 1.5%;
   position: relative;
   background-color: transparent;
   border: none;
@@ -8164,8 +8164,9 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   height:40px;
   border-radius: 50%;
   background-color:white;
-  opacity:0.3;
+  opacity:0.2;
   top:0%;
+  left: 2%;
 }
 
 .wrapper:hover .top, .wrapper:focus .top {
