@@ -8160,23 +8160,27 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 .wrapper:hover .middle {
-  width:35px;
+  /* width:35px;
   height:35px;
-  border-radius: 50%;
+  border-radius: 50%; */
   background-color:white;
-  opacity:0.2;
+  /* opacity:0.2;
   top: 2%;
-  left: 3%;
+  left: 3%; */
 }
 
 .wrapper:hover .top {
-  -webkit-transform:rotate(45deg);
-  top:40%;border-radius:10px;background-color:white;
+  /* -webkit-transform:rotate(45deg);
+  top:40%; */
+  border-radius:10px;
+  background-color:white;
 }
 
 .wrapper:hover .bottom {
-  -webkit-transform:rotate(-45deg);
-  top:40%;border-radius:10px;background-color:white;
+  /* -webkit-transform:rotate(-45deg);
+  top:40%; */
+  border-radius:10px;
+  background-color:white;
 }
 
 .bar {
@@ -8192,15 +8196,41 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   top:20%;
   -webkit-transition:all 0.5s;
 }
+.top-close {
+  left:15%;
+  top:20%;
+  -webkit-transition:all 0.5s;
+  -webkit-transform:rotate(45deg);
+  top:40%;border-radius:10px;background-color:white;
+}
 
 .middle {
   left:15%;
   top:40%;
   -webkit-transition:all 0.5s;
 }
+.middle-close {
+  left:15%;
+  top:40%;
+  -webkit-transition:all 0.5s;
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  background-color:white;
+  opacity:0.2;
+  top: 2%;
+  left: 3%;
+}
 
 .bottom {
   left:15%;
   top:60%;
   -webkit-transition:all 0.5s;
+}
+.bottom-close {
+  left:15%;
+  top:60%;
+  -webkit-transition:all 0.5s;
+  -webkit-transform:rotate(-45deg);
+  top:40%;border-radius:10px;background-color:white;
 }

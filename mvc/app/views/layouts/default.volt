@@ -320,5 +320,15 @@
     });
     </script>
 
+    <!-- 選單按鈕 -->
+    <script>
+      $(document).ready(function() {
+        $(".wrapper").on("click", function() {
+            $(".bar").toggleClass("top top-close");
+            $(".bar").toggleClass("middle middle-close");
+            $(".bar").toggleClass("bottom bottom-close");
+        });
+      });
+    </script>
   </body>
 </html>
