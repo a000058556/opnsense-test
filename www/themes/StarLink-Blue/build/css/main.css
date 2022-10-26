@@ -7023,6 +7023,7 @@ body {
   border-bottom: 1px solid rgba(217, 217, 217, 0.5);
   padding-bottom: 15px;
   padding-top: 20px;
+  color: #fff;
 }
 .page-content-head .navbar-nav, .content-box-head .navbar-nav {
   width: 100%;
