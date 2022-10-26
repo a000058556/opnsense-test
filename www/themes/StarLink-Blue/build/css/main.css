@@ -8143,6 +8143,11 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 
 /* menu 按鈕 */
+@media (min-width: 768px) {
+  .wrapper {
+    display: none;
+  }
+}
 
 .wrapper {
   width:40px;
@@ -8150,12 +8155,13 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   margin: 0 auto;
   margin-top: 1%;
   position: relative;
+  background-color: transparent;
+  border: none;
 }
 
 .wrapper:hover .middle {
   width:40px;
   height:40px;
-  top:40%;
   border-radius: 50%;
   background-color:white;
   opacity:0.3;
@@ -8172,7 +8178,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 .bar {
-  width:40px;
+  width:26px;
   height:2px;
   border:2px solid white;
   position: absolute;
