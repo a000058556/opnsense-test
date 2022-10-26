@@ -207,9 +207,9 @@
           </a>
           <button type="button" class="wrapper collapsed" data-toggle="collapse" data-target="#navigation">
             <span class="sr-only">{{ lang._('Toggle navigation') }}</span>
-            <span class="icon-bar top bar"></span>
-            <span class="icon-bar middle bar"></span>
-            <span class="icon-bar bottom bar"></span>
+            <span class="icon-bar top bar bar-top"></span>
+            <span class="icon-bar middle bar bar-middle"></span>
+            <span class="icon-bar bottom bar bar-bottom"></span>
           </button>
         </div>
         <button class="toggle-sidebar" data-toggle="tooltip right" title="{{ lang._('Toggle sidebar') }}" style="display:none;"><i class="fa fa-chevron-left"></i></button>
@@ -324,9 +324,9 @@
     <script>
       $(document).ready(function() {
         $(".wrapper").on("click", function() {
-            $(".bar").toggleClass("top top-close");
-            $(".bar").toggleClass("middle middle-close");
-            $(".bar").toggleClass("bottom bottom-close");
+            $(".bar-top").toggleClass("top top-close");
+            $(".bar-middle").toggleClass("middle middle-close");
+            $(".bar-bottom").toggleClass("bottom bottom-close");
         });
       });
     </script>
