@@ -8174,10 +8174,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   top:40%;border-radius:10px;background-color:white;
 }
 
-.wrapper:hover .bottom, .wrapper:focus .bottom {
+/* .wrapper:hover .bottom, .wrapper:focus .bottom {
   -webkit-transform:rotate(-45deg);
   top:40%;border-radius:10px;background-color:white;
-}
+} */
 
 .bar {
   width:26px;
