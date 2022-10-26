@@ -4827,10 +4827,6 @@ tbody {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
 }
-/* 手機板菜單按鈕default/滑過效果 */
-.navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus {
-  background-color: transparent;
-}
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #2b2b2b;
@@ -8145,3 +8141,59 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   vertical-align: middle;
 }
 
+
+/* menu 按鈕 */
+
+.wrapper {
+  width:120px;
+  height:120px;
+  margin: 0 auto;
+  margin-top: 10%;
+  position: relative;
+}
+
+.wrapper:hover .middle {
+  width:50px;
+  height:50px;
+  top:24%;
+  left:27%;
+  border-radius: 50%;
+  background-color:white;
+  opacity:0.3;
+}
+
+.wrapper:hover .top {
+  -webkit-transform:rotate(45deg);
+  top:40%;border-radius:10px;background-color:white;
+}
+
+.wrapper:hover .bottom{
+  -webkit-transform:rotate(-45deg);
+  top:40%;border-radius:10px;background-color:white;
+}
+
+.bar {
+  width:80px;
+  height:10px;
+  border:2px solid white;
+  position: absolute;
+  border-radius:10px;
+}
+
+.top {
+  left:15%;
+  top:20%;
+  -webkit-transition:all 0.5s;
+}
+
+.middle {
+  left:15%;
+  top:40%;
+  -webkit-transition:all 0.5s;
+}
+
+.bottom {
+  left:15%;
+  top:60%;
+  -webkit-transition:all 0.5s;
+}
