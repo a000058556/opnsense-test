@@ -3627,16 +3627,19 @@ select[multiple].input-lg,
   background-color: #444;
 }
 
+/* 按鈕樣式 */
 .btn-primary {
   color: #fff;
   background-color: #45D9FD;
   border: none;
+  border: 2px solid;
   /* border-color: #006dd9; */
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #a63c00;
   border-color: #9c3a00;
+  border: 2px solid;
 }
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   background-image: none;
