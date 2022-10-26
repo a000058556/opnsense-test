@@ -4821,11 +4821,15 @@ tbody {
 }
 /* 手機板菜單按鈕default/滑過效果 */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #555;
+  background-color: #FFF;
 }
 /* 手機板菜單按鈕default/icon效果 */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
+}
+/* 手機板菜單按鈕default/滑過效果 */
+.navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus {
+  background-color: transparent;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
