@@ -7577,7 +7577,8 @@ table {
   width: 3px;
 }
 .active-menu-title.active, .active-menu a.active {
-  background-color: #E8E8E8;
+  /* background-color: #E8E8E8; */
+  background: rgba(255,255,255,0.3) !important;
 }
 
 .active-menu a:before {
@@ -8106,7 +8107,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 .active,
 .active:hover{
-  background: rgba(255,255,255,0.3) !important;
+  background: rgba(255,255,255,0.3) ;
 }
 
 .sidebar-i{
