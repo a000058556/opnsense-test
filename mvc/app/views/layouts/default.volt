@@ -205,7 +205,7 @@
                 <img class="brand-icon" src="{{ cache_safe('/ui/themes/%s/build/images/uguard-web-15.png' | format(theme_name)) }}" height="30" alt="icon"/>
             {% endif %}
           </a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+          <button type="button" class="wrapper collapsed" data-toggle="collapse" data-target="#navigation">
             <span class="sr-only">{{ lang._('Toggle navigation') }}</span>
             <span class="icon-bar top bar"></span>
             <span class="icon-bar middle bar"></span>
