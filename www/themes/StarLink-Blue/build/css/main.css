@@ -3780,7 +3780,7 @@ select[multiple].input-lg,
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 9999px;
 }
 
 .btn-block {
@@ -3991,11 +3991,14 @@ tbody {
     right: auto;
   }
 }
+/* 連續按鈕群組 */
 .btn-group,
 .btn-group-vertical {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .btn-group > .btn,
 .btn-group-vertical > .btn {
@@ -4022,7 +4025,8 @@ tbody {
 }
 
 .btn-toolbar {
-  margin-left: -5px;
+  /* margin-left: -5px; */
+  margin-bottom: 10px;
 }
 .btn-toolbar:before, .btn-toolbar:after {
   content: " ";
@@ -4040,23 +4044,27 @@ tbody {
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
-
+/* 連續按鈕-中段 */
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
+  border: 2px solid #006dd9 !important;
 }
 
 .btn-group > .btn:first-child {
   margin-left: 0;
 }
+/* 連續按鈕-開頭 */
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+  border: 2px solid #006dd9 !important;
 }
-
+/* 連續按鈕-結尾 */
 .btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+  border: 2px solid #006dd9 !important;
 }
 
 .btn-group > .btn-group {
@@ -7603,7 +7611,7 @@ table {
 .btn-xs,
 .btn-group-xs > .btn {
   /* emulates btn-xs */
-  padding: 1px 3px;
+  padding: 2px 7px;
 }
 
 ::-webkit-scrollbar {
