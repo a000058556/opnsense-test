@@ -3909,7 +3909,7 @@ tbody {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #45D9FD;
+  /* background-color: #45D9FD; */
 }
 
 .dropdown-menu > .active > a {
