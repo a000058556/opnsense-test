@@ -8145,18 +8145,17 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 /* menu 按鈕 */
 
 .wrapper {
-  width:120px;
-  height:120px;
+  width:40px;
+  height:40px;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 1%;
   position: relative;
 }
 
 .wrapper:hover .middle {
-  width:50px;
-  height:50px;
-  top:24%;
-  left:27%;
+  width:40px;
+  height:40px;
+  top:40%;
   border-radius: 50%;
   background-color:white;
   opacity:0.3;
@@ -8173,8 +8172,8 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 .bar {
-  width:80px;
-  height:10px;
+  width:40px;
+  height:2px;
   border:2px solid white;
   position: absolute;
   border-radius:10px;
