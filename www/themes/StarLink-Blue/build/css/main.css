@@ -3609,10 +3609,11 @@ select[multiple].input-lg,
   border-color: #e5e5e5;
   
 }
+/* 按鈕選取active */
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-  color: #444;
-  background-color: #e6e6e6;
-  border-color: #c6c6c6;
+  color: #fff;
+  background-color: #006dd9 !important;
+
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
