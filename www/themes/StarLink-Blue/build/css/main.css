@@ -8159,7 +8159,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   border: none;
 }
 
-.wrapper:hover .middle, .wrapper:focus .middle {
+.wrapper:hover .middle {
   width:35px;
   height:35px;
   border-radius: 50%;
@@ -8169,15 +8169,15 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   left: 3%;
 }
 
-.wrapper:hover .top, .wrapper:focus .top {
+.wrapper:hover .top {
   -webkit-transform:rotate(45deg);
   top:40%;border-radius:10px;background-color:white;
 }
 
-/* .wrapper:hover .bottom, .wrapper:focus .bottom {
+.wrapper:hover .bottom {
   -webkit-transform:rotate(-45deg);
   top:40%;border-radius:10px;background-color:white;
-} */
+}
 
 .bar {
   width:26px;
