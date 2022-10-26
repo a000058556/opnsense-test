@@ -8159,20 +8159,21 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   border: none;
 }
 
-.wrapper:hover .middle {
+.wrapper:hover .middle, .wrapper:focus .middle {
   width:40px;
   height:40px;
   border-radius: 50%;
   background-color:white;
   opacity:0.3;
+  top:0%;
 }
 
-.wrapper:hover .top {
+.wrapper:hover .top, .wrapper:focus .top {
   -webkit-transform:rotate(45deg);
   top:40%;border-radius:10px;background-color:white;
 }
 
-.wrapper:hover .bottom{
+.wrapper:hover .bottom, .wrapper:focus .bottom {
   -webkit-transform:rotate(-45deg);
   top:40%;border-radius:10px;background-color:white;
 }
