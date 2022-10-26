@@ -4039,10 +4039,13 @@ tbody {
 .btn-toolbar .input-group {
   float: left;
 }
+/* btn-toolbar間距 */
 .btn-toolbar > .btn,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 /* 連續按鈕-中段 */
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
