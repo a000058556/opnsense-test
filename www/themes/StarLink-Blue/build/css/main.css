@@ -7017,7 +7017,9 @@ body {
 }
 
 .page-content-head, .content-box-head {
-  background: #FBFBFB;
+  border-bottom-left-radius: 20px;
+  background: #000034 !important;
+  /* background: #FBFBFB; */
   border-bottom: 1px solid rgba(217, 217, 217, 0.5);
   padding-bottom: 15px;
   padding-top: 20px;
