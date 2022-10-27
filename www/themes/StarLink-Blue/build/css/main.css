@@ -8216,7 +8216,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   border-radius:10px;
 }
 
-.top {
+/* .top {
   left:15%;
   top:20%;
   -webkit-transition:all 0.5s;
@@ -8227,7 +8227,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   -webkit-transition:all 0.5s;
   -webkit-transform:rotate(45deg);
   top:40%;border-radius:10px;background-color:white;
-}
+} */
 
 .middle {
   left:15%;
