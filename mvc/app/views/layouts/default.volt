@@ -240,7 +240,7 @@
         <header class="page-content-head">
           <div class="container-fluid">
             <ul class="list-inline">
-              <li><h1>{{title | default("")}}</h1></li>
+              <li class="pb-10"><h1>{{title | default("")}}</h1></li>
               <li class="btn-group-container" id="service_status_container"></li>
             </ul>
           </div>

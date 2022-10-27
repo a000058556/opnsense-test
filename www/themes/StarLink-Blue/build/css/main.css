@@ -8264,3 +8264,9 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   background: #fff !important;
   color: #48b4fd !important;
 }
+
+/* page-content-head用 */
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
