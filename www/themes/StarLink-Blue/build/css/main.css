@@ -8256,3 +8256,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   -webkit-transform:rotate(-45deg);
   top:40%;border-radius:10px;background-color:white;
 }
+
+
+/* 首頁右內容右上按鈕 */
+
+.srv_status_act:hover {
+  background: #fff !important;
+}
