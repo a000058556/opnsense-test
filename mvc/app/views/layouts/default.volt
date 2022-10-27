@@ -207,7 +207,7 @@
           </a>
           <button type="button" class="wrapper collapsed" data-toggle="collapse" data-target="#navigation">
             <span class="sr-only">{{ lang._('Toggle navigation') }}</span>
-            <span class="icon-bar top bar bar-top"></span>
+            <span class="icon-bar nenu-top bar bar-top"></span>
             <span class="icon-bar middle bar bar-middle"></span>
             <span class="icon-bar bottom bar bar-bottom"></span>
           </button>
@@ -324,7 +324,7 @@
     <script>
       $(document).ready(function() {
         $(".wrapper").on("click", function() {
-            $(".bar-top").toggleClass("top top-close");
+            $(".bar-top").toggleClass("nenu-top top-close");
             $(".bar-middle").toggleClass("middle middle-close");
             $(".bar-bottom").toggleClass("bottom bottom-close");
         });
