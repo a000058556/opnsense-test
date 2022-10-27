@@ -17,6 +17,7 @@
   color: #48b4fd !important;
   background: none !important;
   border: none !important;
+  padding: 2px 4px !important;
 }
 .widgetdiv .content-box-head .btn-group .btn:hover {
   color: #fff !important;
