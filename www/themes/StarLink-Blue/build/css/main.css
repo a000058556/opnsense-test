@@ -8262,4 +8262,5 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 .srv_status_act:hover {
   background: #fff !important;
+  color: #48b4fd !important;
 }
