@@ -16,12 +16,13 @@
 .widgetdiv .content-box-head .btn-group .btn {
   color: #48b4fd !important;
   background: none !important;
-  border: 0px;
+  border: none !important;
 }
 .widgetdiv .content-box-head .btn-group .btn:hover {
   color: #fff !important;
   background: #48b4fd !important;
   border-radius: 100% !important;
+  border: none !important;
 }
 .widgetdiv .content-box-head .btn-group .btn .glyphicon {
   color: #006dd9 !important;
@@ -4054,7 +4055,7 @@ tbody {
 /* 連續按鈕-中段 */
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
-  border: 2px solid #006dd9 !important;
+  border: 2px solid #006dd9 ;
 }
 
 .btn-group > .btn:first-child {
@@ -4064,14 +4065,14 @@ tbody {
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  border: 2px solid #006dd9 !important;
+  border: 2px solid #006dd9 ;
 }
 /* 連續按鈕-結尾 */
 .btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  border: 2px solid #006dd9 !important;
+  border: 2px solid #006dd9 ;
 }
 
 .btn-group > .btn-group {
