@@ -3787,6 +3787,7 @@ select[multiple].input-lg,
   font-size: 12px;
   line-height: 1.5;
   border-radius: 9999px;
+  border: none ;
 }
 
 .btn-block {
