@@ -347,7 +347,7 @@ function renderActions()
                 tpl = this.options.templates,
                 actions = $(tpl.actions.resolve(getParams.call(this)));
 
-            // Refresh Button
+            // Refresh Button 重整按鈕生成
             if (this.options.ajax)
             {
                 var refreshIcon = tpl.icon.resolve(getParams.call(this, { iconCss: css.iconRefresh })),
@@ -1422,10 +1422,11 @@ Grid.defaults = {
      * @for defaults
      **/
     templates: {
-        actionButton: "<button class=\"btn btn-default\" type=\"button\" title=\"{{ctx.text}}\">{{ctx.content}}</button>",
+        actionButton: "<button class=\"btn btn-default re-bt\" type=\"button\" title=\"{{ctx.text}}\">{{ctx.content}}</button>",
         actionDropDown: "<div class=\"{{css.dropDownMenu}}\"><button class=\"btn btn-default dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\"><span class=\"{{css.dropDownMenuText}}\">{{ctx.content}}</span> <span class=\"caret\"></span></button><ul class=\"{{css.dropDownMenuItems}}\" role=\"menu\"></ul></div>",
         actionDropDownItem: "<li><a data-action=\"{{ctx.action}}\" class=\"{{css.dropDownItem}} {{css.dropDownItemButton}}\">{{ctx.text}}</a></li>",
         actionDropDownCheckboxItem: "<li><label class=\"{{css.dropDownItem}}\"><input name=\"{{ctx.name}}\" type=\"checkbox\" value=\"1\" class=\"{{css.dropDownItemCheckbox}}\" {{ctx.checked}} /> {{ctx.label}}</label></li>",
+        //actionBar actions div生成
         actions: "<div class=\"{{css.actions}}\"></div>",
         body: "<tbody></tbody>",
         cell: "<td class=\"{{ctx.css}}\" style=\"{{ctx.style}}\">{{ctx.content}}</td>",
@@ -1440,6 +1441,7 @@ Grid.defaults = {
         paginationItem: "<li class=\"{{ctx.css}}\"><a data-page=\"{{ctx.page}}\" class=\"{{css.paginationButton}}\">{{ctx.text}}</a></li>",
         rawHeaderCell: "<th class=\"{{ctx.css}}\">{{ctx.content}}</th>", // Used for the multi select box
         row: "<tr{{ctx.attr}}>{{ctx.cells}}</tr>",
+        //actionBar search功能生成
         search: "<div class=\"{{css.search}}\"><div class=\"input-group\"><span class=\"{{css.icon}} input-group-addon {{css.iconSearch}}\"></span> <input type=\"text\" class=\"{{css.searchField}}\" placeholder=\"{{lbl.search}}\" /></div></div>",
         select: "<input name=\"select\" type=\"{{ctx.type}}\" class=\"{{css.selectBox}}\" value=\"{{ctx.value}}\" {{ctx.checked}} />"
     }
