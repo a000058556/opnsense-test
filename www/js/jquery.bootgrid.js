@@ -370,7 +370,12 @@ function renderActions()
                             that.current = 1;
                             loadData.call(that);
                         });
+                        console.log(tpl.icon.resolve(getParams.call(this, { iconCss: css.iconRefresh })));
+                        console.log("-------------------------");
+                        console.log(refresh);
+                        console.log("-------------------------");
                 actions.append(refresh);
+                console.log(actions);
             }
 
             // Row count selection
