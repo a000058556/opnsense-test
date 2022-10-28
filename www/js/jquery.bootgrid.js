@@ -358,7 +358,7 @@ function renderActions()
             // Refresh Button 重整按鈕生成
             if (this.options.ajax)
             {   
-                // 取得按鈕icon
+                // 取得按鈕icon，refreshIcon = <span class=\"{{css.icon}} {{ctx.iconCss}}\"></span>
                 var refreshIcon = tpl.icon.resolve(getParams.call(this, { iconCss: css.iconRefresh })),
                     // 取得按鈕html標籤內容
                     refresh = $(tpl.actionButton.resolve(getParams.call(this,
@@ -371,6 +371,9 @@ function renderActions()
                             loadData.call(that);
                         });
                         console.log(tpl.icon.resolve(getParams.call(this, { iconCss: css.iconRefresh })));
+                        console.log("-------------------------");
+                        console.log(tpl.actionButton.resolve(getParams.call(this,
+                            { content: refreshIcon, text: this.options.labels.refresh })));
                         console.log("-------------------------");
                         console.log(refresh);
                         console.log("-------------------------");
