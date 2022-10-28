@@ -345,11 +345,12 @@ function renderActions()
         if (actionItems.length > 0)
         {
             var that = this,
+                // 用tpl取得templates參數，並指定actions = <div class=\"{{css.actions}}\"></div>
                 tpl = this.options.templates,
                 actions = $(tpl.actions.resolve(getParams.call(this)));
                 console.log(that);
                 console.log("-------------------------");
-                console.log(actions);
+                console.log(getParams.call(this));
 
             // Refresh Button 重整按鈕生成
             if (this.options.ajax)
