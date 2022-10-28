@@ -351,6 +351,9 @@ function renderActions()
                 console.log(that);
                 console.log("-------------------------");
                 console.log(getParams.call(this));
+                console.log("-------------------------");
+                console.log(tpl.actions.resolve(getParams.call(this)));
+                console.log("-------------------------");
 
             // Refresh Button 重整按鈕生成
             if (this.options.ajax)
