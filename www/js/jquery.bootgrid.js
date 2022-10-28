@@ -360,7 +360,7 @@ function renderActions()
             {   
                 // 取得按鈕icon，refreshIcon = <span class=\"{{css.icon}} {{ctx.iconCss}}\"></span>
                 var refreshIcon = tpl.icon.resolve(getParams.call(this, { iconCss: css.iconRefresh })),
-                    // 取得按鈕html標籤內容
+                    // 取得按鈕html標籤內容,refresh = <button class=\"btn btn-default re-bt\" type=\"button\" title=\"{{ctx.text}}\">{{ctx.content}}</button>
                     refresh = $(tpl.actionButton.resolve(getParams.call(this,
                     { content: refreshIcon, text: this.options.labels.refresh })))
                         .on("click" + namespace, function (e)
@@ -377,8 +377,8 @@ function renderActions()
                         console.log("-------------------------");
                         console.log(refresh);
                         console.log("-------------------------");
+                console.log(actions.append(refresh));
                 actions.append(refresh);
-                console.log(actions);
             }
 
             // Row count selection
