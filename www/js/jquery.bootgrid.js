@@ -347,11 +347,16 @@ function renderActions()
             var that = this,
                 tpl = this.options.templates,
                 actions = $(tpl.actions.resolve(getParams.call(this)));
+                console.log(that);
+                console.log("-------------------------");
+                console.log(actions);
 
             // Refresh Button 重整按鈕生成
             if (this.options.ajax)
-            {
+            {   
+                // 取得按鈕icon
                 var refreshIcon = tpl.icon.resolve(getParams.call(this, { iconCss: css.iconRefresh })),
+                    // 取得按鈕html標籤內容
                     refresh = $(tpl.actionButton.resolve(getParams.call(this,
                     { content: refreshIcon, text: this.options.labels.refresh })))
                         .on("click" + namespace, function (e)
