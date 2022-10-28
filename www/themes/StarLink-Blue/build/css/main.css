@@ -5435,6 +5435,11 @@ a.thumbnail.active {
   transition: width 0.6s ease;
 }
 
+/* Firewall: Aliases量表文字樣式 */
+.state_text {
+  color: #444;
+}
+
 .progress-striped .progress-bar,
 .progress-bar-striped {
   background-image: -webkit-linear-gradient(45deg, rgba(69, 217, 253, 05) 25%, transparent 25%, transparent 50%, rgba(69, 217, 253, 05) 50%, rgba(69, 217, 253, 05) 75%, transparent 75%, transparent);
@@ -8261,7 +8266,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 
-/* 首頁右內容右上按鈕 */
+/* 由於首頁內容右上按鈕會被btn-group影響，因此新增class來做微調 */
 
 .srv_status_act:hover {
   background: #fff !important;
