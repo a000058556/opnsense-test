@@ -315,6 +315,7 @@ function prepareTable()
     this.element.addClass(this.options.css.table);
 
     // checks whether there is an tbody element; otherwise creates one
+    // 建立id名 [Id() + "-header"]、[Id() + "-footer"]
     if (this.element.children("tbody").length === 0)
     {
         this.element.append(tpl.body);

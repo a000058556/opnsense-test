@@ -66,6 +66,7 @@
             }
         });
 
+        // 導入.bootgrid插件
         $("#type_filter").change(function(){
             $('#grid-aliases').bootgrid('reload');
         });
