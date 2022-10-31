@@ -84,6 +84,10 @@ POSSIBILITY OF SUCH DAMAGE.
                           dfObj.resolve();
                           // fetch aggregators
                           ajaxGet('/api/diagnostics/networkinsight/getMetadata',{}, function(metadata, status) {
+                            console.log("----------------metadata---------------");
+                            console.log(metadata);
+                            console.log("----------------status---------------");
+                            console.log(status);
                             Object.keys(metadata['aggregators']).forEach(function (agg_name) {
                               var res = metadata['aggregators'][agg_name]['resolutions'].join(',');
                               $("#export_collection").append($("<option data-resolutions='"+res+"'/>").val(agg_name).text(agg_name));
