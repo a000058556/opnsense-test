@@ -118,17 +118,23 @@ POSSIBILITY OF SUCH DAMAGE.
       }
 
       /**
-       * get selected time
+       * get selected time use Unix時間戳（Unix timestamp）
        */
       function get_time_select()
       {
-          // current time stamp
+          // current time stamp Math.round() 四捨五入
           var timestamp_now = Math.round((new Date()).getTime() / 1000);
+          console.log("----------------今日Unix timestamp---------------");
+          console.log(timestamp_now);
           var duration = 0;
           var resolution = 0;
+          // https://stackoverflow.com/questions/11179406/jquery-get-value-of-select-onchange
+          // 透過switch case取得選取的時間項目的value
           switch ($("#total_time_select").val()) {
               case "2h":
+                // 期間
                 duration = 60*60*2;
+                // 平均
                 resolution = 30;
                 break;
               case "8h":
@@ -169,16 +175,24 @@ POSSIBILITY OF SUCH DAMAGE.
                 break;
           }
           // always round from timestamp to nearest hour
+          // Math.floor() 取小於這個數的最大整數: 透過/ 3600取得整數天數在* 3600換算回timestamp
           const from_timestamp =  Math.floor((timestamp_now -duration) / 3600 ) * 3600;
+          console.log("----------------get_time_select()---------------");
+          console.log(from_timestamp);
+          // 回傳區間, 開始時間, 結束時間
           return {resolution: resolution, from: from_timestamp, to: timestamp_now};
       }
 
       /**
-       * draw interface totals
+       * draw interface totals 繪製
        */
       function chart_interface_totals() {
         var selected_time = get_time_select();
+        console.log("----------------取得表格時間---------------");
+        console.log(selected_time); // 取得表格時間
         const fetch_params = selected_time.from + '/' + selected_time.to + '/' + selected_time.resolution + '/if,direction' ;
+        console.log("----------------取資料參數---------------");
+        console.log(fetch_params); // 取資料參數
         ajaxGet('/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/' + fetch_params,{},function(data,status){
             $.each(['chart_intf_in', 'chart_intf_out'], function(idx, target) {
                 let direction = '';
