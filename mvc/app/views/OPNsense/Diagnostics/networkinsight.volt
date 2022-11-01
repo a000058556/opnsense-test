@@ -77,12 +77,18 @@ POSSIBILITY OF SUCH DAMAGE.
               }
               // fetch interface names
               ajaxGet('/api/diagnostics/networkinsight/getInterfaces',{}, function(intf_names, status){
+                  console.log("----------------intf_names---------------");
+                  console.log(intf_names);
                   interface_names = intf_names;
                   // fetch protocol names
                   ajaxGet('/api/diagnostics/networkinsight/getProtocols',{}, function(protocols, status) {
+                      console.log("----------------protocols---------------");
+                      console.log(protocols);
                       protocol_names = protocols;
                       // fetch service names
                       ajaxGet('/api/diagnostics/networkinsight/getServices',{}, function(services, status) {
+                          console.log("----------------services---------------");
+                          console.log(services);
                           service_names = services;
                           // return promise, no need to wait for getMetadata
                           dfObj.resolve();
