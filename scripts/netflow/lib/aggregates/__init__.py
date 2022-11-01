@@ -146,6 +146,7 @@ class BaseFlowAggregator(object):
                 os.makedirs(self.database_dir)
             # open sqlite database
             self._db_connection = sqlite3.connect(
+                # /var/netflow
                 ("%s/%s" % (self.database_dir, self.target_filename)) % self.resolution, timeout=60,
                 detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES
             )
@@ -392,8 +393,10 @@ def get_aggregators():
             module_name = 'lib.aggregates.%s' % '.'.join(filename_base.split('.')[:-1])
             __import__(module_name)
             for clsname in dir(sys.modules[module_name]):
+                #  getattr() https://www.runoob.com/python/python-func-getattr.html
                 clshandle = getattr(sys.modules[module_name], clsname)
                 if type(clshandle) == type and issubclass(clshandle, BaseFlowAggregator):
+                    # 確認clshandle內有沒有 'target_filename'屬性
                     if hasattr(clshandle, 'target_filename') and clshandle.target_filename is not None:
                         result.append(clshandle)
     return result

@@ -33,6 +33,12 @@ class FlowInterfaceTotals(BaseFlowAggregator):
     """ collect interface totals
     """
     target_filename = 'interface_%06d.sqlite'
+    # 實際檔案名稱 database_dir='/var/netflow'
+    # interface_000000.sqlite
+    # interface_000030.sqlite
+    # interface_000300.sqlite
+    # interface_003600.sqlite
+    # interface_086400.sqlite
     agg_fields = ['if', 'direction']
 
     @classmethod
