@@ -251,6 +251,8 @@ POSSIBILITY OF SUCH DAMAGE.
                   console.log(data);
                   // .map() https://ithelp.ithome.com.tw/articles/10215281
                   data.map(function(item){
+                    console.log("----------------item.key---------------");
+                    console.log(item.key);
                       let item_dir = item.key.split(',').pop(); // 用,切字串，去掉key內的in out
                       console.log("----------------item_dir---------------");
                       console.log(item_dir);
