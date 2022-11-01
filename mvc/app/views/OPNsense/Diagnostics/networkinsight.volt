@@ -209,6 +209,8 @@ POSSIBILITY OF SUCH DAMAGE.
         console.log(fetch_params); // 取資料參數
         // https://130.211.251.29/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/1666594800/1667200993/3600/if
         ajaxGet('/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/' + fetch_params,{},function(data,status){
+            console.log("----------------origin data---------------");
+            console.log(data);
             $.each(['chart_intf_in', 'chart_intf_out'], function(idx, target) {
                 let direction = '';
                 if (target == 'chart_intf_in') {
