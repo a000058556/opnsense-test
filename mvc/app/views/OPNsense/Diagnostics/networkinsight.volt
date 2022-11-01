@@ -254,7 +254,11 @@ POSSIBILITY OF SUCH DAMAGE.
                               } else {
                                   item.key = item_intf;
                               }
+                              console.log("----------------item---------------");
+                              console.log(item);
                               chart_data.push(item);
+                              console.log("----------------chart_data---------------");
+                              console.log(chart_data);
                           }
                       }
                   });
