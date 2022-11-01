@@ -67,6 +67,10 @@ POSSIBILITY OF SUCH DAMAGE.
       {
           var dfObj = new $.Deferred();
           ajaxGet('/api/diagnostics/netflow/isEnabled', {}, function(is_enabled, status){
+            console.log("----------------is_enabled---------------");
+            console.log(is_enabled);
+            console.log("----------------status---------------");
+            console.log(status);
               if (is_enabled['local'] == 0) {
                   dfObj.reject();
                   return;

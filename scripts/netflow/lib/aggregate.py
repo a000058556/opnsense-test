@@ -31,7 +31,7 @@ import os
 import datetime
 import sqlite3
 
-
+# 轉換時間方法，使用方式 aggregates.convert_timestamp(val)
 def convert_timestamp(val):
     """ convert timestamps from string (internal sqlite type) or seconds since epoch
     """
@@ -57,28 +57,34 @@ def convert_timestamp(val):
 
     return val
 
-
+# 將資料庫typename的類型轉換為python類型
 sqlite3.register_converter('timestamp', convert_timestamp)
 
-
+# 創建資料庫使用物件方法
 class AggMetadata(object):
     """ store some metadata needed to keep track of parse progress
     """
     def __init__(self, database_dir='/var/netflow'):
         self._filename = '%s/metadata.sqlite' % database_dir
+        # self._filename = /var/netflows/metadata.sqlite
         # make sure the target directory exists
+        # 使用os.path.dirname()從指定路徑獲取目錄名稱 輸入:/var/netflows/metadata.sqlite 取得:/var/netflows
         target_path = os.path.dirname(self._filename)
         if not os.path.isdir(target_path):
+            # os.makedirs()建立資料夾時，沿著路徑上的資料夾若不存在，都會建立。
             os.makedirs(target_path)
         # open sqlite database and cursor
+        # 建立連線通過設置sqlite3.PARSE_DECLTYPES和sqlite3.PARSE_COLNAMES來啟用類型檢測
         self._db_connection = sqlite3.connect(self._filename, timeout=60,
                                               detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES)
-        self._db_cursor = self._db_connection.cursor()
+        # 建立游標.cursor() 
+        self._db_cursor = self._db_connection.cursor() 
         # known tables
         self._tables = list()
         # cache known tables
         self._update_known_tables()
 
+    # 關閉資料庫連線方法
     def __del__(self):
         """ close database on destruct
         :return: None
@@ -86,28 +92,35 @@ class AggMetadata(object):
         if self._db_connection is not None:
             self._db_connection.close()
 
+    # 更新self._tables
     def _update_known_tables(self):
         """ request known tables
         """
         self._db_cursor.execute('SELECT name FROM sqlite_master')
         for record in self._db_cursor.fetchall():
             self._tables.append(record[0])
+            # 用self._db_cursor.fetchall()+for迴圈取得所有收尋結果加入到self._tables中
 
     def update_sync_time(self, timestamp):
         """ update (last) sync timestamp
         """
+        # 若沒有sync_timestamp則建立並更新至self._tables中
         if 'sync_timestamp' not in self._tables:
             self._db_cursor.execute('create table sync_timestamp(mtime timestamp)')
             self._db_cursor.execute('insert into sync_timestamp(mtime) values(0)')
+            # 提交變更.commit()
             self._db_connection.commit()
+            # 更新self._tables
             self._update_known_tables()
-        # update last sync timestamp, if this date > timestamp
+        # update last sync timestamp, if this date > timestamp 當timestamp大於原timestamp時 跟新資料 
         self._db_cursor.execute('update sync_timestamp set mtime = :mtime where mtime < :mtime', {'mtime': timestamp})
+        # 提交變更.commit()
         self._db_connection.commit()
 
+    # 取最後sync_timestamp方法
     def last_sync(self):
         if 'sync_timestamp' not in self._tables:
             return 0.0
         else:
             self._db_cursor.execute('select max(mtime) from sync_timestamp')
-            return self._db_cursor.fetchall()[0][0]
+            return self._db_cursor.fetchall()[0][0] # 回傳第1筆
