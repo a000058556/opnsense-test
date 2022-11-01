@@ -207,6 +207,7 @@ POSSIBILITY OF SUCH DAMAGE.
         const fetch_params = selected_time.from + '/' + selected_time.to + '/' + selected_time.resolution + '/if,direction' ;
         console.log("----------------取資料參數---------------");
         console.log(fetch_params); // 取資料參數
+        // https://130.211.251.29/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/1666594800/1667200993/3600/if
         ajaxGet('/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/' + fetch_params,{},function(data,status){
             $.each(['chart_intf_in', 'chart_intf_out'], function(idx, target) {
                 let direction = '';
@@ -244,6 +245,8 @@ POSSIBILITY OF SUCH DAMAGE.
                   chart.yAxis.tickFormat(d3.format(',.2s'));
 
                   let chart_data = [];
+                  console.log("----------------data---------------");
+                  console.log(data);
                   data.map(function(item){
                       let item_dir = item.key.split(',').pop();
                       let item_intf = item.key.split(',')[0];
