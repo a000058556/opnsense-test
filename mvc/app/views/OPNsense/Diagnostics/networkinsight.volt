@@ -210,6 +210,7 @@ POSSIBILITY OF SUCH DAMAGE.
         // https://130.211.251.29/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/1666594800/1667200993/3600/if,direction
         ajaxGet('/api/diagnostics/networkinsight/timeserie/FlowInterfaceTotals/bps/' + fetch_params,{},function(data,status){
             console.log("----------------origin data---------------");
+            // 取得資料data
             console.log(data);
             $.each(['chart_intf_in', 'chart_intf_out'], function(idx, target) {
                 let direction = '';
@@ -251,13 +252,13 @@ POSSIBILITY OF SUCH DAMAGE.
                   console.log(data);
                   // .map() https://ithelp.ithome.com.tw/articles/10215281
                   data.map(function(item){
-                    console.log("----------------item.key---------------");
+                    console.log("----------------item.key = vtnet0,out---------------");
                     console.log(item.key);
-                      let item_dir = item.key.split(',').pop(); // 用,切字串，去掉key內的in out
-                      console.log("----------------item_dir---------------");
+                      let item_dir = item.key.split(',').pop(); // 用,切字串，.pop()為後進先出（Last In First Out，LIFO）去掉key內的第[0]位
+                      console.log("----------------item_dir = out ---------------");
                       console.log(item_dir);
                       let item_intf = item.key.split(',')[0]; // 用,切字串，取key的第[0]位
-                      console.log("----------------item_intf---------------");
+                      console.log("----------------item_intf = vtnet0 ---------------");
                       console.log(item_intf);
                       if (item_intf != '0' && item_intf != 'lo0' ) {
                           if (direction == item_dir) {

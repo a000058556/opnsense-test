@@ -94,10 +94,12 @@ class Backend
         // wait until socket exist for a maximum of $connect_timeout
         $timeout_wait = $connect_timeout;
         $errorMessage = "";
-        while (
+        // configdSocket = /var/run/configd.socket
+        while ( 
             !file_exists($this->configdSocket) ||
             ($stream = @stream_socket_client('unix://' . $this->configdSocket, $errorNumber, $errorMessage, $poll_timeout)) === false
         ) {
+            // 若找不到configd.socket檔
             sleep(1);
             $timeout_wait -= 1;
             if ($timeout_wait <= 0) {
@@ -116,6 +118,7 @@ class Backend
         stream_set_timeout($stream, $poll_timeout);
         // send command
         if ($detach) {
+            // fwrite() 把 string 的內容寫入文件指針 file 處。fwrite() 返回寫入的字符數，出現錯誤時則返回 false。
             fwrite($stream, '&' . $event);
         } else {
             fwrite($stream, $event);

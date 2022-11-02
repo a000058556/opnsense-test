@@ -212,9 +212,12 @@ class NetworkinsightController extends ApiControllerBase
     public function getInterfacesAction()
     {
         // map physical interfaces to description / name
+        // Config.php > Singleton.php的getInstance() > Config.php的object()
         $configObj = Config::getInstance()->object();
         $allInterfaces = array();
+        // children() 取xml 格式 values
         foreach ($configObj->interfaces->children() as $key => $intf) {
+            echo ($configObj->interfaces);
             $allInterfaces[(string)$intf->if] = empty($intf->descr) ? $key : (string)$intf->descr;
         }
         return $allInterfaces;
@@ -226,10 +229,15 @@ class NetworkinsightController extends ApiControllerBase
     public function getProtocolsAction()
     {
         $result = array();
+        // 用換行取資料放至$line中
         foreach (explode("\n", file_get_contents('/etc/protocols')) as $line) {
+            // 字串長度大於1 並且避一個字不是#
             if (strlen($line) > 1 && $line[0] != '#') {
+                // 用空格切字
                 $parts = preg_split('/\s+/', $line);
+                // 當單字大於等於4
                 if (count($parts) >= 4) {
+                    // $parts[1] = index , $parts[0] = values
                     $result[$parts[1]] = $parts[0];
                 }
             }
@@ -249,7 +257,7 @@ class NetworkinsightController extends ApiControllerBase
                 // things here, we ignore those exceptions.
                 $parts = preg_split('/\s+/', $line);
                 if (count($parts) >= 2) {
-                    $portnum = explode('/', trim($parts[1]))[0];
+                    $portnum = explode('/', trim($parts[1]))[0]; // 用"/"切"47557/udp"並取第0位，trim()去前後空白
                     $result[$portnum] = $parts[0];
                 }
             }

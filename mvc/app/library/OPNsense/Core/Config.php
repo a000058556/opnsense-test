@@ -299,7 +299,7 @@ class Config extends Singleton
      */
     public function object()
     {
-        $this->checkvalid();
+        $this->checkvalid(); // check valid config loaded
         return $this->simplexml;
     }
 
