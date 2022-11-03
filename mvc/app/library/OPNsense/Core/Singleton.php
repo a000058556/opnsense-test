@@ -65,8 +65,11 @@ abstract class Singleton
      * @return object
      */
     public static function getInstance()
-    {
-        $className = get_called_class();
+    {   
+        // 取得靜態方法的類名稱 
+        // Config::getInstance() 
+        // $className = Config
+        $className = get_called_class(); 
 
         if (isset(self::$instances[$className]) == false) {
             self::$instances[$className] = new static();

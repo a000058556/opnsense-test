@@ -226,7 +226,7 @@ class AliasController extends ApiMutableModelControllerBase
                 ];
             }
         }
-        ksort($result);
+        ksort($result); // 按照KEY對數組排序，用原關連數組
         return $result;
     }
 

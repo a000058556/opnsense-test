@@ -39,12 +39,14 @@
             toggle:'/api/firewall/alias/toggleItem/',
             options:{
                 requestHandler: function(request){
+                    // 選擇器
                     if ( $('#type_filter').val().length > 0) {
                         request['type'] = $('#type_filter').val();
                     }
                     return request;
                 },
                 formatters: {
+                    // 編輯按鈕
                     "commands": function (column, row) {
                         if (row.uuid.includes('-') === true) {
                             // exclude buttons for internal aliases (which uses names instead of valid uuid's)
@@ -53,6 +55,7 @@
                                 '<button type="button" class="btn btn-xs btn-default command-delete bootgrid-tooltip" data-row-id="' + row.uuid + '"><span class="fa fa-fw fa-trash-o"></span></button>';
                         }
                     },
+                    // 勾選器
                     "rowtoggle": function (column, row) {
                         if (!row.uuid.includes('-')) {
                             return '<span class="fa fa-fw fa-check-square-o"></span>';

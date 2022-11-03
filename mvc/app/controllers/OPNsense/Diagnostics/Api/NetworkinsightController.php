@@ -196,6 +196,7 @@ class NetworkinsightController extends ApiControllerBase
         if ($this->request->isGet()) {
             $backend = new Backend();
             $configd_cmd = "netflow aggregate metadata json";
+            // 使用 class Backend 的configdRun()帶入configd_cmd取得response
             $response = $backend->configdRun($configd_cmd);
             $metadata = json_decode($response, true);
             if ($metadata != null) {
@@ -228,13 +229,13 @@ class NetworkinsightController extends ApiControllerBase
     public function getProtocolsAction()
     {
         $result = array();
-        // 用換行取資料放至$line中
+        // explode("\n" 用換行取資料放至$line中
         foreach (explode("\n", file_get_contents('/etc/protocols')) as $line) {
-            // 字串長度大於1 並且避一個字不是#
+            // 字串長度大於1 並且第一個字不是#
             if (strlen($line) > 1 && $line[0] != '#') {
                 // 用空格切字
                 $parts = preg_split('/\s+/', $line);
-                // 當單字大於等於4
+                // 當單字數大於等於4
                 if (count($parts) >= 4) {
                     // $parts[1] = index , $parts[0] = values
                     $result[$parts[1]] = $parts[0];
