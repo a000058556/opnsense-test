@@ -126,6 +126,7 @@ class AliasController extends ApiMutableModelControllerBase
      * @return array uuid
      * @throws \ReflectionException
      */
+
     public function getAliasUUIDAction($name)
     {
         $node = $this->getModel();
@@ -217,8 +218,11 @@ class AliasController extends ApiMutableModelControllerBase
      */
     public function listNetworkAliasesAction()
     {
+        // protected static $internalModelName = 'alias';
+        // protected static $internalModelClass = 'OPNsense\Firewall\Alias';
         $result = [];
         foreach ($this->getModel()->aliases->alias->iterateItems() as $alias) {
+            // 當(string)$alias->type沒有'external', 'port'時
             if (!in_array((string)$alias->type, ['external', 'port'])) {
                 $result[(string)$alias->name] = [
                     "name" => (string)$alias->name,
@@ -226,7 +230,7 @@ class AliasController extends ApiMutableModelControllerBase
                 ];
             }
         }
-        ksort($result); // 按照KEY對數組排序，用原關連數組
+        ksort($result); // 按照KEY對數組排序，用於關連數組
         return $result;
     }
 

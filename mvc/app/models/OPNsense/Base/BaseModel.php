@@ -422,6 +422,7 @@ abstract class BaseModel
      * iterate (non virtual) child nodes
      * @return mixed
      */
+    // private $internalData = null;
     public function iterateItems()
     {
         return $this->internalData->iterateItems();

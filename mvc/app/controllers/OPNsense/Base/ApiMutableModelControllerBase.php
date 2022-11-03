@@ -171,6 +171,8 @@ abstract class ApiMutableModelControllerBase extends ApiControllerBase
     protected function getModel()
     {
         if ($this->modelHandle == null) {
+            // AliasController > $internalModelClass = 'OPNsense\Firewall\Alias';
+            // 建立Alias class實例?
             $this->modelHandle = (new \ReflectionClass(static::$internalModelClass))->newInstance();
         }
 
