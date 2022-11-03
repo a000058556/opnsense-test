@@ -217,7 +217,6 @@ class NetworkinsightController extends ApiControllerBase
         $allInterfaces = array();
         // children() 取xml 格式 values
         foreach ($configObj->interfaces->children() as $key => $intf) {
-            echo ($configObj->interfaces);
             $allInterfaces[(string)$intf->if] = empty($intf->descr) ? $key : (string)$intf->descr;
         }
         return $allInterfaces;

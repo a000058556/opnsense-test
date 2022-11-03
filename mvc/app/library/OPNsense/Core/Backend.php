@@ -87,7 +87,7 @@ class Backend
      */
     public function configdRun($event, $detach = false, $timeout = 120, $connect_timeout = 10)
     {
-        $endOfStream = chr(0) . chr(0) . chr(0);
+        $endOfStream = chr(0) . chr(0) . chr(0); // 將 ASCII 碼轉換為字串符
         $errorOfStream = 'Execute error';
         $poll_timeout = 2; // poll timeout interval
 
@@ -117,8 +117,10 @@ class Backend
 
         stream_set_timeout($stream, $poll_timeout);
         // send command
+        // $detach = false
+        // $event = "netflow aggregate metadata json"
         if ($detach) {
-            // fwrite() 把 string 的內容寫入文件指針 file 處。fwrite() 返回寫入的字符數，出現錯誤時則返回 false。
+            // fwrite() 把 string 的內容寫入文件。fwrite()出現錯誤時則返回 false。
             fwrite($stream, '&' . $event);
         } else {
             fwrite($stream, $event);
@@ -152,6 +154,11 @@ class Backend
         }
 
         return str_replace($endOfStream, '', $resp);
+        // str_replace(find,replace,string,count)
+        //  find	必需。要查找的值。 $endOfStream = chr(0) . chr(0) . chr(0);
+        //  replace	必需。替換find中的值的值。
+        //  string	必需。被搜索的字符串。
+        //  count	可選。一個變量，對替換數進行計數。
     }
 
     /**
