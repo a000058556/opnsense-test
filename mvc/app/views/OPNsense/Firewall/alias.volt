@@ -137,6 +137,7 @@
 
         /**
          * fetch regions and countries for geoip selection
+         * Edit Alias的type GeoIP的國家選項
          */
         ajaxGet("/api/firewall/alias/listCountries", {}, function(data){
             var regions = [];
@@ -206,6 +207,7 @@
 
         /**
          * hook network group type changes, replicate content
+         * Edit Alias的type network group 的選項
          */
         $("#network_content").change(function(){
             let $content = $("#alias\\.content");
