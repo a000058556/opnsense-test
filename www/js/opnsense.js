@@ -253,23 +253,49 @@ function ajaxGet(url,sendData,callback) {
  * watch scroll position and set to last known on page load
  */
 function watchScrollPosition() {
+    // 取當前位置
     function current_location() {
         // concat url pieces to identify this page and parameters
+        // 透過url的內容來識別頁面
+        // 透過window元素取得頁面網址，並透過replace()將指定符號轉換為無，轉換後範例:https13021125129firewall_rulesphp
         return window.location.href.replace(/\/|\:|\.|\?|\#/gi, '');
     }
+
+    // 將一些不重要但常用到的資料存在用戶端:
+    // localStorage特性
+    // 1.不會過期、除非手動清除
+    // 2.大小預設有 5mb
+    // 3.每次 request 不會帶上
+
+    // sessionStorage特性
+    // 1.每次分頁或瀏覽器關掉後清除
+    // 2.大小預設有 5mb
+    // 3.每次 request 不會帶上
+
+    // 可以在瀏覽器的開發者工具查看
+    // Application > Stroage > Session Storage
 
     // link on scroll event handler
     if (window.sessionStorage) {
         var $window = $(window);
+        // window.scroll() 用來捲動網頁的捲軸到指定的網頁座標
         $window.scroll(function(){
+        // 透過 setItem() 方法中指定物件屬性的 key 以及 value ，
+        // 在sessionStorage中加入key('scrollpos')及 value(https13021125129firewall_rulesphp|88)。
+        // scrollTop() 方法返回或設置匹配元素的滾動條的垂直位置。
             sessionStorage.setItem('scrollpos', current_location() + "|" + $window.scrollTop());
         });
 
         // move to last known position on page load
+        // 移動到頁面加載時的最後已知位置
         $(document).ready(function() {
+            // 取得頁面最後位置
             var scrollpos = sessionStorage.getItem('scrollpos');
+            // 當最後位置不為空值時
             if (scrollpos != null) {
+                // 當最後頁面紀錄等於現在頁面(EX : https13021125129firewall_rulesphp)
                 if (scrollpos.split('|')[0] === current_location()) {
+                    // 將頁面捲至上次最後位置(EX : 88)
                     $window.scrollTop(scrollpos.split('|')[1]);
                 }
             }
