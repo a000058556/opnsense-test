@@ -181,6 +181,8 @@ if __name__ == '__main__':
         fhandle.write(output) # 將output寫入文件
         fhandle.close() # 關閉檔案
         print(output) # 回傳output
+        print ('new')
     else:
         # output 
+        print ('old')
         print (ujson.dumps(results)) # 將dict類型的數據轉換成str
