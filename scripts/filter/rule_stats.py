@@ -111,8 +111,8 @@ if __name__ == '__main__':
         prev_line = ''
         # 將sp.stdout取得的資料以換行(/n)做切割放入rline
         for rline in sp.stdout.split('\n') + []:
-            print('------------------------')
-            print(rline)
+            # print('---------載入順序----------')
+            # print(rline)
             # .strip()將單行的資料去掉開頭/結尾的空格
             # 範例: line = [ Evaluations: 37978     Packets: 37352     Bytes: 2751823     States: 0     ]
             line = rline.strip()
@@ -137,6 +137,8 @@ if __name__ == '__main__':
                                 # results = {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}}
                                 # stats = {'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}
                                 for key in stats:
+                                    print('///////////////要被加的stats////////////////')
+                                    print(stats)
                                     # 如果stats的參數(pf_rules、evaluations等) 有 在results[rule_md5]中
                                     if key in results[rule_md5]:
                                         if key == 'pf_rules':
@@ -148,11 +150,15 @@ if __name__ == '__main__':
                                     # 如果stats的參數(pf_rules、evaluations等) 沒 在results[rule_md5]中
                                     else:
                                         results[rule_md5][key] = stats[key]
+                                print('++++++++++++++label相加+++++++++++++++')
+                                print(results)
                             else:
                                 # 若rule_md5 沒在 results中
                                 # 在results字典中新建{key(rule_md5) : stats(dict())}
                                 # 第一次進來的rule_md5會是這樣 {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1}}
                                 results[rule_md5] = stats
+                                print('++++++++++++++新label+++++++++++++++')
+                                print(results)
                 # reset for next rule 為下一個規則重設
                 prev_line = line
                 stats = {'pf_rules': 1}
@@ -175,6 +181,8 @@ if __name__ == '__main__':
                         stats[parts[i].lower()] = int(parts[i+1]) # 這裡第一次觸發時stats = {'pf_rules': 1} ，並將parts資料寫入stats
                         # 當results[rule_md5]有資料時，這裡才會將資料寫入results[rule_md5] = stats
                         # 結果: {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}}
+                        print ('------stats------')
+                        print (stats)
         output = ujson.dumps(results) # 將dict類型的數據轉換成str
         fhandle.seek(0) # 指標移到開頭
         fhandle.truncate() # 清除文件內容
