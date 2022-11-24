@@ -111,8 +111,8 @@ if __name__ == '__main__':
         prev_line = ''
         # 將sp.stdout取得的資料以換行(/n)做切割放入rline
         for rline in sp.stdout.split('\n') + []:
-            # print('---------載入順序----------')
-            # print(rline)
+            print('---------載入順序----------')
+            print(rline)
             # .strip()將單行的資料去掉開頭/結尾的空格
             # 範例: line = [ Evaluations: 37978     Packets: 37352     Bytes: 2751823     States: 0     ]
             line = rline.strip()
