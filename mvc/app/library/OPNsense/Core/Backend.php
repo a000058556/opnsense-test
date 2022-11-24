@@ -87,6 +87,7 @@ class Backend
      */
     public function configdRun($event, $detach = false, $timeout = 120, $connect_timeout = 10)
     {
+        // 範例: $event = filter rule stats
         $endOfStream = chr(0) . chr(0) . chr(0); // 將 ASCII 碼轉換為字串符
         $errorOfStream = 'Execute error';
         $poll_timeout = 2; // poll timeout interval
@@ -96,12 +97,18 @@ class Backend
         $errorMessage = "";
         // configdSocket = /var/run/configd.socket
         while ( 
+            // 當找不到configdSocket檔案 或 無法打開configdSocket檔案時
             !file_exists($this->configdSocket) ||
+            // stream_socket_client()用於打開Internet或Unix域套接字(範例 unix:///var/run/configd.socket)
+            // 被呼叫的內容在: /opnsense/service/conf/actions.d 中
+            // 例如: configdRun("filter rule stats") 就是呼叫 /opnsense/service/conf/actions.d/actions_filter.conf > [rule.stats]
             ($stream = @stream_socket_client('unix://' . $this->configdSocket, $errorNumber, $errorMessage, $poll_timeout)) === false
         ) {
             // 若找不到configd.socket檔
             sleep(1);
             $timeout_wait -= 1;
+            // 當嘗試時間<=0時
+            // 回傳null ，並送出錯誤訊息
             if ($timeout_wait <= 0) {
                 if (file_exists($this->configdSocket)) {
                     $this->getLogger()->error("Failed to connect to configd socket: $errorMessage while executing " . $event);
@@ -115,39 +122,56 @@ class Backend
 
         $resp = '';
 
+        // 設置讀取資料的超時時間
         stream_set_timeout($stream, $poll_timeout);
         // send command
-        // $detach = false
-        // $event = "netflow aggregate metadata json"
+        // $detach = true 執行 fwrite($stream, '&' . $event);
+        // $detach = false 則執行 fwrite($stream, $event);
+        // 範例: $event = "netflow aggregate metadata json"
+        // 範例: $event = filter rule stats
+        // $stream = @stream_socket_client('unix://' . $this->configdSocket, $errorNumber, $errorMessage, $poll_timeout)
         if ($detach) {
-            // fwrite() 把 string 的內容寫入文件。fwrite()出現錯誤時則返回 false。
+            // fwrite() 把 string 的內容寫入文件。成功時返回寫入的字符數，出現錯誤時則返回 false。
             fwrite($stream, '&' . $event);
         } else {
             fwrite($stream, $event);
         }
 
         // read response data
-        $starttime = time();
+        $starttime = time(); // 取得開始時間
         while (true) {
+            // stream_get_contents()在已打開的流資源上操作並返回字符串中的剩餘內容
+            // stream_get_contents(resource $stream, ?int $length = null, int $offset = -1): string|false
+            // $stream = 資源流
+            // $length = 要讀取的最大字節數。默認為null(讀取全部)
+            // $offset = 讀取前尋找指定的偏移量。如果此數字是負數，則不會發生查找，並且從當前位置開始讀取
             $resp = $resp . stream_get_contents($stream);
 
+            // $errorOfStream = 'Execute error';
             if (strpos($resp, $endOfStream) !== false) {
                 // end of stream detected, exit
                 break;
             }
 
             // handle timeouts
+            // 當現在時間減去開始時間>時間限時
             if ((time() - $starttime) > $timeout) {
+                // 傳送錯誤訊息
                 $this->getLogger()->error("Timeout (" . $timeout . ") executing : " . $event);
                 return null;
             } elseif (feof($stream)) {
+                // feof() 函數檢測是否已到達文件末尾 (eof)。
+                // 如果文件指針到了 EOF 或者出錯時(中途段開鏈接)則返回 TRUE，否則返回一個錯誤（包括 socket 超時），其它情況則返回 FALSE。
                 $this->getLogger()->error("Configd disconnected while executing : " . $event);
                 return null;
             }
         }
 
         if (
+            // 取$resp字串長度比較$errorOfStream字串長度
             strlen($resp) >= strlen($errorOfStream) &&
+            // 從0開始取$errorOfStream的字串長度 若 = $errorOfStream
+            // 回傳null
             substr($resp, 0, strlen($errorOfStream)) == $errorOfStream
         ) {
             return null;

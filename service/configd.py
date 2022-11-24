@@ -65,7 +65,12 @@ def validate_config(cnf):
     """ validate configuration, exit on missing item
         :param cnf: config handle
     """
+    # 取出範例:
+    # [main]
+    # socket_filename:/var/run/configd.socket
+    # pid_filename:/var/run/configd.pid
     for config_item in ['socket_filename', 'pid_filename']:
+        # 若沒有[main]資料回傳錯誤訊息
         if cnf.has_section('main') == False or cnf.has_option('main', config_item) == False:
             print('configuration item main/%s not found in %s/conf/configd.conf' % (config_item, program_path))
             sys.exit(0)

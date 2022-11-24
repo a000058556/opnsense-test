@@ -53,13 +53,16 @@ def exec_config_cmd(exec_command):
     # Create and open unix domain socket
     try:
         sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+        # 套接字(SOCK_STREAM)，提供一個順序化的、可靠的、全雙工的、基於連接的字節流。支持數據傳送流量控制機制。
         sock.connect(configd_socket_name)
+        # 與configd.socket建立連線
     except socket.error:
         syslog_error('unable to connect to configd socket (@%s)'%configd_socket_name)
         print('unable to connect to configd socket (@%s)'%configd_socket_name, file=sys.stderr)
         return None
 
     try:
+        # 送入指令
         sock.send(exec_command.encode())
         data = []
         while True:
