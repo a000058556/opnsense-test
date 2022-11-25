@@ -120,13 +120,15 @@ if __name__ == '__main__':
             if len(line) == 0 or line[0] != '[':
                 # 當prev_line中有label時 (-1 等於沒找到)
                 if prev_line.find(' label ') > -1:
-                    # lbl = prev_linem用label切開取最後一筆資料。
+                    # lbl = prev_linem用label切開後，取最後一筆資料。
                     lbl = prev_line.split(' label ')[-1]
                     # count('"')返回字符串在字符串中出現的次數
-                    # 當字符"出現2次以上時
+                    # 當字符"出現2次或以上時
                     if lbl.count('"') >= 2:
                         # 將lbl以('"') 切割 取地[1]位放入 rule_md5 (放入範例: 02f4bab031b57d1e30553ce08e0ec131)
                         rule_md5 = lbl.split('"')[1]
+                        print ("***********rule_mb5***********")
+                        print (rule_md5)
                         # 若rule_md5字數 == 32 並確認rule_md5內的元素都包含在hex_digits中
                         # set.issubset(set)用于判断集合的所有元素是否都包含在指定集合中
                         if len(rule_md5) == 32 and set(rule_md5).issubset(hex_digits):
@@ -137,6 +139,7 @@ if __name__ == '__main__':
                                 # results = {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}}
                                 # stats = {'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}
                                 for key in stats:
+                                    print ("***********in results***********")
                                     print('///////////////要被加的stats////////////////')
                                     print(stats)
                                     # 如果stats的參數(pf_rules、evaluations等) 有 在results[rule_md5]中
@@ -153,6 +156,7 @@ if __name__ == '__main__':
                                 print('++++++++++++++label相加+++++++++++++++')
                                 print(results)
                             else:
+                                print ("***********not in results***********")
                                 # 若rule_md5 沒在 results中
                                 # 在results字典中新建{key(rule_md5) : stats(dict())}
                                 # 第一次進來的rule_md5會是這樣 {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1}}
