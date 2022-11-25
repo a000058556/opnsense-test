@@ -175,9 +175,11 @@ if __name__ == '__main__':
                                 print('++++++++++++++新label+++++++++++++++')
                                 print(results)
                 # reset for next rule 為下一個規則重設
-                print('---------label not in prev_line ----------')
+                # 當label not in prev_line時(第一次讀取到label時會進到這裡)
+                print('--------- prev_line = line ----------')
                 prev_line = line
-                print('---------將 label 加入 prev_line ----------')
+                print('---------將 label 放入 prev_line 中覆蓋內容----------')
+                print('---------為下個 label 做準備----------')
                 print(prev_line)
                 stats = {'pf_rules': 1}
             # 當開頭='[' and line中有Evaluations字串時
