@@ -168,11 +168,18 @@ abstract class ApiMutableModelControllerBase extends ApiControllerBase
      * @return null|BaseModel
      * @throws \ReflectionException
      */
+
+     // private $modelHandle = null;
     protected function getModel()
     {
         if ($this->modelHandle == null) {
             // AliasController > $internalModelClass = 'OPNsense\Firewall\Alias';
-            // 建立Alias class實例?
+            // 建立Alias class實例
+
+            // protected static $internalModelClass = 'OPNsense\Firewall\Category';
+            // 讀取app\models\OPNsense\Firewall\Category.php
+            // 透過ReflectionClass讀取某個class內有哪些方法(method)或是屬性
+            // newInstance()建立一個實例
             $this->modelHandle = (new \ReflectionClass(static::$internalModelClass))->newInstance();
         }
 
@@ -315,13 +322,43 @@ abstract class ApiMutableModelControllerBase extends ApiControllerBase
      * @return array
      * @throws \ReflectionException when binding to the model class fails
      */
+
+    // CategoryController.php > searchBase("categories.category", array('name', 'auto', 'color'), "name");
+    // CategoryController.php > $internalModelName = 'category';
+    // CategoryController.php > $internalModelClass = 'OPNsense\Firewall\Category';
     public function searchBase($path, $fields, $defaultSort = null, $filter_funct = null, $sort_flags = SORT_NATURAL)
     {
         $this->sessionClose();
+        // 使用$internalModelClass建立Model實例
         $element = $this->getModel();
+        // explode('.', $path); = array( [0] => categories [1] => category)
+        // foreach (array() as $step)
         foreach (explode('.', $path) as $step) {
+            // 將$path依序帶入$element = $this->getModel();中
             $element = $element->{$step};
         }
+        // 取得Category.xml
+        // <categories>
+        //    <category type="ArrayField">
+        //         <name type="TextField">
+        //             <Required>Y</Required>
+        //             <Constraints>
+        //                 <check001>
+        //                     <ValidationMessage>A category with this name already exists.</ValidationMessage>
+        //                     <type>UniqueConstraint</type>
+        //                 </check001>
+        //             </Constraints>
+        //         </name>
+        //         <auto type="BooleanField">
+        //             <default>0</default>
+        //         </auto>
+        //         <color type="TextField">
+        //             <Required>N</Required>
+        //             <mask>/^([0-9a-fA-F]){6,6}$/u</mask>
+        //             <ValidationMessage>A valid color code consists of 6 hex digits</ValidationMessage>
+        //         </color>
+        //     </category>
+        // </categories>
         $grid = new UIModelGrid($element);
         return $grid->fetchBindRequest(
             $this->request,

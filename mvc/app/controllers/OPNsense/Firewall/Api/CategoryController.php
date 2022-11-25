@@ -60,6 +60,7 @@ class CategoryController extends ApiMutableModelControllerBase
      */
     public function searchNoCategoryItemAction()
     {
+        // 調用ApiMutableModelControllerBase.php > searchBase()
         $result = $this->searchBase("categories.category", array('name', 'auto', 'color'), "name");
         array_unshift($result['rows'], array('uuid' => "", 'name' => gettext("(No Category)"), 'auto' => "", 'color' => ""));
         return $result;
