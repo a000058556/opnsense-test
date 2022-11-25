@@ -120,14 +120,15 @@ if __name__ == '__main__':
             # .strip()將單行的資料去掉開頭/結尾的空格
             # 範例: line = [ Evaluations: 37978     Packets: 37352     Bytes: 2751823     States: 0     ]
             line = rline.strip()
-            print('---------載入並.strip()後----------')
-            print(line)
+            # print('---------載入並.strip()後----------')
+            # print(line)
             # 當單行資料長度==0 或 開頭不是'['時
             if len(line) == 0 or line[0] != '[':
                 # 當prev_line中有label時 (-1 等於沒找到)
+                print('---------prev_line內容----------')
+                print(prev_line)
                 if prev_line.find(' label ') > -1:
-                    print('---------prev_line內容----------')
-                    print(prev_line)
+                    print('---------label有在prev_line中----------')
                     # lbl = prev_linem用label切開後，取最後一筆資料。
                     lbl = prev_line.split(' label ')[-1]
                     # count('"')返回字符串在字符串中出現的次數
@@ -174,7 +175,10 @@ if __name__ == '__main__':
                                 print('++++++++++++++新label+++++++++++++++')
                                 print(results)
                 # reset for next rule 為下一個規則重設
+                print('---------label not in prev_line ----------')
                 prev_line = line
+                print('---------將 label 加入 prev_line ----------')
+                print(prev_line)
                 stats = {'pf_rules': 1}
             # 當開頭='[' and line中有Evaluations字串時
             # 當還沒觸發if len(line) == 0 or line[0] != '[': 前，進到這裡的資料不會被回傳(一直覆寫)。
