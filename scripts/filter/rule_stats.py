@@ -69,6 +69,8 @@ if __name__ == '__main__':
         #         0代表從文件開頭開始算起，1代表從當前位置開始算起，2代表從文件末尾算起。
         # 返回值: 成功返回新的文件位置，失敗則函數返回-1。
         results = ujson.loads(fhandle.read())
+        print('---------讀取檔案results----------')
+        print(results)
         # fileObject.read([size]); 從文件讀取指定的字節數-1表示讀取整個文件。
         # size -- 從文件中讀取的字節數，默認為-1
 
@@ -97,6 +99,8 @@ if __name__ == '__main__':
                 sys.exit(0) # 無錯誤退出
 
         results = dict() # 重置results內容
+        print('---------重置results內容??----------')
+        print(results)
         hex_digits = set("0123456789abcdef") # 建立驗證用集合
         # subprocess.run() 執行外部命令，指令以字串形式帶入 
         # 對Packet Filter下指令(man pfctl 可以看指令手冊)
@@ -129,6 +133,8 @@ if __name__ == '__main__':
                         rule_md5 = lbl.split('"')[1]
                         print ("***********rule_mb5***********")
                         print (rule_md5)
+                        print ("***********此時的results***********")
+                        print (results)
                         # 若rule_md5字數 == 32 並確認rule_md5內的元素都包含在hex_digits中
                         # set.issubset(set)用于判断集合的所有元素是否都包含在指定集合中
                         if len(rule_md5) == 32 and set(rule_md5).issubset(hex_digits):
