@@ -69,8 +69,8 @@ if __name__ == '__main__':
         #         0代表從文件開頭開始算起，1代表從當前位置開始算起，2代表從文件末尾算起。
         # 返回值: 成功返回新的文件位置，失敗則函數返回-1。
         results = ujson.loads(fhandle.read())
-        print('---------讀取檔案results----------')
-        print(results)
+        # print('---------讀取檔案results----------')
+        # print(results)
         # fileObject.read([size]); 從文件讀取指定的字節數-1表示讀取整個文件。
         # size -- 從文件中讀取的字節數，默認為-1
 
@@ -99,8 +99,8 @@ if __name__ == '__main__':
                 sys.exit(0) # 無錯誤退出
 
         results = dict() # 重置results內容
-        print('---------重置results內容----------')
-        print(results)
+        # print('---------重置results內容----------')
+        # print(results)
         hex_digits = set("0123456789abcdef") # 建立驗證用集合
         # subprocess.run() 執行外部命令，指令以字串形式帶入 
         # 對Packet Filter下指令(man pfctl 可以看指令手冊)
@@ -115,8 +115,8 @@ if __name__ == '__main__':
         prev_line = ''
         # 將sp.stdout取得的資料以換行(/n)做切割放入rline
         for rline in sp.stdout.split('\n') + []:
-            print('---------載入順序----------')
-            print(rline)
+            # print('---------載入順序----------')
+            # print(rline)
             # .strip()將單行的資料去掉開頭/結尾的空格
             # 範例: line = [ Evaluations: 37978     Packets: 37352     Bytes: 2751823     States: 0     ]
             line = rline.strip()
@@ -125,10 +125,10 @@ if __name__ == '__main__':
             # 當單行資料長度==0 或 開頭不是'['時
             if len(line) == 0 or line[0] != '[':
                 # 當prev_line中有label時 (-1 等於沒找到)
-                print('---------prev_line內容----------')
-                print(prev_line)
+                # print('---------prev_line內容----------')
+                # print(prev_line)
                 if prev_line.find(' label ') > -1:
-                    print('---------label有在prev_line中----------')
+                    # print('---------label有在prev_line中----------')
                     # lbl = prev_linem用label切開後，取最後一筆資料。
                     lbl = prev_line.split(' label ')[-1]
                     # count('"')返回字符串在字符串中出現的次數
@@ -136,10 +136,10 @@ if __name__ == '__main__':
                     if lbl.count('"') >= 2:
                         # 將lbl以('"') 切割 取地[1]位放入 rule_md5 (放入範例: 02f4bab031b57d1e30553ce08e0ec131)
                         rule_md5 = lbl.split('"')[1]
-                        print ("***********rule_mb5***********")
-                        print (rule_md5)
-                        print ("***********此時的results***********")
-                        print (results)
+                        # print ("***********rule_mb5***********")
+                        # print (rule_md5)
+                        # print ("***********此時的results***********")
+                        # print (results)
                         # 若rule_md5字數 == 32 並確認rule_md5內的元素都包含在hex_digits中
                         # set.issubset(set)用于判断集合的所有元素是否都包含在指定集合中
                         if len(rule_md5) == 32 and set(rule_md5).issubset(hex_digits):
@@ -150,9 +150,9 @@ if __name__ == '__main__':
                                 # results = {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}}
                                 # stats = {'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}
                                 for key in stats:
-                                    print ("***********in results***********")
-                                    print('///////////////要被加的stats////////////////')
-                                    print(stats)
+                                    # print ("***********in results***********")
+                                    # print('///////////////要被加的stats////////////////')
+                                    # print(stats)
                                     # 如果stats的參數(pf_rules、evaluations等) 有 在results[rule_md5]中
                                     if key in results[rule_md5]:
                                         if key == 'pf_rules':
@@ -164,23 +164,23 @@ if __name__ == '__main__':
                                     # 如果stats的參數(pf_rules、evaluations等) 沒 在results[rule_md5]中
                                     else:
                                         results[rule_md5][key] = stats[key]
-                                print('++++++++++++++label相加+++++++++++++++')
-                                print(results)
+                                # print('++++++++++++++label相加+++++++++++++++')
+                                # print(results)
                             else:
-                                print ("***********not in results***********")
+                                # print ("***********not in results***********")
                                 # 若rule_md5 沒在 results中
                                 # 在results字典中新建{key(rule_md5) : stats(dict())}
                                 # 第一次進來的rule_md5會是這樣 {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1}}
                                 results[rule_md5] = stats
-                                print('++++++++++++++新label+++++++++++++++')
-                                print(results)
+                                # print('++++++++++++++新label+++++++++++++++')
+                                # print(results)
                 # reset for next rule 為下一個規則重設
                 # 當label not in prev_line時(第一次讀取到label時會進到這裡)
-                print('--------- prev_line = line ----------')
+                # print('--------- prev_line = line ----------')
                 prev_line = line
-                print('---------將 label 放入 prev_line 中覆蓋內容----------')
-                print('---------為下個 label 做準備----------')
-                print(prev_line)
+                # print('---------將 label 放入 prev_line 中覆蓋內容----------')
+                # print('---------為下個 label 做準備----------')
+                # print(prev_line)
                 stats = {'pf_rules': 1}
             # 當開頭='[' and line中有Evaluations字串時
             # 當還沒觸發if len(line) == 0 or line[0] != '[': 前，進到這裡的資料不會被回傳(一直覆寫)。
@@ -201,16 +201,16 @@ if __name__ == '__main__':
                         stats[parts[i].lower()] = int(parts[i+1]) # 這裡第一次觸發時stats = {'pf_rules': 1} ，並將parts資料寫入stats
                         # 當results[rule_md5]有資料時，這裡才會將資料寫入results[rule_md5] = stats
                         # 結果: {"02f4bab031b57d1e30553ce08e0ec131":{'pf_rules': 1, 'evaluations': 5063, 'packets': 35, 'bytes': 3674, 'states': 0}}
-                        print ('------stats------')
-                        print (stats)
+                        # print ('------stats------')
+                        # print (stats)
         output = ujson.dumps(results) # 將dict類型的數據轉換成str
         fhandle.seek(0) # 指標移到開頭
         fhandle.truncate() # 清除文件內容
         fhandle.write(output) # 將output寫入文件
         fhandle.close() # 關閉檔案
         print(output) # 回傳output
-        print ('new')
+        # print ('new')
     else:
         # output 
-        print ('old')
+        # print ('old')
         print (ujson.dumps(results)) # 將dict類型的數據轉換成str

@@ -43,6 +43,7 @@ class FilterUtilController extends ApiControllerBase
     public function ruleStatsAction()
     {
         $this->sessionClose();
+        // 使用configdRun()帶入參數取得資料
         $result = json_decode((new Backend())->configdRun("filter rule stats"), true);
         if ($result !== null) {
             return ["status" => "ok", "stats" => $result];
