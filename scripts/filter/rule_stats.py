@@ -126,6 +126,8 @@ if __name__ == '__main__':
             if len(line) == 0 or line[0] != '[':
                 # 當prev_line中有label時 (-1 等於沒找到)
                 if prev_line.find(' label ') > -1:
+                print('---------prev_line內容----------')
+                print(prev_line)
                     # lbl = prev_linem用label切開後，取最後一筆資料。
                     lbl = prev_line.split(' label ')[-1]
                     # count('"')返回字符串在字符串中出現的次數
