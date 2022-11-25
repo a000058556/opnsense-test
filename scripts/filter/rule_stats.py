@@ -99,7 +99,7 @@ if __name__ == '__main__':
                 sys.exit(0) # 無錯誤退出
 
         results = dict() # 重置results內容
-        print('---------重置results內容??----------')
+        print('---------重置results內容----------')
         print(results)
         hex_digits = set("0123456789abcdef") # 建立驗證用集合
         # subprocess.run() 執行外部命令，指令以字串形式帶入 
@@ -120,6 +120,8 @@ if __name__ == '__main__':
             # .strip()將單行的資料去掉開頭/結尾的空格
             # 範例: line = [ Evaluations: 37978     Packets: 37352     Bytes: 2751823     States: 0     ]
             line = rline.strip()
+            print('---------載入並.strip()後----------')
+            print(line)
             # 當單行資料長度==0 或 開頭不是'['時
             if len(line) == 0 or line[0] != '[':
                 # 當prev_line中有label時 (-1 等於沒找到)
