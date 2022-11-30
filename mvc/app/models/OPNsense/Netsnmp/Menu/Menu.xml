@@ -1,0 +1,7 @@
+<menu>
+  <Services>
+    <NTP order="110" VisibleName="Network Time" cssClass="fa fa-clock-o fa-fw">
+      <Net-SNMP order="60" cssClass="fa fa-database" url="/ui/netsnmp/general/index" />
+    </NTP>
+  </Services>
+</menu>
