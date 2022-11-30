@@ -6,7 +6,6 @@
             <PPS order="30" url="/services_ntpd_pps.php"/>
             <Status order="40" url="/status_ntpd.php"/>
             <Log order="50" VisibleName="Log File" url="/ui/diagnostics/log/core/ntpd"/>
-            <NetSNMP order="60" VisibleName="Net-SNMP" url="/ui/netsnmp/general/index" cssClass="fa fa-database"/>
         </NTP>
     </Services>
 </menu>
