@@ -1,11 +1,10 @@
 <menu>
     <Services>
-        <CaptivePortal order="40" VisibleName="Captive Portal" cssClass="fa fa-paper-plane-o fa-fw">
+        <CaptivePortal VisibleName="Captive Portal" cssClass="fa fa-paper-plane-o fa-fw">
             <Administration order="10" url="/ui/captiveportal"/>
             <Sessions order="20" url="/ui/captiveportal/session"/>
             <Vouchers order="30" url="/ui/captiveportal/voucher"/>
             <Log order="40" VisibleName="Log File" url="/ui/diagnostics/log/core/portalauth"/>
-            <Collectd order="50" url="/ui/collectd/general/index" cssClass="fa fa-area-chart"/>
         </CaptivePortal>
     </Services>
 </menu>
