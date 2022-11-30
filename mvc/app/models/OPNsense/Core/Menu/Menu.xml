@@ -84,7 +84,7 @@
             <Wizard url="/wizard.php?xml=system" cssClass="fa fa-magic fa-fw"/>
             <Power order="170" cssClass="fa fa-plug" url="/ui/core/power" VisibleName="Power" />
         </Settings>
-        <Trust order="90" cssClass="fa fa-certificate fa-fw">
+        <!-- <Trust order="90" cssClass="fa fa-certificate fa-fw">
             <Authorities url="/system_camanager.php">
                 <Edit url="/system_camanager.php*" visibility="hidden"/>
             </Authorities>
@@ -95,7 +95,7 @@
                 <Edit url="/system_crlmanager.php*" visibility="hidden"/>
             </Revocation>
         </Trust>
-        <Wizard order="100" url="/wizard.php?xml=system" cssClass="fa fa-magic fa-fw"/>
+        <Wizard order="100" url="/wizard.php?xml=system" cssClass="fa fa-magic fa-fw"/> -->
         <LogFiles order="150" VisibleName="Log Files" cssClass="fa fa-eye fa-fw">
             <Audit url="/ui/diagnostics/log/core/audit"/>
             <Backend url="/ui/diagnostics/log/core/configd"/>
@@ -141,6 +141,15 @@
             <LAGG url="/interfaces_lagg.php">
                 <Edit url="/interfaces_lagg_edit.php*" visibility="hidden"/>
             </LAGG>
+            <Loopback url="/ui/interfaces/loopback">
+                <Edit url="/ui/interfaces/loopback*" visibility="hidden"/>
+            </Loopback>
+            <VLAN url="/ui/interfaces/vlan">
+                <Edit url="/ui/interfaces/vlan*" visibility="hidden"/>
+            </VLAN>
+            <VXLAN url="/ui/interfaces/vxlan">
+                <Edit url="/ui/interfaces/vxlan*" visibility="hidden"/>
+            </VXLAN>
         </Types>
         <Diagnostics order="970" cssClass="fa fa-medkit fa-fw">
             <DNSLookup VisibleName="DNS Lookup" url="/ui/diagnostics/dns_diagnostics"/>
