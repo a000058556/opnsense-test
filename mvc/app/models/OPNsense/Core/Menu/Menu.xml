@@ -36,6 +36,11 @@
                 <none url="/diag_confbak.php*" visibility="hidden"/>
             </History>
         </Configuration>
+        <Diagnostics order="160" cssClass="fa fa-medkit fa-fw">
+            <Services url="/status_services.php">
+                <All url="/status_services.php?*" visibility="hidden"/>
+            </Services>
+        </Diagnostics>
         <Firmware cssClass="fa fa-building-o fa-fw">
             <Status order="10" url="/ui/core/firmware#status"/>
             <Settings order="20" url="/ui/core/firmware#settings"/>
@@ -94,11 +99,6 @@
             <General url="/ui/diagnostics/log/core/system"/>
             <WebGUI VisibleName="Web GUI" url="/ui/diagnostics/log/core/lighttpd"/>
         </LogFiles>
-        <Diagnostics order="160" cssClass="fa fa-medkit fa-fw">
-            <Services url="/status_services.php">
-                <All url="/status_services.php?*" visibility="hidden"/>
-            </Services>
-        </Diagnostics>
         <!-- 將Power移至System中 -->
         <Power order="170" cssClass="fa fa-plug" url="/ui/core/power" VisibleName="Power" >
             <!-- <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
