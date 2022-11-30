@@ -199,8 +199,12 @@
             <Statistics order="40" url="/ui/diagnostics/firewall/statistics"/>
         </Diagnostics>
         <Automation order="600" cssClass="fa fa-medkit fa-fw">
-            <Filter order="10" url="/ui/firewall/filter/"/>
-            <SourceNAT VisibleName="Source NAT" order="10" url="/ui/firewall/source_nat/"/>
+            <Filter order="50" url="/ui/firewall/filter/">
+                <FilterRef url="/ui/firewall/filter#*"/>
+            </Filter>
+            <SourceNat order="100" VisibleName="Source NAT" url="/ui/firewall/source_nat/">
+                <FilterRef url="/ui/firewall/source_nat#*"/>
+            </SourceNat>
         </Automation>
         <LogFiles order="400" VisibleName="Log Files" cssClass="fa fa-eye fa-fw">
             <General VisibleName="General" url="/ui/diagnostics/log/core/firewall"/>
