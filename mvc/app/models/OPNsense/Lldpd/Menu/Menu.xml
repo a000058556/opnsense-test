@@ -1,0 +1,7 @@
+<menu>
+  <Services>
+    <IDS order="80" VisibleName="Intrusion Detection" cssClass="fa fa-shield fa-fw">
+      <LLDPd order="110" cssClass="fa fa-binoculars" url="/ui/lldpd/general/index" />
+    </IDS>
+  </Services>
+</menu>
