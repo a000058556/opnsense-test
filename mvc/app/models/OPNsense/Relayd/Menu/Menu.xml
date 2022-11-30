@@ -1,0 +1,9 @@
+<menu>
+   <Services>
+      <Relayd order="130" VisibleName="Inbound Loadbalance" cssClass="fa fa-truck fa-fw">
+         <Settings url="/ui/relayd"/>
+         <Status url="/ui/relayd/status"/>
+         <Log VisibleName="Log File" order="100" url="/ui/diagnostics/log/core/relayd"/>
+      </Relayd>
+   </Services>
+</menu>
