@@ -1,6 +1,6 @@
 <menu>
   <Services>
-    <FreeRADIUS cssClass="fa fa-address-book-o fa-fw">
+    <FreeRADIUS order="70" cssClass="fa fa-address-book-o fa-fw">
       <General url="/ui/freeradius/general/index" order="10"/>
       <Users url="/ui/freeradius/user/index" order="20"/>
       <Clients url="/ui/freeradius/client/index" order="30"/>
