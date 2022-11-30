@@ -151,15 +151,15 @@
                 <Edit url="/ui/interfaces/vxlan*" visibility="hidden"/>
             </VXLAN>
         </Types>
-        <Diagnostics order="970" cssClass="fa fa-medkit fa-fw">
+        <!-- <Diagnostics order="970" cssClass="fa fa-medkit fa-fw">
             <DNSLookup VisibleName="DNS Lookup" url="/ui/diagnostics/dns_diagnostics"/>
             <PacketCapture VisibleName="Packet Capture" url="/diag_packet_capture.php"/>
             <Ping url="/diag_ping.php"/>
             <TestPort VisibleName="Port Probe" url="/diag_testport.php"/>
             <Traceroute VisibleName="Trace Route" url="/diag_traceroute.php"/>
-        </Diagnostics>
+        </Diagnostics> -->
     </Interfaces>
-    <Firewall order="40" cssClass="glyphicon glyphicon-fire">
+    <Firewall VisibleName="StarShield" order="40" cssClass="glyphicon glyphicon-fire">
         <Aliases url="/ui/firewall/alias" cssClass="fa fa-list-alt fa-fw">
             <Edit url="/ui/firewall/alias/*" visibility="hidden"/>
         </Aliases>
@@ -181,29 +181,33 @@
                 <Edit url="/firewall_nat_npt_edit.php*" visibility="hidden"/>
             </NPTv6>
         </NAT>
-        <Rules cssClass="fa fa-check fa-fw" />
+        <Rules VisibleName="Firewall" cssClass="fa fa-check fa-fw" />
         <Settings order="200" cssClass="fa fa-cogs fa-fw">
-            <Schedules url="/firewall_schedule.php">
-                <SchedulesEdit url="/firewall_schedule_edit.php*" visibility="hidden"/>
-            </Schedules>
-            <Normalization url="/firewall_scrub.php">
+            <Advanced order="10" url="/system_advanced_firewall.php"/>
+            <Normalization order="20" url="/firewall_scrub.php">
                 <NormalizationEdit url="/firewall_scrub_edit.php*" visibility="hidden"/>
                 <Normalization url="/firewall_scrub.php*" visibility="hidden"/>
             </Normalization>
-            <Advanced url="/system_advanced_firewall.php"/>
+            <Schedules order="30" url="/firewall_schedule.php">
+                <SchedulesEdit url="/firewall_schedule_edit.php*" visibility="hidden"/>
+            </Schedules>
         </Settings>
         <Diagnostics order="500" cssClass="fa fa-medkit fa-fw">
-            <Aliases url="/ui/firewall/alias_util/"/>
-            <States url="/ui/diagnostics/firewall/states"/>
-            <Sessions url="/ui/diagnostics/firewall/pf_top"/>
-            <Statistics url="/ui/diagnostics/firewall/statistics"/>
+            <Aliases order="10" url="/ui/firewall/alias_util/"/>
+            <Sessions order="20" url="/ui/diagnostics/firewall/pf_top"/>
+            <States order="30" url="/ui/diagnostics/firewall/states"/>
+            <Statistics order="40" url="/ui/diagnostics/firewall/statistics"/>
         </Diagnostics>
-        <LogFiles order="400" VisibleName="Log Files" cssClass="fa fa-eye fa-fw">
+        <Automation order="600" cssClass="fa fa-medkit fa-fw">
+            <Filter order="10" url="/ui/firewall/filter/"/>
+            <SourceNAT VisibleName="Source NAT" order="10" url="/ui/firewall/source_nat/"/>
+        </Automation>
+        <!-- <LogFiles order="400" VisibleName="Log Files" cssClass="fa fa-eye fa-fw">
             <General VisibleName="General" url="/ui/diagnostics/log/core/firewall"/>
             <Live VisibleName="Live View" url="/ui/diagnostics/firewall/log"/>
             <Overview url="/ui/diagnostics/firewall/stats"/>
             <Plain VisibleName="Plain View" url="/ui/diagnostics/log/core/filter"/>
-        </LogFiles>
+        </LogFiles> -->
     </Firewall>
     <Services order="60" cssClass="fa fa-cog">
         <DHCPv4 cssClass="fa fa-bullseye fa-fw">
