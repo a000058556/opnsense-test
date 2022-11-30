@@ -246,6 +246,16 @@
         <OpenDNS VisibleName="OpenDNS" url="/services_opendns.php" cssClass="fa fa-tags fa-fw"/>
         <RouterAdv order="140" VisibleName="Router Advertisements" cssClass="fa fa-bullseye fa-fw" />
     </Services>
+    <Diagnostics order="970" cssClass="fa fa-medkit fa-fw">
+        <ARPTable VisibleName="ARP Table" url="/ui/diagnostics/interface/arp"/>
+        <DNSLookup VisibleName="DNS Lookup" url="/ui/diagnostics/dns_diagnostics"/>
+        <NDPTable VisibleName="NDP Table" url="/ui/diagnostics/interface/ndp"/>
+        <Netstat VisibleName="Netstat" url="/ui/diagnostics/interface/netstat"/>
+        <PacketCapture VisibleName="Packet Capture" url="/ui/diagnostics/packet_capture"/>
+        <Ping url="/diag_ping.php"/>
+        <PortProbe VisibleName="Port Probe" url="/diag_testport.php"/>
+        <TraceRoute VisibleName="Trace Route" url="/diag_traceroute.php"/>
+    </Diagnostics>
     <!-- <Power order="70" cssClass="fa fa-plug">
         <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
         <PowerOff VisibleName="Power Off" order="20" url="/ui/core/halt" cssClass="fa fa-power-off fa-fw"/>
