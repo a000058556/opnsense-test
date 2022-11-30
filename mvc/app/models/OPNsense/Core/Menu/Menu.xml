@@ -37,16 +37,16 @@
             </History>
         </Configuration>
         <Diagnostics order="30" cssClass="fa fa-medkit fa-fw">
-            <Services url="/status_services.php">
+            <!-- <Services url="/status_services.php">
                 <All url="/status_services.php?*" visibility="hidden"/>
-            </Services>
+            </Services> -->
         </Diagnostics>
         <Firmware order="40" cssClass="fa fa-building-o fa-fw">
             <Status order="10" url="/ui/core/firmware#status"/>
-            <Settings order="20" url="/ui/core/firmware#settings"/>
+            <!-- <Settings order="20" url="/ui/core/firmware#settings"/>
             <Changelog order="30" url="/ui/core/firmware#changelog"/>
             <Updates order="40" url="/ui/core/firmware#updates"/>
-            <Plugins order="50" url="/ui/core/firmware#plugins"/>
+            <Plugins order="50" url="/ui/core/firmware#plugins"/> -->
             <Packages order="60" url="/ui/core/firmware#packages"/>
             <Reporter order="70" url="/crash_reporter.php"/>
             <LogFile order="80" VisibleName="Log File" url="/ui/diagnostics/log/core/pkg"/>
@@ -68,6 +68,7 @@
         </HighAvailability>
         <Routes order="70" cssClass="fa fa-map-signs fa-fw">
             <Configuration order="10" url="/ui/routes" />
+            <Status order="90" url="/ui/diagnostics/interface/routes" />
             <LogFile order="100" VisibleName="Log File" url="/ui/diagnostics/log/core/routing"/>
         </Routes>
         <Settings order="80" cssClass="fa fa-cogs fa-fw">
