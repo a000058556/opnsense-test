@@ -15,7 +15,7 @@
         <Traffic url="/ui/diagnostics/traffic" cssClass="fa fa-line-chart fa-fw"/>
     </Reporting>
     <System order="20" cssClass="fa fa-server">
-        <Access cssClass="fa fa-users fa-fw">
+        <Access order="10" cssClass="fa fa-users fa-fw">
             <Users order="10" url="/system_usermanager.php">
                 <All url="/system_usermanager.php*" visibility="hidden"/>
                 <Privileges url="/system_usermanager_addprivs.php?user*" visibility="hidden"/>
@@ -29,19 +29,19 @@
             </Servers>
             <Verification VisibleName="Verification" order="40" url="/diag_authentication.php"/>
         </Access>
-        <Configuration cssClass="fa fa-history fa-fw">
+        <Configuration order="20" cssClass="fa fa-history fa-fw">
             <Backups url="/diag_backup.php"/>
             <Defaults url="/diag_defaults.php"/>
             <History url="/diag_confbak.php">
                 <none url="/diag_confbak.php*" visibility="hidden"/>
             </History>
         </Configuration>
-        <Diagnostics order="160" cssClass="fa fa-medkit fa-fw">
+        <Diagnostics order="30" cssClass="fa fa-medkit fa-fw">
             <Services url="/status_services.php">
                 <All url="/status_services.php?*" visibility="hidden"/>
             </Services>
         </Diagnostics>
-        <Firmware cssClass="fa fa-building-o fa-fw">
+        <Firmware order="40" cssClass="fa fa-building-o fa-fw">
             <Status order="10" url="/ui/core/firmware#status"/>
             <Settings order="20" url="/ui/core/firmware#settings"/>
             <Changelog order="30" url="/ui/core/firmware#changelog"/>
@@ -51,7 +51,7 @@
             <Reporter order="70" url="/crash_reporter.php"/>
             <LogFile order="80" VisibleName="Log File" url="/ui/diagnostics/log/core/pkg"/>
         </Firmware>
-        <Gateways cssClass="fa fa-location-arrow fa-fw">
+        <Gateways order="50" cssClass="fa fa-location-arrow fa-fw">
             <Single order="10" url="/system_gateways.php">
                 <List url="/system_gateways.php*" visibility="hidden"/>
                 <Edit url="/system_gateways_edit.php*" visibility="hidden"/>
@@ -62,15 +62,15 @@
             </Group>
             <LogFile VisibleName="Log File" order="30" url="/ui/diagnostics/log/core/gateways"/>
         </Gateways>
-        <HighAvailability VisibleName="High Availability" cssClass="fa fa-refresh fa-fw">
+        <HighAvailability order="60" VisibleName="High Availability" cssClass="fa fa-refresh fa-fw">
             <Settings order="100" url="/system_hasync.php"/>
             <Status order="200" url="/status_habackup.php"/>
         </HighAvailability>
-        <Routes cssClass="fa fa-map-signs fa-fw">
+        <Routes order="70" cssClass="fa fa-map-signs fa-fw">
             <Configuration order="10" url="/ui/routes" />
             <LogFile order="100" VisibleName="Log File" url="/ui/diagnostics/log/core/routing"/>
         </Routes>
-        <Settings cssClass="fa fa-cogs fa-fw">
+        <Settings order="80" cssClass="fa fa-cogs fa-fw">
             <Administration url="/system_advanced_admin.php"/>
             <General url="/system_general.php">
                 <Edit url="/system_general.php*" visibility="hidden"/>
@@ -81,7 +81,7 @@
                 <Edit url="/system_advanced_sysctl.php*" visibility="hidden"/>
             </Tunables>
         </Settings>
-        <Trust cssClass="fa fa-certificate fa-fw">
+        <Trust order="90" cssClass="fa fa-certificate fa-fw">
             <Authorities url="/system_camanager.php">
                 <Edit url="/system_camanager.php*" visibility="hidden"/>
             </Authorities>
@@ -92,7 +92,7 @@
                 <Edit url="/system_crlmanager.php*" visibility="hidden"/>
             </Revocation>
         </Trust>
-        <Wizard url="/wizard.php?xml=system" cssClass="fa fa-magic fa-fw"/>
+        <Wizard order="100" url="/wizard.php?xml=system" cssClass="fa fa-magic fa-fw"/>
         <LogFiles order="150" VisibleName="Log Files" cssClass="fa fa-eye fa-fw">
             <Audit url="/ui/diagnostics/log/core/audit"/>
             <Backend url="/ui/diagnostics/log/core/configd"/>
