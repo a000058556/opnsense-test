@@ -12,8 +12,6 @@
             <Dot VisibleName="DNS over TLS" order="70" url="/ui/unbound/dot"/>
             <Statistics order="90" url="/ui/unbound/stats"/>
             <LogFile VisibleName="Log File" order="100" url="/ui/diagnostics/log/core/resolver"/>
-            <VnStat order="110" url="/ui/vnstat/general/index" cssClass="fa fa-bar-chart"/>
-            <WakeOnLAN VisibleName="Wake on LAN" order="120" url="/ui/wol" cssClass="fa fa-power-off fa-fw"/>
         </Unbound>
     </Services>
 </menu>
