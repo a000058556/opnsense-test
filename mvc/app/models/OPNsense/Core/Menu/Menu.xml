@@ -27,7 +27,7 @@
             <Servers order="30" url="/system_authservers.php">
                 <Edit url="/system_authservers.php*" visibility="hidden"/>
             </Servers>
-            <Verification order="40" url="/diag_authentication.php"/>
+            <Verification VisibleName="Verification" order="40" url="/diag_authentication.php"/>
         </Access>
         <Configuration cssClass="fa fa-history fa-fw">
             <Backups url="/diag_backup.php"/>
