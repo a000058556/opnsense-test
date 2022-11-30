@@ -13,11 +13,11 @@
             <Status order="20" url="/ui/diagnostics/interface/routes"/>
         </Routes>
     </System>
-    <Interfaces>
+    <!-- <Interfaces>
         <Diagnostics>
             <ARPTable VisibleName="ARP Table" url="/ui/diagnostics/interface/arp"/>
             <NDPTable VisibleName="NDP Table" url="/ui/diagnostics/interface/ndp"/>
             <Netstat VisibleName="Netstat" url="/ui/diagnostics/interface/netstat"/>
         </Diagnostics>
-    </Interfaces>
+    </Interfaces> -->
 </menu>
