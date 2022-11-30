@@ -36,7 +36,7 @@
                 <none url="/diag_confbak.php*" visibility="hidden"/>
             </History>
         </Configuration>
-        <Diagnostics cssClass="fa fa-medkit fa-fw">
+        <Diagnostics order="160" cssClass="fa fa-medkit fa-fw">
             <Services url="/status_services.php">
                 <All url="/status_services.php?*" visibility="hidden"/>
             </Services>
