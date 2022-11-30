@@ -242,8 +242,9 @@
                 <Details url="/status_dhcpv6_leases.php?*" visibility="hidden"/>
             </Leases>
         </DHCPv6>
+        <Collectd order="50" VisibleName="Collectd" url="/ui/collectd/general/index" cssClass="fa fa-area-chart"/>
         <OpenDNS VisibleName="OpenDNS" url="/services_opendns.php" cssClass="fa fa-tags fa-fw"/>
-        <RouterAdv VisibleName="Router Advertisements" cssClass="fa fa-bullseye fa-fw" />
+        <RouterAdv order="140" VisibleName="Router Advertisements" cssClass="fa fa-bullseye fa-fw" />
     </Services>
     <!-- <Power order="70" cssClass="fa fa-plug">
         <Reboot order="10" url="/ui/core/reboot" cssClass="fa fa-repeat fa-fw"/>
