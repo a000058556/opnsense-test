@@ -247,7 +247,7 @@
             </Leases>
         </DHCPv6>
         <Collectd order="50" VisibleName="Collectd" url="/ui/collectd/general/index" cssClass="fa fa-area-chart"/>
-        <OpenDNS VisibleName="OpenDNS" url="/services_opendns.php" cssClass="fa fa-tags fa-fw"/>
+        <OpenDNS order="125" VisibleName="OpenDNS" url="/services_opendns.php" cssClass="fa fa-tags fa-fw"/>
         <RouterAdv order="140" VisibleName="Router Advertisements" cssClass="fa fa-bullseye fa-fw" />
     </Services>
     <Diagnostics order="970" cssClass="fa fa-medkit fa-fw">

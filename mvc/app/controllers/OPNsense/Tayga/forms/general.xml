@@ -1,0 +1,50 @@
+<form>
+    <field>
+        <id>general.enabled</id>
+        <label>Enable</label>
+        <type>checkbox</type>
+        <help>This will activate Tayga.</help>
+    </field>
+    <field>
+        <id>general.v4address</id>
+        <label>IPv4 Address</label>
+        <type>text</type>
+        <help>Should be located in Tayga's IPv4 pool. Tayga requires its own IPv4 address because it acts as a router and needs to be able to send ICMP messages. Tayga will also respond to ICMPv4 echo requests at this address.</help>
+    </field>
+    <field>
+        <id>general.v4destination</id>
+        <label>IPv4 NAT64 Interface Address</label>
+        <type>text</type>
+        <help>IPv4 address of the NAT64 interface. Must not be located in Tayga's IPv4 pool. Only used for ICMP.</help>
+    </field>
+    <field>
+        <id>general.v6address</id>
+        <label>IPv6 Address</label>
+        <type>text</type>
+        <help>If left unspecified, Tayga will construct its IPv6 address by using its IPv4 address and the IPv6 prefix (default). Tayga requires its own IPv6 address because it acts as a router and needs to be able to send ICMP messages. Tayga will also respond to ICMPv6 echo requests at this address.</help>
+    </field>
+    <field>
+        <id>general.v6destination</id>
+        <label>IPv6 NAT64 Interface Address</label>
+        <type>text</type>
+        <help>IPv6 address of the NAT64 interface. Must not have Tayga's IPv6 prefix. Only used for ICMP.</help>
+    </field>
+    <field>
+        <id>general.v6prefix</id>
+        <label>IPv6 Prefix</label>
+        <type>text</type>
+        <help>This must be a /96 prefix selected from your organization's IPv6 address space or the Well-Known Prefix 64:ff9b::/96. The IPv4 address space is mapped into the IPv6 address space by prepending this prefix to the IPv4 address.</help>
+    </field>
+    <field>
+        <id>general.v4pool</id>
+        <label>IPv4 Pool</label>
+        <type>text</type>
+        <help>IPv6 hosts which send traffic through Tayga will be dynamically assigned an IPv4 address from this pool. Can be any size, but each IPv6 host requires one address.</help>
+    </field>
+    <field>
+        <id>general.v6routedisabled</id>
+        <label>Custom IPv6 Routing</label>
+        <type>checkbox</type>
+        <help>This is an advanced setting for selective routing scenarios. It will prevent installing the route which routes the IPv6 Prefix to Tayga. This requires assigning and locking the nat64 interface, enabling dynamic gateway policy, configuring a dynamic IPv6 gateway and adding custom routes.</help>
+    </field>
+</form>

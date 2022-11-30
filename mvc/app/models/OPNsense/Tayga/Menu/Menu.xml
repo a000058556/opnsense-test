@@ -1,0 +1,5 @@
+<menu>
+    <Services>
+      <Tayga order="140" VisibleName="Router Advertisements" cssClass="fa fa-exchange" url="/ui/tayga/general/index" />
+    </Services>
+</menu>
