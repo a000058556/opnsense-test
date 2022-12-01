@@ -270,10 +270,6 @@
         <Support VisibleName="Commercial Support" order="30" url="https://opnsense.org/support-overview/commercial-support/" cssClass="fa fa-phone" IsExternal="Y"/>
     </Help> -->
     <Security order="1000" cssClass="fa fa-shield fa-fw">
-        <Dashboard order="0" url="/index.php" cssClass="fa fa-dashboard fa-fw">
-            <Args url="/index.php*" visibility="hidden"/>
-            <Root url="/" visibility="hidden"/>
-            <RootArgs url="/?*" visibility="hidden"/>
-        </Dashboard>
+        <test VisibleName="test" url="/"/>
     </Security>
 </menu>
