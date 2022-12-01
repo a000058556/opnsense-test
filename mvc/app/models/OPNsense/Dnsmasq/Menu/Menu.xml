@@ -6,7 +6,6 @@
             <Domains url="/services_dnsmasq_domainoverride_edit.php*" visibility="hidden"/>
           </Settings>
           <LogFile VisibleName="Log File" order="50" url="/ui/diagnostics/log/core/dnsmasq"/>
-          <DynamicDNS VisibleName="Dynamic DNS (legacy)" order="60" cssClass="fa fa-tags fa-fw" url="/services_dyndns.php"/>
         </Dnsmasq>
     </Services>
 </menu>

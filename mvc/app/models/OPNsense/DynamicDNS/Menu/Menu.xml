@@ -1,1 +1,8 @@
 
+<menu>
+    <Services>
+        <Dnsmasq order="60" VisibleName="Dnsmasq DNS" cssClass="fa fa-tags fa-fw">
+          <DynamicDNS VisibleName="Dynamic DNS (legacy)" order="60" cssClass="fa fa-tags fa-fw" url="/services_dyndns.php"/>
+        </Dnsmasq>
+    </Services>
+</menu>
