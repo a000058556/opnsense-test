@@ -269,6 +269,11 @@
         <Forum VisibleName="User Forum" order="20" url="https://forum.opnsense.org/" cssClass="fa fa-ticket" IsExternal="Y"/>
         <Support VisibleName="Commercial Support" order="30" url="https://opnsense.org/support-overview/commercial-support/" cssClass="fa fa-phone" IsExternal="Y"/>
     </Help> -->
-    <Security order="1000" cssClass="fa fa-medkit fa-fw">
+    <Security order="1000" cssClass="fa fa-sharp fa-solid fa-shield-keyhole fa-fw">
+        <Dashboard order="0" url="/index.php" cssClass="fa fa-dashboard fa-fw">
+            <Args url="/index.php*" visibility="hidden"/>
+            <Root url="/" visibility="hidden"/>
+            <RootArgs url="/?*" visibility="hidden"/>
+        </Dashboard>
     </Security>
 </menu>
