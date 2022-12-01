@@ -269,6 +269,6 @@
         <Forum VisibleName="User Forum" order="20" url="https://forum.opnsense.org/" cssClass="fa fa-ticket" IsExternal="Y"/>
         <Support VisibleName="Commercial Support" order="30" url="https://opnsense.org/support-overview/commercial-support/" cssClass="fa fa-phone" IsExternal="Y"/>
     </Help> -->
-    <Security order="1000" cssClass="fa fa-solid fa-shield-keyhole fa-fw">
+    <Security order="1000" cssClass="fa fa-medkit fa-fw">
     </Security>
 </menu>
