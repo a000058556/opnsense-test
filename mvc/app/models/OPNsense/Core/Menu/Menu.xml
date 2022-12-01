@@ -160,9 +160,6 @@
         </Diagnostics> -->
     </Interfaces>
     <Firewall VisibleName="StarShield" order="40" cssClass="glyphicon glyphicon-fire">
-        <Aliases url="/ui/firewall/alias" cssClass="fa fa-list-alt fa-fw">
-            <Edit url="/ui/firewall/alias/*" visibility="hidden"/>
-        </Aliases>
         <Categories url="/ui/firewall/category" cssClass="fa fa-tags fa-fw"/>
         <Groups url="/interfaces_groups.php" cssClass="fa fa-sitemap fa-fw">
             <Edit url="/interfaces_groups_edit.php*" visibility="hidden"/>
@@ -270,6 +267,8 @@
         <Support VisibleName="Commercial Support" order="30" url="https://opnsense.org/support-overview/commercial-support/" cssClass="fa fa-phone" IsExternal="Y"/>
     </Help> -->
     <Security order="1000" cssClass="fa fa-shield fa-fw">
-        <test VisibleName="test" url="/"/>
+        <Aliases url="/ui/firewall/alias" cssClass="fa fa-list-alt fa-fw">
+            <Edit url="/ui/firewall/alias/*" visibility="hidden"/>
+        </Aliases>
     </Security>
 </menu>
