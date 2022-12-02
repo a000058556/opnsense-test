@@ -8290,7 +8290,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 /* RServer(v4/v6)選單 class */
 
 .off{
-  color:gray;
+  opacity: 0.3;
   cursor:pointer;
   pointer-events:none;
 }
