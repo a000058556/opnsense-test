@@ -8286,3 +8286,11 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   margin-top: 5px !important;
   margin-bottom: 10px !important;
 }
+
+/* RServer(v4/v6)選單 class */
+
+.off{
+  color:gray;
+  cursor:pointer;
+  pointer-events:none;
+}
