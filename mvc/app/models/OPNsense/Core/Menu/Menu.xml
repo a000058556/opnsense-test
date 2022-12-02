@@ -159,7 +159,7 @@
             <Traceroute VisibleName="Trace Route" url="/diag_traceroute.php"/>
         </Diagnostics> -->
     </Interfaces>
-    <Firewall VisibleName="StarShield" order="40" cssClass="glyphicon glyphicon-fire">
+    <Firewall order="40" cssClass="glyphicon glyphicon-fire">
         <Categories url="/ui/firewall/category" cssClass="fa fa-tags fa-fw"/>
         <Groups url="/interfaces_groups.php" cssClass="fa fa-sitemap fa-fw">
             <Edit url="/interfaces_groups_edit.php*" visibility="hidden"/>
@@ -178,7 +178,7 @@
                 <Edit url="/firewall_nat_npt_edit.php*" visibility="hidden"/>
             </NPTv6>
         </NAT>
-        <Rules VisibleName="Firewall" cssClass="fa fa-check fa-fw" />
+        <Rules cssClass="fa fa-check fa-fw" />
         <Settings order="200" cssClass="fa fa-cogs fa-fw">
             <Advanced order="10" url="/system_advanced_firewall.php"/>
             <Normalization order="20" url="/firewall_scrub.php">
@@ -232,22 +232,22 @@
     <Services order="70" cssClass="fa fa-cog">
         <DHCPv4 order="10" VisibleName="DHCP Server(v4)"  cssClass="fa fa-bullseye fa-fw">
             <Relay order="200" url="/services_dhcp_relay.php"/>
-            <Leases order="300" url="/status_dhcp_leases.php">
-                <Details url="/status_dhcp_leases.php?*" visibility="hidden"/>
-            </Leases>
             <LogFile VisibleName="Log File" order="400" url="/ui/diagnostics/log/core/dhcpd"/>
         </DHCPv4>
         <DHCPv6 order="20" VisibleName="DHCP Server(v6)" cssClass="fa fa-bullseye fa-fw">
             <Relay order="300" url="/services_dhcpv6_relay.php"/>
-            <Leases order="400" url="/status_dhcpv6_leases.php">
-                <Details url="/status_dhcpv6_leases.php?*" visibility="hidden"/>
-            </Leases>
         </DHCPv6>
         <!-- <Collectd order="50" VisibleName="Collectd" url="/ui/collectd/general/index" cssClass="fa fa-area-chart"/> -->
         <OpenDNS order="125" VisibleName="OpenDNS" url="/services_opendns.php" cssClass="fa fa-tags fa-fw"/>
         <RouterAdv order="140" VisibleName="Router Advertisements" cssClass="fa fa-bullseye fa-fw" />
     </Services>
     <Diagnostics order="970" cssClass="fa fa-medkit fa-fw">
+        <DNSTablev4 VisibleName="DNS Table(v4)" url="/status_dhcp_leases.php">
+            <Details url="/status_dhcp_leases.php?*" visibility="hidden"/>
+        </DNSTablev4>
+        <DNSTablev6 VisibleName="DNS Table(v6)" url="/status_dhcpv6_leases.php">
+            <Details url="/status_dhcpv6_leases.php?*" visibility="hidden"/>
+        </DNSTablev6>
         <ARPTable VisibleName="ARP Table" url="/ui/diagnostics/interface/arp"/>
         <DNSLookup VisibleName="DNS Lookup" url="/ui/diagnostics/dns_diagnostics"/>
         <NDPTable VisibleName="NDP Table" url="/ui/diagnostics/interface/ndp"/>
@@ -266,7 +266,7 @@
         <Forum VisibleName="User Forum" order="20" url="https://forum.opnsense.org/" cssClass="fa fa-ticket" IsExternal="Y"/>
         <Support VisibleName="Commercial Support" order="30" url="https://opnsense.org/support-overview/commercial-support/" cssClass="fa fa-phone" IsExternal="Y"/>
     </Help> -->
-    <Security order="1000" cssClass="fa fa-shield fa-fw">
+    <Security VisibleName="StarShield" order="1000" cssClass="fa fa-shield fa-fw">
         <Aliases url="/ui/firewall/alias" cssClass="fa fa-list-alt fa-fw">
             <Edit url="/ui/firewall/alias/*" visibility="hidden"/>
         </Aliases>
