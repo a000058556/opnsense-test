@@ -226,8 +226,8 @@
                 <Edit url="/ui/openvpn/export?*" visibility="hidden"/>
             </ClientExport>
             <LogFile order="70" VisibleName="Log File" url="/ui/diagnostics/log/core/openvpn"/>
-            <WireGuard order="80" url="/ui/wireguard/general/index" cssClass="fa fa-lock fa-fw"/>
         </OpenVPN>
+        <WireGuard order="80" url="/ui/wireguard/general/index" cssClass="fa fa-lock fa-fw"/>
     </VPN>
     <Services order="70" cssClass="fa fa-cog">
         <DHCPv4 order="10" VisibleName="DHCP Server(v4)"  cssClass="fa fa-bullseye fa-fw">
