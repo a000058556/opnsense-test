@@ -122,13 +122,13 @@
             </Devices>
             <LogFile VisibleName="Log File" url="/ui/diagnostics/log/core/wireless"/>
         </Wireless>
-        <PPP order="950" VisibleName="Point-to-Point" cssClass="fa fa-tty fa-fw">
+        <PPP order="950" VisibleName="PPPoE Profiles" cssClass="fa fa-tty fa-fw">
             <Devices url="/interfaces_ppps.php">
                 <Edit url="/interfaces_ppps_edit.php*" visibility="hidden"/>
             </Devices>
             <LogFile VisibleName="Log File" url="/ui/diagnostics/log/core/ppps"/>
         </PPP>
-        <Types VisibleName="Other Types" order="960" cssClass="fa fa-archive fa-fw">
+        <Types VisibleName="vSwitch Settings" order="960" cssClass="fa fa-archive fa-fw">
             <Bridge url="/interfaces_bridge.php">
                 <Edit url="/interfaces_bridge_edit.php*" visibility="hidden"/>
             </Bridge>

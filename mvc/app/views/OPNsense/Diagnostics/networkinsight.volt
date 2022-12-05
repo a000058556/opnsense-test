@@ -697,6 +697,7 @@ POSSIBILITY OF SUCH DAMAGE.
     });
 </script>
 
+<!-- 上方選單 -->
 <ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
     <li><a data-toggle="tab" id="info_tab" style="display:none;" href="#info">{{ lang._('Info') }}</a></li>
     <li class="active"><a data-toggle="tab" id="totals_tab" href="#totals">{{ lang._('Totals') }}</a></li>
