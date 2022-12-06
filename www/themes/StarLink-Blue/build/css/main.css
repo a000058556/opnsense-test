@@ -4791,7 +4791,7 @@ tbody {
   .navbar-text {
     float: left;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .navbar-text.navbar-right:last-child {
     margin-right: 0;
