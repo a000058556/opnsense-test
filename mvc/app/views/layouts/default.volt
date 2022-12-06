@@ -213,11 +213,9 @@
           </button>
         </div>
         <button class="toggle-sidebar" data-toggle="tooltip right" title="{{ lang._('Toggle sidebar') }}" style="display:none;"><i class="fa fa-chevron-left"></i></button>
+        <!-- navbar start -->
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li id="menu_messages">
-              <span class="navbar-text">{{session_username}}@{{system_hostname}}.{{system_domain}}</span>
-            </li>
             <li>
               <form class="navbar-form" role="search">
                 <div class="input-group">
@@ -226,6 +224,28 @@
                 </div>
               </form>
             </li>
+            <li id="menu_messages">
+              <span class="navbar-text">{{session_username}}@{{system_hostname}}.{{system_domain}}</span>
+            </li>
+            <!-- Log Out/password -->
+            <li>
+              <div id="mobile_only_nav" class="mobile-only-nav pull-right">
+                <ul class="nav navbar-right top-nav pull-right">
+                  <li class="dropdown auth-drp">
+                    <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="/ui/themes/%s/build/images/uguard-web-15.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+                    <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+                      <li>
+                        <a href="/system_usermanager_passwordmg.php"><i class="zmdi zmdi-settings"></i><span>Password</span></a>
+                      </li>
+                      <li>
+                        <a href="/index.php?logout"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>	
+            </li>
+            <!-- Log Out/password -->
           </ul>
         </div>
       </div>
