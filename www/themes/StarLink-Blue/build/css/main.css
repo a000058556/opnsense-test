@@ -8350,3 +8350,8 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
 }
+
+
+.language_on {
+  background: rgba(33, 33, 33, 0.05);
+}
