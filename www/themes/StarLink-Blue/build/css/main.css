@@ -8294,3 +8294,59 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   cursor:pointer;
   pointer-events:none;
 }
+
+
+/*Dropdown*/
+.show-on-hover:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu > li > a {
+  color: #212121;
+}
+.dropdown-menu > li > a:hover {
+  color: #212121;
+  background: rgba(33, 33, 33, 0.05);
+}
+.dropdown-menu > li > a i {
+  color: #878787;
+  font-size: 18px;
+  margin-right: 10px;
+  width: 18px;
+}
+.dropdown-menu > li.sub-menu {
+  position: relative;
+}
+.dropdown-menu > li.sub-menu .dropdown-menu:before, .dropdown-menu > li.sub-menu .dropdown-menu:after {
+  display: none !important;
+}
+.dropdown-menu > li.sub-menu > ul {
+  top: 0;
+}
+.dropdown-menu > li.sub-menu > ul.open-left-side {
+  right: 100% !important;
+}
+.dropdown-menu > li.sub-menu > ul.open-right-side {
+  left: 100% !important;
+}
+.dropdown-menu .divider {
+  background-color: #dedede;
+}
+.dropdown-menu > .active > a {
+  background: #4aa23c;
+}
+.dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+  background: #4aa23c;
+}
+
+.dropdown-menu.animated {
+  -webkit-animation-duration: 0.55s;
+  animation-duration: 0.55s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
