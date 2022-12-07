@@ -225,8 +225,7 @@
               </form>
             </li>
             <li id="menu_messages">
-              <span class="navbar-text">root@UGuard.localdomain</span>
-              <!-- <span class="navbar-text">{{session_username}}@{{system_hostname}}.{{system_domain}}</span> -->
+              <span class="navbar-text">{{session_username}}@{{system_hostname}}.{{system_domain}}</span>
             </li>
             <!-- Log Out/password -->
             <li>
@@ -280,7 +279,7 @@
         <!-- page footer -->
         <footer class="page-foot">
           <div class="container-fluid">
-            <a target="_blank" href="/#">UGuard</a> (c) 2020 UGuard Networks Technology Co., LTD
+            <a target="_blank" href="/">UGuard</a> (c) 2020 UGuard Networks Technology Co., LTD
             <!-- <a target="_blank" href="{{ product_website }}">{{ product_name }}</a> (c) {{ product_copyright_years }}
             <a target="_blank" href="{{ product_copyright_url }}">{{ product_copyright_owner }}</a> -->
           </div>
