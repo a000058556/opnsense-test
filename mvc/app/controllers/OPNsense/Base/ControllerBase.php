@@ -211,10 +211,10 @@ class ControllerBase extends ControllerRoot
         $locales = array();
         $locales[0]['Title'] = gettext('English');
         $locales[0]['Code'] = gettext('en_US');
-        $locales[1]['Title'] = gettext('Chinese (Simplified)');
-        $locales[1]['Code'] = gettext('zh_CN');
-        $locales[2]['Title'] = gettext('Japanese');
-        $locales[2]['Code'] = gettext('ja_JP');
+        // $locales[1]['Title'] = gettext('Chinese (Simplified)');
+        // $locales[1]['Code'] = gettext('zh_CN');
+        // $locales[2]['Title'] = gettext('Japanese');
+        // $locales[2]['Code'] = gettext('ja_JP');
 
         // info about the current user and box
         $this->view->session_username = !empty($_SESSION['Username']) ? $_SESSION['Username'] : '(unknown)';
