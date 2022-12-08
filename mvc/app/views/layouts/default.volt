@@ -253,6 +253,9 @@
                               </li>
                               {% endfor %}
                             </ul>	
+                            <li>
+                              <p>{{ $locales }}</p>
+                            </li>
                         </li>
                       <li class="divider"></li>
                     </ul>
