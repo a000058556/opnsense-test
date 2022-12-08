@@ -247,7 +247,7 @@
 
                             </ul>	
                             <li>
-                              <p>{{ languages }}</p>
+                              <p>{{  print_array(languages) }}</p>
                             </li>
                         </li>
                       <li class="divider"></li>
