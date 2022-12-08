@@ -247,7 +247,7 @@
 
                             </ul>	
                             <li>
-                              <p>{{ $locales }}</p>
+                              <p>{{ locales }}</p>
                             </li>
                         </li>
                       <li class="divider"></li>
