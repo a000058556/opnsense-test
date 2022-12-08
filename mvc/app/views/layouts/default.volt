@@ -254,7 +254,7 @@
                               {% endfor %}
                             </ul>	
                             <li>
-                              <p>{{ print_array($locales) }}</p>
+                              <p>{{ language }}</p>
                             </li>
                         </li>
                       <li class="divider"></li>
