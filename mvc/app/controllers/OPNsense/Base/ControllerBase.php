@@ -205,14 +205,13 @@ class ControllerBase extends ControllerRoot
 
         // 建立語言清單
         $locales = array();
-        $locales[] = gettext('English');
-        $locales[] = gettext('Chinese (Simplified)');
-        $locales[] = gettext('Japanese');
+        $locales['local'] = gettext('English');
+        $locales['local'] = gettext('Chinese (Simplified)');
+        $locales['local'] = gettext('Japanese');
 
-        $locales_code = array();
-        $locales_code[] = gettext('en_US');
-        $locales_code[] = gettext('zh_CN');
-        $locales_code[] = gettext('ja_JP');
+        $locales['code'] = gettext('en_US');
+        $locales['code'] = gettext('zh_CN');
+        $locales['code'] = gettext('ja_JP');
 
         // info about the current user and box
         $this->view->session_username = !empty($_SESSION['Username']) ? $_SESSION['Username'] : '(unknown)';
@@ -220,7 +219,6 @@ class ControllerBase extends ControllerRoot
         $this->view->system_domain = $cnf->object()->system->domain;
         $this->view->system_language = $cnf->object()->system->language;
         $this->view->languages = $locales;
-        $this->view->language_codes = $locales_code;
 
 
 
