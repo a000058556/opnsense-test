@@ -245,14 +245,14 @@
                             <a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i>Language</a>
                             <ul class="dropdown-menu open-left-side">
                               {% for language_code in language_codes %}
+                              {% for language in languages %}
                               <li class="{% if system_language == language_code %} language_on {% endif %}" >
-                                <form method="post" name="{{language_code}}}_form" id="{{language_code}}}_form">
-                                  <input name="language" type="text" value="{{language_code}}}" class="hide"/>
-                                    {% for language in languages %}
-                                    <input name="{{language_code}}}_Submit" type="submit" class="btn btn-primary zmdi zmdi-check" value="{{language}}}" />
-                                    {% endfor %}
+                                <form method="post" name="{{language_code}}_form" id="{{language_code}}_form">
+                                  <input name="language" type="text" value="{{language_code}}" class="hide"/>
+                                    <input name="{{language_code}}_Submit" type="submit" class="btn btn-primary zmdi zmdi-check" value="{{language}}" />
                                   </form>  
                                 </li>
+                                {% endfor %}
                                 {% endfor %}
                             </ul>	
                         </li>
