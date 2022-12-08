@@ -91,6 +91,7 @@
 
 </script>
 
+<p>{{ $locales }}</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
     <li class="active"><a data-toggle="tab" href="#grid-jobs">{{ lang._('Jobs') }}</a></li>
