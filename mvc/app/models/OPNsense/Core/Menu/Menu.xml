@@ -15,7 +15,7 @@
         <Traffic url="/ui/diagnostics/traffic" cssClass="fa fa-line-chart fa-fw"/>
     </Reporting>
     <System order="20" cssClass="fa fa-server">
-        <Access order="10" cssClass="fa fa-users fa-fw">
+        <Access order="10" cssClass="fa fa-users fa-fw" VisibleName="User Management">
             <Users order="10" url="/system_usermanager.php">
                 <All url="/system_usermanager.php*" visibility="hidden"/>
                 <Privileges url="/system_usermanager_addprivs.php?user*" visibility="hidden"/>
