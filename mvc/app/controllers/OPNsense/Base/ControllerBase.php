@@ -219,8 +219,8 @@ class ControllerBase extends ControllerRoot
         $this->view->system_hostname = $cnf->object()->system->hostname;
         $this->view->system_domain = $cnf->object()->system->domain;
         $this->view->system_language = $cnf->object()->system->language;
-        $this->view->languages = $locales;
-        $this->view->languages_code = $locales_code;
+        $this->view->languages = $this->view->$locales;
+        $this->view->languages_code = $this->view->$locales_code;
 
 
 
