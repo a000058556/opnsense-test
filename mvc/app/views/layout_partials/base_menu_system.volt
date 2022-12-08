@@ -5,14 +5,17 @@
                 <div class="panel list-group" style="border:0px">
                     {% for topMenuItem in menuSystem %}
                         {% if topMenuItem.Children|length >= 1 %}
+                            <!-- 最外層 topMenuItem.Id = 最上層名稱 -->
                             <a href="#{{ topMenuItem.Id }}" class="list-group-item {% if topMenuItem.Selected %}  active-menu-title {% endif  %}" data-toggle="collapse" data-parent="#mainmenu">
                                 <span class="{{ topMenuItem.CssClass }} __iconspacer"></span>{{ lang._(topMenuItem.VisibleName) }}
                             </a>
+                            <!-- 第二層 subMenuItem.Id = 第二層名稱 -->
                             <div class="collapse  {% if topMenuItem.Selected %} active-menu in {% endif  %}" id="{{ topMenuItem.Id }}">
                                 {% for subMenuItem in topMenuItem.Children %}
                                     {% if subMenuItem.Url == '' %}
                                     {# next level items, submenu is a container #}
-                                        <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %}"
+                                        <!-- 第三層 -->
+                                        <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %} {% if subMenuItem.Id = 'DHCPv4'  %}  hide {% endif  %}"
                                             data-toggle="collapse" data-parent="#{{ topMenuItem.Id }}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
@@ -23,6 +26,7 @@
                                                 </div>
                                             </div>
                                         </a>
+                                        <!-- 第四層 -->
                                         <div class="collapse {% if subMenuItem.Selected %} active-menu in {% endif  %}" id="{{ topMenuItem.Id }}_{{ subMenuItem.Id }}">
                                             {% for subsubMenuItem in subMenuItem.Children %} {% if subsubMenuItem.IsExternal == "Y" %}
                                             <a href="{{ subsubMenuItem.Url }}" target="_blank" rel="noopener noreferrer" class="font-8px menu-a-a list-group-item menu-level-3-item {% if subsubMenuItem.Selected %} active {% endif  %}">{{ lang._(subsubMenuItem.VisibleName) }}</a>

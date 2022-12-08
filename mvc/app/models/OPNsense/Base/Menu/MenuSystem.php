@@ -62,17 +62,21 @@ class MenuSystem
     private function addXML($filename)
     {
         // load and validate menu xml
+        // 若沒有檔案
         if (!file_exists($filename)) {
             throw new MenuInitException('Menu xml ' . $filename . ' missing');
         }
+        // 讀取xml檔案
         $menuXml = simplexml_load_file($filename);
+        // 若讀取失敗
         if ($menuXml === false) {
             throw new MenuInitException('Menu xml ' . $filename . ' not valid');
         }
+        // 若開頭名稱不為menu
         if ($menuXml->getName() != "menu") {
             throw new MenuInitException('Menu xml ' . $filename . ' seems to be of wrong type');
         }
-
+        // 回傳讀取成功的資料
         return $menuXml;
     }
 
