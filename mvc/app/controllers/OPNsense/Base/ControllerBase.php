@@ -203,10 +203,26 @@ class ControllerBase extends ControllerRoot
             $this->view->$product_key = $product_var;
         }
 
+        // 建立語言清單
+        $locales = array();
+        $locales[] = gettext('English');
+        $locales[] = gettext('Chinese (Simplified)');
+        $locales[] = gettext('Japanese');
+
+        $locales_code = array();
+        $locales_code[] = gettext('en_US');
+        $locales_code[] = gettext('zh_CN');
+        $locales_code[] = gettext('ja_JP');
+
         // info about the current user and box
         $this->view->session_username = !empty($_SESSION['Username']) ? $_SESSION['Username'] : '(unknown)';
         $this->view->system_hostname = $cnf->object()->system->hostname;
         $this->view->system_domain = $cnf->object()->system->domain;
+        $this->view->system_language = $cnf->object()->system->language;
+        $this->view->languages = $locales;
+        $this->view->languages_code = $locales_code;
+
+
 
         if (isset($this->view->menuBreadcrumbs[0]['name'])) {
             $output = array();

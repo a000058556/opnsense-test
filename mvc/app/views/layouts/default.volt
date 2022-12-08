@@ -235,11 +235,28 @@
                     <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img style="width: 30px;" src="{{ cache_safe('/ui/themes/%s/build/images/user-02.jpg' | format(theme_name)) }}" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
                     <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
                       <li>
-                        <a href="/system_usermanager_passwordmg.php"><i class="zmdi zmdi-settings"></i><span>Password</span></a>
+                        <a href="/system_usermanager_passwordmg.php"><i class="zmdi zmdi-settings"></i><span></i>Password</span></a>
                       </li>
                       <li>
                         <a href="/index.php?logout"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
                       </li>
+                      <li class="divider"></li>
+                        <li class="sub-menu show-on-hover">
+                            <a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i>Language</a>
+                            <ul class="dropdown-menu open-left-side">
+                                {% for language in languages %}
+                                <li class="{% if system_language == language_code %} language_on {% endif %}" >
+                                  <form method="post" name="{{language_code}}}_form" id="{{language_code}}}_form">
+                                    <input name="language" type="text" value="{{language_code}}}" class="hide"/>
+                                    {% for language_code in language_codes %}
+                                    <input name="{{language_code}}}_Submit" type="submit" class="btn btn-primary zmdi zmdi-check" value="{{language}}}" />
+                                    {% endfor %}
+                                  </form>  
+                                </li>
+                                {% endfor %}
+                            </ul>	
+                        </li>
+                      <li class="divider"></li>
                     </ul>
                   </li>
                 </ul>
