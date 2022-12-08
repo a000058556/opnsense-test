@@ -247,7 +247,7 @@
 
                             </ul>	
                             <li>
-                              <p>{{  print_arrayy(languages) }}</p>
+                              <p>{{  callMacro('print_arrayy', languages) }}</p>
                             </li>
                         </li>
                       <li class="divider"></li>
