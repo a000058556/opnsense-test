@@ -218,6 +218,7 @@ class ControllerBase extends ControllerRoot
         $this->view->system_domain = $cnf->object()->system->domain;
         $this->view->system_language = $cnf->object()->system->language;
         $this->view->languages = $locales;
+        print_r($locales, true);
 
 
 
