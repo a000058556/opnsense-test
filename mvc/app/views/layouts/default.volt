@@ -245,7 +245,7 @@
                             <a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i>Language</a>
                             <ul class="dropdown-menu open-left-side">
                               {% for language in languages %}
-                              <li class="{% if system_language == language['code'] %} language_on {% endif %}" >
+                              <li class="{% if system_language == language.code %} language_on {% endif %}" >
                                 <form method="post" name="{{language.code}}_form" id="{{language.code}}_form">
                                   <input name="language" type="text" value="{{language.code}}" class="hide"/>
                                   <input name="{{language.code}}_Submit" type="submit" class="btn btn-primary zmdi zmdi-check" value="{{language.local}}" />
