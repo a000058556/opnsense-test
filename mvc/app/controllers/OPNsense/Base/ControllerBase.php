@@ -113,7 +113,7 @@ class ControllerBase extends ControllerRoot
         return $this->parseFormNode($formXml);
     }
 
-    public function print_array($locales) {
+    public function print_arrayy($locales) {
         print_r($locales, true);
     }
 
