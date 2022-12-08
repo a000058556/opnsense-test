@@ -17,7 +17,7 @@
                                     {# next level items, submenu is a container #}
                                         <!-- 第三層 -->
                                         <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" 
-                                            class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %} {% if subMenuItem.Id == 'DHCPv4'%} hide {% elif subMenuItem.Id == 'DHCPv6'%} hide {% endif %}"
+                                            class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %} {% if subMenuItem.Id == 'DHCPv4' %} hide {% elif subMenuItem.Id == 'DHCPv6' %} hide {% endif %}"
                                             data-toggle="collapse" data-parent="#{{ topMenuItem.Id }}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
