@@ -304,31 +304,31 @@ class MenuSystem
         // add interfaces to "Firewall: Rules" menu tab...
         $iftargets['fw'] = array_merge(array('FloatingRules' => gettext('Floating')), $iftargets['fw']);
         $ordid = 0;
-        // foreach ($iftargets['fw'] as $key => $descr) {
-        //     $this->appendItem('Firewall.Rules', $key, array(
-        //         'url' => '/firewall_rules.php?if=' . $key,
-        //         'visiblename' => $descr,
-        //         'order' => $ordid++,
-        //     ));
-        //     $this->appendItem('Firewall.Rules.' . $key, 'Select' . $key, array(
-        //         'url' => '/firewall_rules.php?if=' . $key . '&*',
-        //         'visibility' => 'hidden',
-        //     ));
-        //     if ($key == 'FloatingRules') {
-        //         $this->appendItem('Firewall.Rules.' . $key, 'Top' . $key, array(
-        //             'url' => '/firewall_rules.php',
-        //             'visibility' => 'hidden',
-        //         ));
-        //     }
-        //     $this->appendItem('Firewall.Rules.' . $key, 'Add' . $key, array(
-        //         'url' => '/firewall_rules_edit.php?if=' . $key,
-        //         'visibility' => 'hidden',
-        //     ));
-        //     $this->appendItem('Firewall.Rules.' . $key, 'Edit' . $key, array(
-        //         'url' => '/firewall_rules_edit.php?if=' . $key . '&*',
-        //         'visibility' => 'hidden',
-        //     ));
-        // }
+        foreach ($iftargets['fw'] as $key => $descr) {
+            $this->appendItem('Firewall.Rules', $key, array(
+                'url' => '/firewall_rules.php?if=' . $key,
+                'visiblename' => $descr,
+                'order' => $ordid++,
+            ));
+            $this->appendItem('Firewall.Rules.' . $key, 'Select' . $key, array(
+                'url' => '/firewall_rules.php?if=' . $key . '&*',
+                'visibility' => 'hidden',
+            ));
+            if ($key == 'FloatingRules') {
+                $this->appendItem('Firewall.Rules.' . $key, 'Top' . $key, array(
+                    'url' => '/firewall_rules.php',
+                    'visibility' => 'hidden',
+                ));
+            }
+            $this->appendItem('Firewall.Rules.' . $key, 'Add' . $key, array(
+                'url' => '/firewall_rules_edit.php?if=' . $key,
+                'visibility' => 'hidden',
+            ));
+            $this->appendItem('Firewall.Rules.' . $key, 'Edit' . $key, array(
+                'url' => '/firewall_rules_edit.php?if=' . $key . '&*',
+                'visibility' => 'hidden',
+            ));
+        }
 
         // add interfaces to "Services: DHCPv[46]" menu tab:
         $ordid = 0;
