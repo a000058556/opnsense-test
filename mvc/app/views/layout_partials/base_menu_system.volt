@@ -17,7 +17,11 @@
                                     {# next level items, submenu is a container #}
                                         <!-- 第三層 -->
                                         <a href="#{{ topMenuItem.Id }}_{{ subMenuItem.Id }}" 
-                                            class="menu-a-radius list-group-item {% if subMenuItem.Selected %}  active-menu-title {% endif  %} {% if subMenuItem.Id == 'DHCPv4' %} hide {% endif %} {% if subMenuItem.Id == 'DHCPv6' %} hide {% endif %}"
+                                            class="menu-a-radius list-group-item 
+                                            {% if subMenuItem.Selected %}  active-menu-title {% endif  %} 
+                                            {% if subMenuItem.Id == 'DHCPv4' %} hide {% endif %} 
+                                            {% if subMenuItem.Id == 'DHCPv6' %} hide {% endif %}
+                                            "
                                             data-toggle="collapse" data-parent="#{{ topMenuItem.Id }}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
@@ -40,7 +44,10 @@
                                     {% elseif subMenuItem.IsExternal == "Y" %}
                                     <!-- 設置隱藏條件{% if subMenuItem.Url == '/system_usermanager_passwordmg.php' %} hide {% endif  %} -->
                                         <a href="{{ subMenuItem.Url }}" target="_blank" rel="noopener noreferrer" 
-                                            class="menu-a-radius list-group-item {% if subMenuItem.Selected %} active {% endif  %} {% if subMenuItem.Url == '/system_usermanager_passwordmg.php' %} hide {% endif  %}"
+                                            class="menu-a-radius list-group-item 
+                                            {% if subMenuItem.Selected %} active {% endif  %} 
+                                            {% if subMenuItem.Url == '/system_usermanager_passwordmg.php' %} hide {% endif  %}
+                                            "
                                             aria-expanded="{% if subMenuItem.Selected %}true{%else%}false{% endif  %}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">

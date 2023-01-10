@@ -87,7 +87,7 @@ class Backend
      */
     public function configdRun($event, $detach = false, $timeout = 120, $connect_timeout = 10)
     {
-        // 範例: $event = filter rule stats
+        // 範例: $event = filter rule stats / interface show traffic
         $endOfStream = chr(0) . chr(0) . chr(0); // 將 ASCII 碼轉換為字串符
         $errorOfStream = 'Execute error';
         $poll_timeout = 2; // poll timeout interval
@@ -129,6 +129,7 @@ class Backend
         // $detach = false 則執行 fwrite($stream, $event);
         // 範例: $event = "netflow aggregate metadata json"
         // 範例: $event = filter rule stats
+        // 範例: $event = interface show traffic
         // $stream = @stream_socket_client('unix://' . $this->configdSocket, $errorNumber, $errorMessage, $poll_timeout)
         if ($detach) {
             // fwrite() 把 string 的內容寫入文件。成功時返回寫入的字符數，出現錯誤時則返回 false。
