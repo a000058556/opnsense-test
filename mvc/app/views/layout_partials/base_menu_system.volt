@@ -25,9 +25,13 @@
                                             data-toggle="collapse" data-parent="#{{ topMenuItem.Id }}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
-                                                    <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
+                                                    <div style="display: table-cell"><span class="right-nav-text
+                                                        {% if subMenuItem.VisibleName == 'Wireless' %} hide {% endif %}
+                                                        ">{{ lang._(subMenuItem.VisibleName) }}</span></div>
                                                     <div style="display: table-cell; text-align:right; vertical-align:middle;">
-                                                        <span class="{{ subMenuItem.CssClass }}"></span>
+                                                        <span class="{{ subMenuItem.CssClass }}
+                                                        {% if subMenuItem.VisibleName == 'Wireless' %} hide {% endif %}
+                                                        "></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -51,9 +55,13 @@
                                             aria-expanded="{% if subMenuItem.Selected %}true{%else%}false{% endif  %}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
-                                                    <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
+                                                    <div style="display: table-cell"><span class="right-nav-text
+                                                        {% if subMenuItem.VisibleName == 'Wireless' %} hide {% endif %}
+                                                        ">{{ lang._(subMenuItem.VisibleName) }}</span></div>
                                                     <div style="display: table-cell; text-align:right; vertical-align:middle;">
-                                                        <span class="{{ subMenuItem.CssClass }}"></span>
+                                                        <span class="{{ subMenuItem.CssClass }}
+                                                        {% if subMenuItem.VisibleName == 'Wireless' %} hide {% endif %}
+                                                        "></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -63,9 +71,13 @@
                                             class="menu-a-radius list-group-item {% if subMenuItem.Selected %} active {% endif  %} {% if subMenuItem.Url == '/system_usermanager_passwordmg.php' %} hide {% endif  %}">
                                             <div style="display: table;width: 90%;">
                                                 <div style="display: table-row">
-                                                    <div style="display: table-cell">{{ lang._(subMenuItem.VisibleName) }}</div>
+                                                    <div style="display: table-cell"><span class="right-nav-text
+                                                        {% if subMenuItem.VisibleName == 'Wireless' %} hide {% endif %}
+                                                        ">{{ lang._(subMenuItem.VisibleName) }}</span></div>
                                                     <div style="display: table-cell; text-align:right; vertical-align:middle;">
-                                                        <span class="{{ subMenuItem.CssClass }}"></span>
+                                                        <span class="{{ subMenuItem.CssClass }}
+                                                        {% if subMenuItem.VisibleName == 'Wireless' %} hide {% endif %}
+                                                        "></span>
                                                     </div>
                                                 </div>
                                             </div>
